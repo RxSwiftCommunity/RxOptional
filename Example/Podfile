@@ -3,6 +3,8 @@ use_frameworks!
 
 target 'RxOptional_Example', :exclusive => true do
   pod 'RxOptional', :path => '../'
+  pod 'RxSwift', '~> 2.0'
+  pod 'RxCocoa', '~> 2.0'
 end
 
 target 'RxOptional_Tests', :exclusive => true do

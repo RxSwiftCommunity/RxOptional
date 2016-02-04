@@ -9,32 +9,24 @@
 Pod::Spec.new do |s|
   s.name             = "RxOptional"
   s.version          = "0.1.0"
-  s.summary          = "A short description of RxOptional."
+  s.summary          = "RxSwift extensions for Swift's optionals"
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/RxOptional"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/thanegill/RxOptional"
   s.license          = 'MIT'
   s.author           = { "Thane Gill" => "me@thanegill.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/RxOptional.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/thanegill/RxOptional.git", :tag => s.version.to_s }
 
-  s.platform     = :ios, '8.0'
-  s.requires_arc = true
+  s.ios.deployment_target = '8.0'
+  s.osx.deployment_target = '10.9'
+  s.watchos.deployment_target = '2.0'
+  s.tvos.deployment_target = '9.0'
 
-  s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'RxOptional' => ['Pod/Assets/*.png']
-  }
+  s.source_files = 'RxOptional/**/*'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'RxSwift', '~> 2.0'
+  s.dependency 'RxCocoa', '~> 2.0'
+  s.frameworks = 'Foundation'
 end
