@@ -7,17 +7,21 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = "RxOptional"
-  s.version          = "0.1.0"
-  s.summary          = "RxSwift extensions for Swift's optionals"
+  s.name        = 'RxOptional'
+  s.version     = '0.1.1'
+  s.summary     = "RxSwift extensions for Swift's optionals"
 
-  s.description      = <<-DESC
-                       DESC
+  s.description = <<-DESC
+                  RxOptional bridged Swift's optional to RxSwift
+                  DESC
 
-  s.homepage         = "https://github.com/thanegill/RxOptional"
-  s.license          = 'MIT'
-  s.author           = { "Thane Gill" => "me@thanegill.com" }
-  s.source           = { :git => "https://github.com/thanegill/RxOptional.git", :tag => s.version.to_s }
+  s.homepage    = 'https://github.com/thanegill/RxOptional'
+  s.license     = 'MIT'
+  s.author      = { 'Thane Gill' => 'me@thanegill.com' }
+  s.source      = {
+                    :git => 'https://github.com/thanegill/RxOptional.git',
+                    :tag => s.version.to_s
+                  }
 
   s.ios.deployment_target = '8.0'
   s.osx.deployment_target = '10.9'
