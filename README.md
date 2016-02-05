@@ -9,7 +9,14 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+```swift
+
+```
+
 ## Requirements
+
+- [RxSwift](https://github.com/ReactiveX/RxSwift)
+- [RxCocoa](https://github.com/ReactiveX/RxSwift)
 
 ## Installation
 

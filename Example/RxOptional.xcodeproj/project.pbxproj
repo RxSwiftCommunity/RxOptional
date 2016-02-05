@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		6818D4701C647E91008FF9B4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6818D46F1C647E91008FF9B4 /* Info.plist */; };
+		68A45EB91C64807F00B4FAB3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 607FACEA1AFB9204008FA782 /* Info.plist */; };
+		68A45EBB1C64809900B4FAB3 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A45EBA1C64809900B4FAB3 /* Tests.swift */; };
 		B188465E7C2E67A0D7528716 /* Pods_RxOptional_Examples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A18EB142F4C0557A635D74 /* Pods_RxOptional_Examples.framework */; };
 		BC4CC019FFB38AA84C654D66 /* Pods_RxOptional_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC258AA3091BA7EC5029B0D3 /* Pods_RxOptional_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -19,9 +20,9 @@
 		5E6819C0E34D39030363E767 /* Pods_RxOptional_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxOptional_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACE51AFB9204008FA782 /* RxOptional_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxOptional_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6818D46E1C647E91008FF9B4 /* RxOptional Examples.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RxOptional Examples.h"; path = "Supporting Files/RxOptional Examples.h"; sourceTree = "<group>"; };
-		6818D46F1C647E91008FF9B4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = "<group>"; };
+		6818D46E1C647E91008FF9B4 /* RxOptional Examples.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RxOptional Examples.h"; sourceTree = "<group>"; };
+		6818D46F1C647E91008FF9B4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68A45EBA1C64809900B4FAB3 /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		68B6CB121C646F1F00C5D21E /* Examples.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Examples.playground; sourceTree = "<group>"; };
 		68B6CB191C64769700C5D21E /* RxOptional_Examples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxOptional_Examples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8111D6524D623E3DA342E780 /* Pods-RxOptional_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxOptional_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxOptional_Tests/Pods-RxOptional_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -80,10 +81,11 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				68A45EBA1C64809900B4FAB3 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
-			path = Tests;
+			name = Tests;
+			path = ../Tests;
 			sourceTree = "<group>";
 		};
 		607FACE91AFB9204008FA782 /* Supporting Files */ = {
@@ -110,7 +112,7 @@
 				6818D46E1C647E91008FF9B4 /* RxOptional Examples.h */,
 				6818D46F1C647E91008FF9B4 /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		D87D76C76A8644196F86B0DD /* Frameworks */ = {
@@ -195,7 +197,7 @@
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
@@ -231,6 +233,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68A45EB91C64807F00B4FAB3 /* Info.plist in Resources */,
 				6818D4701C647E91008FF9B4 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,7 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				68A45EBB1C64809900B4FAB3 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +430,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9BC4BC68DE17D3490CD25490 /* Pods-RxOptional_Tests.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -439,6 +443,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -446,6 +451,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8111D6524D623E3DA342E780 /* Pods-RxOptional_Tests.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -468,7 +474,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "RxOptional Examples/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -491,7 +497,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "RxOptional Examples/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
