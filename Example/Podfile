@@ -9,7 +9,7 @@ target 'RxOptional Examples', :exclusive => true do
   pod 'RxCocoa', '~> 2.0'
 end
 
-target 'RxOptional_Tests', :exclusive => true do
+target 'RxOptional Tests', :exclusive => true do
   pod 'RxOptional', :path => '../'
 
   pod 'Quick', '~> 0.8.0'
