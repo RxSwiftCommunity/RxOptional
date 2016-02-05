@@ -31,9 +31,10 @@ public extension Driver where Element: Occupiable {
     public func fatalErrorOnEmpty() -> Driver<Element> {
         return self.flatMap { element -> Driver<Element> in
             if element.isEmpty {
-                fatalError("Empty object of type \(String(Element.self))")
-            } else {
                 return Driver<Element>.just(element)
+            } else {
+                RxFatalError("Empty object of type \(String(Element.self))")
+                return Driver.empty()
             }
         }
     }

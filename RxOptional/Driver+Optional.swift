@@ -28,7 +28,8 @@ public extension Driver where Element: OptionalType {
             if let value = element.value {
                 return Driver<Element.Wrapped>.just(value)
             } else {
-                fatalError("Found nil while trying to unwrap type: \(Element.Wrapped.self)")
+                RxFatalError("Found nil while trying to unwrap type: \(Element.Wrapped.self)")
+                return Driver<Element.Wrapped>.empty()
             }
         }
     }

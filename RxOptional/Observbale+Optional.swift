@@ -32,7 +32,8 @@ public extension ObservableType where E: OptionalType {
             if let value = element.value {
                 return Observable<E.Wrapped>.just(value)
             } else {
-                fatalError("Found nil while trying to unwrap type: \(E.Wrapped.self)")
+                RxFatalError("Found nil while trying to unwrap type: \(E.Wrapped.self)")
+                return Observable.empty()
             }
         }
     }

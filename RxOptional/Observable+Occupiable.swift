@@ -25,13 +25,13 @@ public extension ObservableType where E: Occupiable {
     /**
      Passes value if not empty. When empty throws error.
 
-     - parameter error: Error to throw when empty
+     - parameter error: Error to throw when empty default to `RxError.NoElements`.
 
      - returns: Observable containing the source sequence's elements,
      or error if empty.
      */
     @warn_unused_result(message="http://git.io/rxs.uo")
-    public func errorOnEmpty(error: ErrorType) -> Observable<E> {
+    public func errorOnEmpty(error: ErrorType = RxError.NoElements) -> Observable<E> {
         return self.flatMap { element -> Observable<E> in
             if element.isEmpty {
                 throw error
@@ -50,7 +50,8 @@ public extension ObservableType where E: Occupiable {
     public func fatalErrorOnEmpty() -> Observable<E> {
         return self.flatMap { element -> Observable<E> in
             if element.isEmpty {
-                fatalError("Empty object of type \(String(E.self))")
+                RxFatalError("Empty object of type \(String(E.self))")
+                return Observable.empty()
             } else {
                 return Observable<E>.just(element)
             }
