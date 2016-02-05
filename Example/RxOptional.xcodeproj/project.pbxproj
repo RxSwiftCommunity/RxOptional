@@ -40,6 +40,7 @@
 		607FACE51AFB9204008FA782 /* RxOptional_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxOptional_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		68B6CB121C646F1F00C5D21E /* Examples.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Examples.playground; sourceTree = "<group>"; };
 		8111D6524D623E3DA342E780 /* Pods-RxOptional_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxOptional_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxOptional_Tests/Pods-RxOptional_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		816A8CA48D402F34E82CF14A /* RxOptional.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RxOptional.podspec; path = ../RxOptional.podspec; sourceTree = "<group>"; };
 		92783A8C6E01EB9EA3F6F1EA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -72,6 +73,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				68B6CB121C646F1F00C5D21E /* Examples.playground */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for RxOptional */,
 				607FACE81AFB9204008FA782 /* Tests */,
