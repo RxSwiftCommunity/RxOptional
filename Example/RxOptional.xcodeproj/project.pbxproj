@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		68B6CB1C1C64769800C5D21E /* RxOptional Examples.h in Headers */ = {isa = PBXBuildFile; fileRef = 68B6CB1B1C64769800C5D21E /* RxOptional Examples.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6818D4701C647E91008FF9B4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6818D46F1C647E91008FF9B4 /* Info.plist */; };
 		B188465E7C2E67A0D7528716 /* Pods_RxOptional_Examples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A18EB142F4C0557A635D74 /* Pods_RxOptional_Examples.framework */; };
 		BC4CC019FFB38AA84C654D66 /* Pods_RxOptional_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC258AA3091BA7EC5029B0D3 /* Pods_RxOptional_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -20,10 +20,10 @@
 		607FACE51AFB9204008FA782 /* RxOptional_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxOptional_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		6818D46E1C647E91008FF9B4 /* RxOptional Examples.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RxOptional Examples.h"; path = "Supporting Files/RxOptional Examples.h"; sourceTree = "<group>"; };
+		6818D46F1C647E91008FF9B4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = "<group>"; };
 		68B6CB121C646F1F00C5D21E /* Examples.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Examples.playground; sourceTree = "<group>"; };
 		68B6CB191C64769700C5D21E /* RxOptional_Examples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxOptional_Examples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		68B6CB1B1C64769800C5D21E /* RxOptional Examples.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RxOptional Examples.h"; sourceTree = "<group>"; };
-		68B6CB1D1C64769800C5D21E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8111D6524D623E3DA342E780 /* Pods-RxOptional_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxOptional_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxOptional_Tests/Pods-RxOptional_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		816A8CA48D402F34E82CF14A /* RxOptional.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RxOptional.podspec; path = ../RxOptional.podspec; sourceTree = "<group>"; };
 		92783A8C6E01EB9EA3F6F1EA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 				68B6CB121C646F1F00C5D21E /* Examples.playground */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACE81AFB9204008FA782 /* Tests */,
-				68B6CB1A1C64769800C5D21E /* RxOptional Examples */,
+				6818D46D1C647E80008FF9B4 /* Supporting Files */,
 				607FACD11AFB9204008FA782 /* Products */,
 				EB2CCC8A534AA9714E536AE4 /* Pods */,
 				D87D76C76A8644196F86B0DD /* Frameworks */,
@@ -104,13 +104,13 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		68B6CB1A1C64769800C5D21E /* RxOptional Examples */ = {
+		6818D46D1C647E80008FF9B4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				68B6CB1B1C64769800C5D21E /* RxOptional Examples.h */,
-				68B6CB1D1C64769800C5D21E /* Info.plist */,
+				6818D46E1C647E91008FF9B4 /* RxOptional Examples.h */,
+				6818D46F1C647E91008FF9B4 /* Info.plist */,
 			);
-			path = "RxOptional Examples";
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		D87D76C76A8644196F86B0DD /* Frameworks */ = {
@@ -143,7 +143,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68B6CB1C1C64769800C5D21E /* RxOptional Examples.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6818D4701C647E91008FF9B4 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
