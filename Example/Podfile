@@ -11,5 +11,5 @@ target 'RxOptional_Tests', :exclusive => true do
   pod 'RxOptional', :path => '../'
 
   pod 'Quick', '~> 0.8.0'
-  pod 'Nimble', '3.0.0'
+  pod 'Nimble', :git => 'https://github.com/Quick/Nimble.git', :branch => 'master'
 end
