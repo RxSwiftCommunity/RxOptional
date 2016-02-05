@@ -6,7 +6,7 @@ import RxOptional
 /*
 Steps to Run
 
-- Select RxOptional-Example Target
+- Select RxOptional Examples Target
 - Build
 - Show Debug Area (cmd+shit+Y)
 - Click blue play button in Debug Area
@@ -17,7 +17,6 @@ public func example(description: String, action: () -> ()) {
     print("\n--- \(description) example ---")
     action()
 }
-
 
 example("filterNil") {
     Observable<String?>
