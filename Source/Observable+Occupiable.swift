@@ -3,9 +3,27 @@ import RxSwift
 
 public extension ObservableType where E: Occupiable {
     /**
-     Passes value if not empty. When empty uses handler to call another Observable
+     Filter out empty occupibales.
 
-     - parameter handler: Empty handler function, producing another observable sequence
+     - returns: Observbale of only non-empty occupiables.
+     */
+    @warn_unused_result(message="http://git.io/rxs.uo")
+    public func filterEmpty() -> Observable<E> {
+        return self.flatMap { element -> Observable<E> in
+            if element.isNotEmpty {
+                return Observable<E>.just(element)
+            } else {
+                return Observable<E>.empty()
+            }
+        }
+    }
+
+    /**
+     When empty uses handler to call another Observbale otherwise passes elemets.
+
+     - parameter handler: Empty handler function, producing another observable.
+     Guarantees non-empty by throwing RxOptionalError.EmptyOccupiable is handler
+     returns an Observable with empty elements.
 
      - returns: An observable sequence containing the source sequence's elements,
      followed by the elements produced by the handler's resulting observable
@@ -16,6 +34,7 @@ public extension ObservableType where E: Occupiable {
         return self.flatMap { element -> Observable<E> in
             if element.isEmpty {
                 return try handler()
+                    .errorOnEmpty()
             } else {
                 return Observable<E>.just(element)
             }
@@ -31,12 +50,12 @@ public extension ObservableType where E: Occupiable {
      or error if empty.
      */
     @warn_unused_result(message="http://git.io/rxs.uo")
-    public func errorOnEmpty(error: ErrorType = RxError.NoElements) -> Observable<E> {
-        return self.flatMap { element -> Observable<E> in
+    public func errorOnEmpty(error: ErrorType = RxOptionalError.EmptyOccupiable(E.self)) -> Observable<E> {
+        return self.map { element in
             if element.isEmpty {
                 throw error
             } else {
-                return Observable<E>.just(element)
+                return element
             }
         }
     }
@@ -48,12 +67,12 @@ public extension ObservableType where E: Occupiable {
      */
     @warn_unused_result(message="http://git.io/rxs.uo")
     public func fatalErrorOnEmpty() -> Observable<E> {
-        return self.flatMap { element -> Observable<E> in
+        return self.map { element in
             if element.isEmpty {
-                RxFatalError("Empty object of type \(String(E.self))")
-                return Observable.empty()
+                RxOptionalFatalError(RxOptionalError.EmptyOccupiable(E.self))
+                throw RxOptionalError.EmptyOccupiable(E.self)
             } else {
-                return Observable<E>.just(element)
+                return element
             }
         }
     }

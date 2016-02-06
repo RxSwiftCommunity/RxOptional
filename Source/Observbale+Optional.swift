@@ -1,7 +1,7 @@
 import Foundation
 import RxSwift
 
-// Some code from here: https://github.com/artsy/eidolon/blob/24e36a69bbafb4ef6dbe4d98b575ceb4e1d8345f/Kiosk/Observable%2BOperators.swift#L42-L62
+// Some code originally from here: https://github.com/artsy/eidolon/blob/24e36a69bbafb4ef6dbe4d98b575ceb4e1d8345f/Kiosk/Observable%2BOperators.swift#L42-L62
 // Credit to Artsy and @ashfurrow
 
 public extension ObservableType where E: OptionalType {
@@ -28,12 +28,12 @@ public extension ObservableType where E: OptionalType {
      */
     @warn_unused_result(message="http://git.io/rxs.uo")
     public func fatalErrorOnNil() -> Observable<E.Wrapped> {
-        return self.flatMap { element -> Observable<E.Wrapped> in
+        return self.map { element in
             if let value = element.value {
-                return Observable<E.Wrapped>.just(value)
+                return value
             } else {
-                RxFatalError("Found nil while trying to unwrap type: \(E.Wrapped.self)")
-                return Observable.empty()
+                RxOptionalFatalError(RxOptionalError.FoundNilWhileUnwrappingOptional(E.self))
+                throw RxOptionalError.FoundNilWhileUnwrappingOptional(E.self)
             }
         }
     }
@@ -46,10 +46,10 @@ public extension ObservableType where E: OptionalType {
      - returns: Observable of unwrapped value or Error.
      */
     @warn_unused_result(message="http://git.io/rxs.uo")
-    public func errorOnNil(error: ErrorType) -> Observable<E.Wrapped> {
-        return self.flatMap { element -> Observable<E.Wrapped> in
+    public func errorOnNil(error: ErrorType = RxOptionalError.FoundNilWhileUnwrappingOptional(E.self)) -> Observable<E.Wrapped> {
+        return self.map { element -> E.Wrapped in
             if let value = element.value {
-                return Observable<E.Wrapped>.just(value)
+                return value
             } else {
                 throw error
             }
@@ -59,17 +59,17 @@ public extension ObservableType where E: OptionalType {
     /**
      Unwraps optional and replace nil values with value.
 
-     - parameter nilValue: Value to emit when nil is found.
+     - parameter valueOnNil: Value to emit when nil is found.
 
      - returns: Observable of unwrapped value or nilValue.
      */
     @warn_unused_result(message="http://git.io/rxs.uo")
-    public func replaceNilWith(nilValue: E.Wrapped) -> Observable<E.Wrapped> {
-        return self.flatMap { element -> Observable<E.Wrapped> in
+    public func replaceNilWith(valueOnNil: E.Wrapped) -> Observable<E.Wrapped> {
+        return self.map { element -> E.Wrapped in
             if let value = element.value {
-                return Observable<E.Wrapped>.just(value)
+                return value
             } else {
-                return Observable<E.Wrapped>.just(nilValue)
+                return valueOnNil
             }
         }
     }

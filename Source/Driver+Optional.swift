@@ -28,7 +28,7 @@ public extension Driver where Element: OptionalType {
             if let value = element.value {
                 return Driver<Element.Wrapped>.just(value)
             } else {
-                RxFatalError("Found nil while trying to unwrap type: \(Element.Wrapped.self)")
+                RxOptionalFatalError(RxOptionalError.FoundNilWhileUnwrappingOptional(Element.self))
                 return Driver<Element.Wrapped>.empty()
             }
         }
@@ -37,17 +37,17 @@ public extension Driver where Element: OptionalType {
     /**
      Unwraps optional and replace nil values with value.
 
-     - parameter nilValue: Value to emit when nil is found.
+     - parameter valueOnNil: Value to emit when nil is found.
 
      - returns: Driver with unwrapped value or nilValue.
      */
     @warn_unused_result(message="http://git.io/rxs.uo")
-    public func replaceNilWith(nilValue: Element.Wrapped) -> Driver<Element.Wrapped> {
-        return self.flatMap { element -> Driver<Element.Wrapped> in
+    public func replaceNilWith(valueOnNil: Element.Wrapped) -> Driver<Element.Wrapped> {
+        return self.map { element -> E.Wrapped in
             if let value = element.value {
-                return Driver<Element.Wrapped>.just(value)
+                return value
             } else {
-                return Driver<Element.Wrapped>.just(nilValue)
+                return valueOnNil
             }
         }
     }

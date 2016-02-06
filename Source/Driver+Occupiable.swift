@@ -3,9 +3,27 @@ import RxCocoa
 
 public extension Driver where Element: Occupiable {
     /**
-     Passes value if not empty. When empty uses handler to call another Driver
+     Filter out empty occupibales.
 
-     - parameter handler: Empty handler function, producing another Driver
+     - returns: Driver of only non-empty occupiables.
+     */
+    @warn_unused_result(message="http://git.io/rxs.uo")
+    public func filterEmpty() -> Driver<Element> {
+        return self.flatMap { element -> Driver<Element> in
+            if element.isNotEmpty {
+                return Driver<Element>.just(element)
+            } else {
+                return Driver<Element>.empty()
+            }
+        }
+    }
+
+    /**
+     When empty uses handler to call another Driver otherwise passes elemets.
+
+     - parameter handler: Empty handler function, producing another Driver.
+     Guarantees non-empty by fatalErroring when handler returns an Driver
+     with empty elements.
 
      - returns: Driver containing the source sequence's elements,
      followed by the elements produced by the handler's resulting observable
@@ -16,6 +34,7 @@ public extension Driver where Element: Occupiable {
         return self.flatMap { element -> Driver<Element> in
             if element.isEmpty {
                 return handler()
+                    .fatalErrorOnEmpty()
             } else {
                 return Driver<Element>.just(element)
             }
@@ -33,7 +52,7 @@ public extension Driver where Element: Occupiable {
             if element.isEmpty {
                 return Driver<Element>.just(element)
             } else {
-                RxFatalError("Empty object of type \(String(Element.self))")
+                RxOptionalFatalError(RxOptionalError.EmptyOccupiable(Element.self))
                 return Driver.empty()
             }
         }
