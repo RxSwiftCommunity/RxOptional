@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.summary     = "RxSwift extensions for Swift's optionals"
 
   s.description = <<-DESC
-                  RxOptional bridged Swift's optional to RxSwift
+                  RxSwift extentions for Swift optionals and "Occupiable" types.
                   DESC
 
   s.homepage    = 'https://github.com/thanegill/RxOptional'
