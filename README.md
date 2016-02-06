@@ -97,7 +97,7 @@ Occupiables are:
 - `Set`
 
 Currently in Swift protocols cannot be extended to conform to other protocols.
-For now the Type listed above conform to `Occupiable`. You can always conform
+For now the types listed above conform to `Occupiable`. You can always conform
 custom types to `Occupiable`.
 
 ##### filterEmpty
