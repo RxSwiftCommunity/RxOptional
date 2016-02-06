@@ -19,7 +19,7 @@ func RxOptionalFatalError(error: ErrorType) {
     #if DEBUG
         rxfatalError(error)
     #else
-        print("\(error)")
+        print("fatalError: \(error)")
     #endif
 }
 
