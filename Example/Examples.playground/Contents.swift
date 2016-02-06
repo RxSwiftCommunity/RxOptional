@@ -2,7 +2,6 @@ import RxSwift
 import RxCocoa
 import RxOptional
 
-
 /*
 Steps to Run
 
@@ -18,31 +17,78 @@ public func example(description: String, action: () -> ()) {
     action()
 }
 
+// All operators are available on Driver as well unless otherwise marked.
+
+
+// Optionals
+
 example("filterNil") {
-    Observable<String?>.of("One", nil, "two")
+    let _ = Observable<String?>
+        .of("One", nil, "Three")
         .filterNil()
         .subscribe { print($0) }
 }
 
-example("fatalErrorOnNil") {
-    Observable<String?>
-        .just(nil)
-        .fatalErrorOnNil()
+example("replaceNilWith") {
+    let _ = Observable<String?>
+        .of("One", nil, "Three")
+        .replaceNilWith("Two")
         .subscribe { print($0) }
 }
 
+example("fatalErrorOnNil") {
+    let _ = Observable<String?>
+        .of("One", nil, "Three")
+        .fatalErrorOnNil()  // Durring release fatalErrors will only be logged
+        .subscribe { print($0) }
+}
+
+// Unavailable on Driver
 example("errorOnNil") {
-    Observable<String?>
-        .just(nil)
-        .errorOnNil(RxError.Unknown)
+    let _ = Observable<String?>
+        .of("One", nil, "Three")
+        .errorOnNil()
         .subscribe { print($0) }
 }
 
 example("catchOnNil") {
-    Observable<String?>
-        .just(nil)
+    let _ = Observable<String?>
+        .of("One", nil, "Three")
         .catchOnNil {
             return Observable<String>.just("A String from a new Observable")
+        }
+        .subscribe { print($0) }
+}
+
+// Occupilables
+
+example("filterEmpty") {
+    let _ = Observable<[String]>
+        .of(["Single Element"], [], ["Two", "Elements"])
+        .filterEmpty()
+        .subscribe { print($0) }
+}
+
+example("fatalErrorOnEmpty") {
+    let _ = Observable<[String]>
+        .of(["Single Element"], [], ["Two", "Elements"])
+        .fatalErrorOnEmpty()
+        .subscribe { print($0) }
+}
+
+
+example("errorOnEmpty") {
+    let _ = Observable<[String]>
+        .of(["Single Element"], [], ["Two", "Elements"])
+        .errorOnEmpty()
+        .subscribe { print($0) }
+}
+
+example("catchOnEmpty") {
+    let _ = Observable<[String]>
+        .of(["Single Element"], [], ["Two", "Elements"])
+        .catchOnEmpty {
+            return Observable<[String]>.just(["Not Empty"])
         }
         .subscribe { print($0) }
 }

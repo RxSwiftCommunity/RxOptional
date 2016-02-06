@@ -3,7 +3,7 @@ PODS:
   - Quick (0.8.0)
   - RxCocoa (2.1.0):
     - RxSwift (~> 2.0)
-  - RxOptional (0.1.0):
+  - RxOptional (0.1.1):
     - RxCocoa (~> 2.0)
     - RxSwift (~> 2.0)
   - RxSwift (2.1.0)
@@ -31,7 +31,7 @@ SPEC CHECKSUMS:
   Nimble: eb2a9b164b9a3f16df6581c692a0bfced7d072a4
   Quick: 563d0f6ec5f72e394645adb377708639b7dd38ab
   RxCocoa: 79b5feb8378545336e756a0a33fcf5e95050b71c
-  RxOptional: deeb6b94a58bdebbecf02bf4f911967ad42dff71
+  RxOptional: e5b9be03b615ec15dd9f7d9ab1874291228a6350
   RxSwift: 110fb07f81c17c2c3b3254d168363057b1880d18
 
 COCOAPODS: 0.39.0
