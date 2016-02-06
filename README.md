@@ -10,8 +10,6 @@ RxSwift extentions for Swift optionals and "Occupiable" types.
 
 ## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
 All operators are available on Driver as well unless otherwise marked.
 
 ### Optional Operators
@@ -44,8 +42,9 @@ Completed
 ```
 
 ##### fatalErrorOnNil
-During release builds fatalErrors are logged. `.fatalErrorOnNil` and sends Error event
-for Observables only, Driver sends Completed event.
+During release builds fatalErrors are logged. Durring Debug builds
+`.fatalErrorOnNil()` sends Error event for Observables and Driver
+continutes after logging fatalError.
 ```swift
 Observable<String?>
     .of("One", nil, "Three")
@@ -54,7 +53,7 @@ Observable<String?>
 ```
 ```text
 Next(One)
-Found nil while trying to unwrap type <Optional<String>>
+fatal Error: Found nil while trying to unwrap type <Optional<String>>
 Error(Found nil while trying to unwrap type <Optional<String>>)
 ```
 
@@ -115,8 +114,9 @@ Completed
 ```
 
 ##### fatalErrorOnEmpty
-During release builds fatalErrors are logged. `.fatalErrorOnEmpty` and sends Error event
-for Observables only, Driver sends Completed event.
+During release builds fatalErrors are logged. Durring Debug builds
+`.fatalErrorOnEmpty()` sends Error event for Observables and Driver
+continutes after logging fatalError.
 ```swift
 Observable<[String]>
     .of(["Single Element"], [], ["Two", "Elements"])
@@ -125,7 +125,7 @@ Observable<[String]>
 ```
 ```text
 Next(["Single Element"])
-Empty occupiable of type <Array<String>>
+fatal Error: Empty occupiable of type <Array<String>>
 Error(Empty occupiable of type <Array<String>>)
 ```
 
@@ -160,6 +160,15 @@ Next(["Not Empty"])
 Next(["Two", "Elements"])
 Completed
 ```
+
+## Running Examples.playground
+
+- Run `pod install` in Example directory
+- Select RxOptional Examples Target
+- Build
+- Open Examples.playground
+- Show Debug Area (cmd+shit+Y)
+- Click blue play button in Debug Area
 
 ## Requirements
 

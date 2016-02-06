@@ -23,6 +23,9 @@ public extension ObservableType where E: OptionalType {
     /**
      Unwraps optional values and if finds nil fatalErrors.
 
+     During release builds fatalErrors are logged. Durring Debug builds
+     sends Error event `RxOptionalError.FoundNilWhileUnwrappingOptional`.
+
      - returns: Observbale of unwrapped value.
      */
     @warn_unused_result(message="http://git.io/rxs.uo")
@@ -39,7 +42,8 @@ public extension ObservableType where E: OptionalType {
     /**
      Unwraps optional and if finds nil emmits error.
 
-     - parameter error: Error to emit when nil if found.
+     - parameter error: Error to emit when nil if found. Defaults to
+     `RxOptionalError.FoundNilWhileUnwrappingOptional`
 
      - returns: Observable of unwrapped value or Error.
      */

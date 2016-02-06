@@ -42,7 +42,8 @@ public extension ObservableType where E: Occupiable {
     /**
      Passes value if not empty. When empty throws error.
 
-     - parameter error: Error to throw when empty default to `RxError.NoElements`.
+     - parameter error: Error to throw when empty. Defaults to
+     `RxOptionalError.EmptyOccupiable`.
 
      - returns: Observable containing the source sequence's elements,
      or error if empty.
@@ -58,7 +59,10 @@ public extension ObservableType where E: Occupiable {
     }
 
     /**
-     Unwraps optional values and if finds nil fatalErrors
+     Unwraps optional values and if finds nil fatalErrors.
+
+     During release builds fatalErrors are logged. Durring Debug builds
+     sends Error event `RxOptionalError.EmptyOccupiable`.
 
      - returns: Observbale of unwrapped value
      */

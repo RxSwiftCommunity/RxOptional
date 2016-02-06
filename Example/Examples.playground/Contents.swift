@@ -5,7 +5,7 @@ import RxOptional
 /*:
 Steps to Run
 
-- Run Pod install in Example directory
+- Run `pod install` in Example directory
 - Select RxOptional Examples Target
 - Build
 - Show Debug Area (cmd+shit+Y)
@@ -38,8 +38,9 @@ example("replaceNilWith") {
 }
 
 /*:
-During release builds fatalErrors are logged. `.fatalErrorOnNil` and sends Error event
-for Observables only, Driver sends Completed event.
+ During release builds fatalErrors are logged. Durring Debug builds
+ `.fatalErrorOnNil()` sends Error event for Observables and Driver
+ continutes after logging fatalError.
 */
 example("fatalErrorOnNil") {
     let _ = Observable<String?>
@@ -49,9 +50,9 @@ example("fatalErrorOnNil") {
 }
 
 /*:
-Unavailable on Driver
-
-By default errors with `RxOptionalError.FoundNilWhileUnwrappingOptional`.
+ Unavailable on Driver
+ 
+ By default errors with `RxOptionalError.FoundNilWhileUnwrappingOptional`.
 */
 example("errorOnNil") {
     let _ = Observable<String?>
@@ -79,8 +80,9 @@ example("filterEmpty") {
 }
 
 /*:
-During release builds fatalErrors are logged. `.fatalErrorOnEmpty` and sends Error event
-for Observables only, Driver sends Completed event.
+ During release builds fatalErrors are logged. Durring Debug builds
+ `.fatalErrorOnEmpty()` sends Error event for Observables and Driver
+ continutes after logging fatalError.
 */
 example("fatalErrorOnEmpty") {
     let _ = Observable<[String]>
@@ -98,9 +100,9 @@ example("errorOnEmpty") {
 }
 
 /*:
-`.catchOnEmpty` ensures that the hander function returns a Observable or Driver with
-non-empty elements by calling `.errorOnEmpty` or `.fatalErrorOnEmpty`
-respectfully.
+ `.catchOnEmpty` ensures that the hander function returns a Observable or Driver with
+ non-empty elements by calling `.errorOnEmpty` or `.fatalErrorOnEmpty`
+ respectfully.
 */
 example("catchOnEmpty") {
     let _ = Observable<[String]>

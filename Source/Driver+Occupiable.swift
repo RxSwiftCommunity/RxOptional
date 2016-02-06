@@ -40,9 +40,12 @@ public extension Driver where Element: Occupiable {
     }
 
     /**
-     Unwraps optional values and if finds nil fatalErrors
+     Unwraps optional values and if finds nil fatalErrors.
 
-     - returns: Driver of nwrapped value
+     During release builds fatalErrors are logged. Durring Debug builds
+     continutes after logging fatalError.
+
+     - returns: Driver of unwrapped elements.
      */
     @warn_unused_result(message="http://git.io/rxs.uo")
     public func fatalErrorOnEmpty() -> Driver<Element> {

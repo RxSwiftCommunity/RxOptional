@@ -19,6 +19,9 @@ public extension Driver where Element: OptionalType {
     /**
      Unwraps optional values and if finds nil fatalErrors.
 
+     During release builds fatalErrors are logged. Durring Debug builds
+     continutes after logging fatalError.
+
      - returns: Driver with unwrapped value.
      */
     @warn_unused_result(message="http://git.io/rxs.uo")
