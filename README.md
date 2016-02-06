@@ -60,6 +60,7 @@ Error(Found nil while trying to unwrap type <Optional<String>>)
 
 ##### errorOnNil
 Unavailable on Driver
+By default errors with `RxOptionalError.FoundNilWhileUnwrappingOptional`.
 ```swift
 Observable<String?>
     .of("One", nil, "Three")
@@ -129,6 +130,7 @@ Error(Empty occupiable of type <Array<String>>)
 ```
 
 ##### errorOnEmpty
+By default errors with `RxOptionalError.EmptyOccupiable`.
 ```swift
 Observable<[String]>
     .of(["Single Element"], [], ["Two", "Elements"])
