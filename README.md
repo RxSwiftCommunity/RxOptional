@@ -1,6 +1,6 @@
 # RxOptional
 
-[![CI Status](http://img.shields.io/travis/Thane Gill/RxOptional.svg?style=flat)](https://travis-ci.org/Thane Gill/RxOptional)
+[![CI Status](http://img.shields.io/travis/thanegill/RxOptional.svg?style=flat)](https://travis-ci.org/thanegill/RxOptional)
 [![Version](https://img.shields.io/cocoapods/v/RxOptional.svg?style=flat)](http://cocoapods.org/pods/RxOptional)
 [![License](https://img.shields.io/cocoapods/l/RxOptional.svg?style=flat)](http://cocoapods.org/pods/RxOptional)
 [![Platform](https://img.shields.io/cocoapods/p/RxOptional.svg?style=flat)](http://cocoapods.org/pods/RxOptional)
