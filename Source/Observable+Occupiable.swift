@@ -10,11 +10,10 @@ public extension ObservableType where E: Occupiable {
     @warn_unused_result(message="http://git.io/rxs.uo")
     public func filterEmpty() -> Observable<E> {
         return self.flatMap { element -> Observable<E> in
-            if element.isNotEmpty {
-                return Observable<E>.just(element)
-            } else {
+            guard element.isNotEmpty else {
                 return Observable<E>.empty()
             }
+            return Observable<E>.just(element)
         }
     }
 
@@ -32,12 +31,11 @@ public extension ObservableType where E: Occupiable {
     @warn_unused_result(message="http://git.io/rxs.uo")
     public func catchOnEmpty(handler: () throws -> Observable<E>) -> Observable<E> {
         return self.flatMap { element -> Observable<E> in
-            if element.isEmpty {
+            guard element.isNotEmpty else {
                 return try handler()
                     .errorOnEmpty()
-            } else {
-                return Observable<E>.just(element)
             }
+            return Observable<E>.just(element)
         }
     }
 
@@ -52,11 +50,10 @@ public extension ObservableType where E: Occupiable {
     @warn_unused_result(message="http://git.io/rxs.uo")
     public func errorOnEmpty(error: ErrorType = RxOptionalError.EmptyOccupiable(E.self)) -> Observable<E> {
         return self.map { element in
-            if element.isEmpty {
+            guard element.isNotEmpty else {
                 throw error
-            } else {
-                return element
             }
+            return element
         }
     }
 
@@ -68,12 +65,11 @@ public extension ObservableType where E: Occupiable {
     @warn_unused_result(message="http://git.io/rxs.uo")
     public func fatalErrorOnEmpty() -> Observable<E> {
         return self.map { element in
-            if element.isEmpty {
+            guard element.isNotEmpty else {
                 RxOptionalFatalError(RxOptionalError.EmptyOccupiable(E.self))
                 throw RxOptionalError.EmptyOccupiable(E.self)
-            } else {
-                return element
             }
+            return element
         }
     }
 }

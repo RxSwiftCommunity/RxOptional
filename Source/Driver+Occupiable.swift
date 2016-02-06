@@ -10,11 +10,10 @@ public extension Driver where Element: Occupiable {
     @warn_unused_result(message="http://git.io/rxs.uo")
     public func filterEmpty() -> Driver<Element> {
         return self.flatMap { element -> Driver<Element> in
-            if element.isNotEmpty {
-                return Driver<Element>.just(element)
-            } else {
+            guard element.isNotEmpty else {
                 return Driver<Element>.empty()
             }
+            return Driver<Element>.just(element)
         }
     }
 
@@ -32,12 +31,11 @@ public extension Driver where Element: Occupiable {
     @warn_unused_result(message="http://git.io/rxs.uo")
     public func catchOnEmpty(handler: () -> Driver<Element>) -> Driver<Element> {
         return self.flatMap { element -> Driver<Element> in
-            if element.isEmpty {
+            guard element.isNotEmpty else {
                 return handler()
                     .fatalErrorOnEmpty()
-            } else {
-                return Driver<Element>.just(element)
             }
+            return Driver<Element>.just(element)
         }
     }
 
@@ -49,12 +47,11 @@ public extension Driver where Element: Occupiable {
     @warn_unused_result(message="http://git.io/rxs.uo")
     public func fatalErrorOnEmpty() -> Driver<Element> {
         return self.flatMap { element -> Driver<Element> in
-            if element.isEmpty {
-                return Driver<Element>.just(element)
-            } else {
+            guard element.isNotEmpty else {
                 RxOptionalFatalError(RxOptionalError.EmptyOccupiable(Element.self))
                 return Driver.empty()
             }
+            return Driver<Element>.just(element)
         }
     }
 }

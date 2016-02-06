@@ -9,11 +9,10 @@ public extension Driver where Element: OptionalType {
     @warn_unused_result(message="http://git.io/rxs.uo")
     public func filterNil() -> Driver<Element.Wrapped> {
         return self.flatMap { element -> Driver<Element.Wrapped> in
-            if let value = element.value {
-                return Driver<Element.Wrapped>.just(value)
-            } else {
+            guard let value = element.value else {
                 return Driver<Element.Wrapped>.empty()
             }
+            return Driver<Element.Wrapped>.just(value)
         }
     }
 
@@ -25,12 +24,11 @@ public extension Driver where Element: OptionalType {
     @warn_unused_result(message="http://git.io/rxs.uo")
     public func fatalErrorOnNil() -> Driver<Element.Wrapped> {
         return self.flatMap { element -> Driver<Element.Wrapped> in
-            if let value = element.value {
-                return Driver<Element.Wrapped>.just(value)
-            } else {
+            guard let value = element.value else {
                 RxOptionalFatalError(RxOptionalError.FoundNilWhileUnwrappingOptional(Element.self))
                 return Driver<Element.Wrapped>.empty()
             }
+            return Driver<Element.Wrapped>.just(value)
         }
     }
 
@@ -44,11 +42,10 @@ public extension Driver where Element: OptionalType {
     @warn_unused_result(message="http://git.io/rxs.uo")
     public func replaceNilWith(valueOnNil: Element.Wrapped) -> Driver<Element.Wrapped> {
         return self.map { element -> E.Wrapped in
-            if let value = element.value {
-                return value
-            } else {
+            guard let value = element.value else {
                 return valueOnNil
             }
+            return value
         }
     }
 
@@ -64,11 +61,10 @@ public extension Driver where Element: OptionalType {
     @warn_unused_result(message="http://git.io/rxs.uo")
     public func catchOnNil(handler: () -> Driver<Element.Wrapped>) -> Driver<Element.Wrapped> {
         return self.flatMap { element -> Driver<Element.Wrapped> in
-            if let value = element.value {
-                return Driver<Element.Wrapped>.just(value)
-            } else {
+            guard let value = element.value else {
                 return handler()
             }
+            return Driver<Element.Wrapped>.just(value)
         }
     }
 }

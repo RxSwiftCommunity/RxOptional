@@ -13,11 +13,10 @@ public extension ObservableType where E: OptionalType {
     @warn_unused_result(message="http://git.io/rxs.uo")
     public func filterNil() -> Observable<E.Wrapped> {
         return self.flatMap { element -> Observable<E.Wrapped> in
-            if let value = element.value {
-                return Observable<E.Wrapped>.just(value)
-            } else {
+            guard let value = element.value else {
                 return Observable<E.Wrapped>.empty()
             }
+            return Observable<E.Wrapped>.just(value)
         }
     }
 
@@ -29,12 +28,11 @@ public extension ObservableType where E: OptionalType {
     @warn_unused_result(message="http://git.io/rxs.uo")
     public func fatalErrorOnNil() -> Observable<E.Wrapped> {
         return self.map { element in
-            if let value = element.value {
-                return value
-            } else {
+            guard let value = element.value else {
                 RxOptionalFatalError(RxOptionalError.FoundNilWhileUnwrappingOptional(E.self))
                 throw RxOptionalError.FoundNilWhileUnwrappingOptional(E.self)
             }
+            return value
         }
     }
 
@@ -48,11 +46,10 @@ public extension ObservableType where E: OptionalType {
     @warn_unused_result(message="http://git.io/rxs.uo")
     public func errorOnNil(error: ErrorType = RxOptionalError.FoundNilWhileUnwrappingOptional(E.self)) -> Observable<E.Wrapped> {
         return self.map { element -> E.Wrapped in
-            if let value = element.value {
-                return value
-            } else {
+            guard let value = element.value else {
                 throw error
             }
+            return value
         }
     }
 
@@ -66,11 +63,10 @@ public extension ObservableType where E: OptionalType {
     @warn_unused_result(message="http://git.io/rxs.uo")
     public func replaceNilWith(valueOnNil: E.Wrapped) -> Observable<E.Wrapped> {
         return self.map { element -> E.Wrapped in
-            if let value = element.value {
-                return value
-            } else {
+            guard let value = element.value else {
                 return valueOnNil
             }
+            return value
         }
     }
 
@@ -86,11 +82,10 @@ public extension ObservableType where E: OptionalType {
     @warn_unused_result(message="http://git.io/rxs.uo")
     public func catchOnNil(handler: () throws -> Observable<E.Wrapped>) -> Observable<E.Wrapped> {
         return self.flatMap { element -> Observable<E.Wrapped> in
-            if let value = element.value {
-                return Observable<E.Wrapped>.just(value)
-            } else {
+            guard let value = element.value else {
                 return try handler()
             }
+            return Observable<E.Wrapped>.just(value)
         }
     }
 }
