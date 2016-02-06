@@ -2,9 +2,10 @@ import RxSwift
 import RxCocoa
 import RxOptional
 
-/*
+/*:
 Steps to Run
 
+- Run Pod install in Example directory
 - Select RxOptional Examples Target
 - Build
 - Show Debug Area (cmd+shit+Y)
@@ -17,25 +18,29 @@ public func example(description: String, action: () -> ()) {
     action()
 }
 
-// All operators are available on Driver as well unless otherwise marked.
+//: All operators are available on Driver as well unless otherwise marked.
 
 
-// Optionals
+//: ## Optionals
 
 example("filterNil") {
     let _ = Observable<String?>
         .of("One", nil, "Three")
-        .filterNil()
+        .filterNil() // Type is now Observable<String>
         .subscribe { print($0) }
 }
 
 example("replaceNilWith") {
     let _ = Observable<String?>
         .of("One", nil, "Three")
-        .replaceNilWith("Two")
+        .replaceNilWith("Two") // Type is now Observable<String>
         .subscribe { print($0) }
 }
 
+/*:
+During release builds fatalErrors are logged. `.fatalErrorOnNil` and sends Error event
+for Observables only, Driver sends Completed event.
+*/
 example("fatalErrorOnNil") {
     let _ = Observable<String?>
         .of("One", nil, "Three")
@@ -43,7 +48,11 @@ example("fatalErrorOnNil") {
         .subscribe { print($0) }
 }
 
-// Unavailable on Driver
+/*:
+Unavailable on Driver
+
+By default errors with `RxOptionalError.FoundNilWhileUnwrappingOptional`.
+*/
 example("errorOnNil") {
     let _ = Observable<String?>
         .of("One", nil, "Three")
@@ -56,11 +65,11 @@ example("catchOnNil") {
         .of("One", nil, "Three")
         .catchOnNil {
             return Observable<String>.just("A String from a new Observable")
-        }
+        }  // Type is now Observable<String>
         .subscribe { print($0) }
 }
 
-// Occupilables
+//: ## Occupilables
 
 example("filterEmpty") {
     let _ = Observable<[String]>
@@ -69,6 +78,10 @@ example("filterEmpty") {
         .subscribe { print($0) }
 }
 
+/*:
+During release builds fatalErrors are logged. `.fatalErrorOnEmpty` and sends Error event
+for Observables only, Driver sends Completed event.
+*/
 example("fatalErrorOnEmpty") {
     let _ = Observable<[String]>
         .of(["Single Element"], [], ["Two", "Elements"])
@@ -76,7 +89,7 @@ example("fatalErrorOnEmpty") {
         .subscribe { print($0) }
 }
 
-
+//: By default errors with `RxOptionalError.EmptyOccupiable`.
 example("errorOnEmpty") {
     let _ = Observable<[String]>
         .of(["Single Element"], [], ["Two", "Elements"])
@@ -84,6 +97,11 @@ example("errorOnEmpty") {
         .subscribe { print($0) }
 }
 
+/*:
+`.catchOnEmpty` ensures that the hander function returns a Observable or Driver with
+non-empty elements by calling `.errorOnEmpty` or `.fatalErrorOnEmpty`
+respectfully.
+*/
 example("catchOnEmpty") {
     let _ = Observable<[String]>
         .of(["Single Element"], [], ["Two", "Elements"])
