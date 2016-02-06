@@ -61,8 +61,9 @@ public extension ObservableType where E: Occupiable {
     /**
      Unwraps optional values and if finds nil fatalErrors.
 
-     During release builds fatalErrors are logged. Durring Debug builds
-     sends Error event `RxOptionalError.EmptyOccupiable`.
+     During release builds fatalErrors are logged, behaves exactly like
+     `.errorOnError`. Durring Debug builds sends Error event
+     `RxOptionalError.EmptyOccupiable`.
 
      - returns: Observbale of unwrapped value
      */

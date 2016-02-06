@@ -23,8 +23,10 @@ public extension ObservableType where E: OptionalType {
     /**
      Unwraps optional values and if finds nil fatalErrors.
 
-     During release builds fatalErrors are logged. Durring Debug builds
-     sends Error event `RxOptionalError.FoundNilWhileUnwrappingOptional`.
+     During release builds fatalErrors are logged, behaves exactly like
+     `.errorOnNil`. Durring Debug builds sends Error event
+     `RxOptionalError.FoundNilWhileUnwrappingOptional`.
+
 
      - returns: Observbale of unwrapped value.
      */
