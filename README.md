@@ -58,8 +58,8 @@ Error(Found nil while trying to unwrap type <Optional<String>>)
 ```
 
 ##### errorOnNil
-Unavailable on Driver
-By default errors with `RxOptionalError.FoundNilWhileUnwrappingOptional`.
+Unavailable on Driver. By default errors with
+`RxOptionalError.FoundNilWhileUnwrappingOptional`.
 ```swift
 Observable<String?>
     .of("One", nil, "Three")
