@@ -100,7 +100,7 @@ example("errorOnEmpty") {
 }
 
 /*:
- `.catchOnEmpty` ensures that the hander function returns a Observable or Driver with
+ `.catchOnEmpty` guarantees that the hander function returns a Observable or Driver with
  non-empty elements by calling `.errorOnEmpty` or `.fatalErrorOnEmpty`
  respectfully.
 */

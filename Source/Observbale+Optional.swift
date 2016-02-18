@@ -27,7 +27,6 @@ public extension ObservableType where E: OptionalType {
      `.errorOnNil`. Durring Debug builds sends Error event
      `RxOptionalError.FoundNilWhileUnwrappingOptional`.
 
-
      - returns: Observbale of unwrapped value.
      */
     @warn_unused_result(message="http://git.io/rxs.uo")
