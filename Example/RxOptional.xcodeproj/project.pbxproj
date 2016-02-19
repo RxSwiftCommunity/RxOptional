@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		04303153B7403A779FD99B48 /* Pods_RxOptional_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC258AA3091BA7EC5029B0D3 /* Pods_RxOptional_Tests.framework */; };
+		68A2D23D1C76786D003ED49C /* OptionalOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A2D23B1C767864003ED49C /* OptionalOperatorsTests.swift */; };
+		68A2D23F1C76FFB2003ED49C /* OccupiableOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A2D23E1C76FFB2003ED49C /* OccupiableOperatorsTests.swift */; };
 		68A45EE91C64860D00B4FAB3 /* RxOptional_Examples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B6CB191C64769700C5D21E /* RxOptional_Examples.framework */; };
-		68A45EEF1C6486DB00B4FAB3 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A45EBA1C64809900B4FAB3 /* Tests.swift */; };
 		B188465E7C2E67A0D7528716 /* Pods_RxOptional_Examples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A18EB142F4C0557A635D74 /* Pods_RxOptional_Examples.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +31,8 @@
 		65A665B2B5CCAA4FA3C3C1A1 /* Pods-RxOptional Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxOptional Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxOptional Tests/Pods-RxOptional Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6818D46E1C647E91008FF9B4 /* RxOptional Examples.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RxOptional Examples.h"; sourceTree = "<group>"; };
 		6818D46F1C647E91008FF9B4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		68A45EBA1C64809900B4FAB3 /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		68A2D23B1C767864003ED49C /* OptionalOperatorsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalOperatorsTests.swift; sourceTree = "<group>"; };
+		68A2D23E1C76FFB2003ED49C /* OccupiableOperatorsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OccupiableOperatorsTests.swift; sourceTree = "<group>"; };
 		68A45EE41C64860D00B4FAB3 /* RxOptional Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RxOptional Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68B6CB121C646F1F00C5D21E /* Examples.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Examples.playground; sourceTree = "<group>"; };
 		68B6CB191C64769700C5D21E /* RxOptional_Examples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxOptional_Examples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,7 +93,8 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				68A45EBA1C64809900B4FAB3 /* Tests.swift */,
+				68A2D23B1C767864003ED49C /* OptionalOperatorsTests.swift */,
+				68A2D23E1C76FFB2003ED49C /* OccupiableOperatorsTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			name = Tests;
@@ -342,7 +345,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68A45EEF1C6486DB00B4FAB3 /* Tests.swift in Sources */,
+				68A2D23F1C76FFB2003ED49C /* OccupiableOperatorsTests.swift in Sources */,
+				68A2D23D1C76786D003ED49C /* OptionalOperatorsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +482,7 @@
 			baseConfigurationReference = FE0BD51662630D95CD4A96FC /* Pods-RxOptional Examples.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -491,6 +496,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.RxOptional-Example.RxOptional-Examples";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -502,6 +508,7 @@
 			baseConfigurationReference = E11094565CE7AEE7E004F298 /* Pods-RxOptional Examples.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
