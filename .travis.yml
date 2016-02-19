@@ -8,4 +8,3 @@ podfile: Example/Podfile
 osx_image: xcode7.2
 script:
 - set -o pipefail && xcodebuild test -workspace Example/RxOptional.xcworkspace -scheme "RxOptional Examples" -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
-- pod lib lint
