@@ -29,6 +29,7 @@ public extension ObservableType where E: OptionalType {
 
      - returns: Observbale of unwrapped value.
      */
+    @available(*, deprecated=1.2, obsoleted=2.0, message="https://github.com/RxSwiftCommunity/RxOptional/issues/4")
     @warn_unused_result(message="http://git.io/rxs.uo")
     public func fatalErrorOnNil() -> Observable<E.Wrapped> {
         return self.map { element in
