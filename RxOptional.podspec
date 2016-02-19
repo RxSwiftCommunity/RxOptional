@@ -15,11 +15,11 @@ Pod::Spec.new do |s|
                   RxSwift extentions for Swift optionals and "Occupiable" types.
                   DESC
 
-  s.homepage    = 'https://github.com/thanegill/RxOptional'
+  s.homepage    = 'https://github.com/RxSwiftCommunity/RxOptional'
   s.license     = 'MIT'
   s.author      = { 'Thane Gill' => 'me@thanegill.com' }
   s.source      = {
-                    :git => 'https://github.com/thanegill/RxOptional.git',
+                    :git => 'https://github.com/RxSwiftCommunity/RxOptional.git',
                     :tag => s.version.to_s
                   }
 
