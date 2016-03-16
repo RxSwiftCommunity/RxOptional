@@ -49,26 +49,6 @@ class OptionalOperatorsSpec: QuickSpec {
             }
         }
 
-        describe("fatalErrorOnNil") {
-            context("Observable") {
-                it("unwraps the optional") {
-                    // Check on compile
-                    let _: Observable<Int> = Observable<Int?>
-                        .just(nil)
-                        .fatalErrorOnNil()
-                }
-            }
-
-            context("Driver") {
-                it("unwraps the optional") {
-                    // Check on compile
-                    let _: Driver<Int> = Driver<Int?>
-                        .just(nil)
-                        .fatalErrorOnNil()
-                }
-            }
-        }
-
         describe("Error On Nil") {
             context("Observable") {
                 it("unwraps the optional") {
