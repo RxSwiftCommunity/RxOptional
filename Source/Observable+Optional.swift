@@ -73,25 +73,4 @@ public extension ObservableType where E: OptionalType {
             return Observable<E.Wrapped>.just(value)
         }
     }
-
-    /**
-     Unwraps optional values and if finds nil fatalErrors.
-
-     During release builds fatalErrors are logged, behaves exactly like
-     `.errorOnNil`. Durring Debug builds sends Error event
-     `RxOptionalError.FoundNilWhileUnwrappingOptional`.
-
-     - returns: Observbale of unwrapped value.
-     */
-    @available(*, deprecated, message="https://github.com/RxSwiftCommunity/RxOptional/issues/4")
-    @warn_unused_result(message="http://git.io/rxs.uo")
-    public func fatalErrorOnNil() -> Observable<E.Wrapped> {
-        return self.map { element in
-            guard let value = element.value else {
-                RxOptionalFatalError(RxOptionalError.FoundNilWhileUnwrappingOptional(E.self))
-                throw RxOptionalError.FoundNilWhileUnwrappingOptional(E.self)
-            }
-            return value
-        }
-    }
 }

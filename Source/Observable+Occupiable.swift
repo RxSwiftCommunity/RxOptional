@@ -54,25 +54,4 @@ public extension ObservableType where E: Occupiable {
             return element
         }
     }
-
-    /**
-     Unwraps optional values and if finds nil fatalErrors.
-
-     During release builds fatalErrors are logged, behaves exactly like
-     `.errorOnError`. Durring Debug builds sends Error event
-     `RxOptionalError.EmptyOccupiable`.
-
-     - returns: Observbale of unwrapped value
-     */
-    @available(*, deprecated, message="https://github.com/RxSwiftCommunity/RxOptional/issues/4")
-    @warn_unused_result(message="http://git.io/rxs.uo")
-    public func fatalErrorOnEmpty() -> Observable<E> {
-        return self.map { element in
-            guard element.isNotEmpty else {
-                RxOptionalFatalError(RxOptionalError.EmptyOccupiable(E.self))
-                throw RxOptionalError.EmptyOccupiable(E.self)
-            }
-            return element
-        }
-    }
 }
