@@ -1,4 +1,5 @@
 # 2.0.0
+- ** Breaking Change**: Remove `fatalErrorOn*` operators
 - ** Breaking Change**: Remove guarantees from `catchOnEmpty` operators
 
 # 1.2.0
