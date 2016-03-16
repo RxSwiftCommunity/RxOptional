@@ -1,4 +1,5 @@
-
+# 2.0.0
+- ** Breaking Change**: Remove guarantees from `catchOnEmpty` operators
 
 # 1.2.0
 - Add unit tests

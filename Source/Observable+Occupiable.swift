@@ -21,8 +21,6 @@ public extension ObservableType where E: Occupiable {
      When empty uses handler to call another Observbale otherwise passes elemets.
 
      - parameter handler: Empty handler function, producing another observable.
-     Guarantees non-empty by throwing RxOptionalError.EmptyOccupiable is handler
-     returns an Observable with empty elements.
 
      - returns: An observable sequence containing the source sequence's elements,
      followed by the elements produced by the handler's resulting observable
@@ -33,7 +31,6 @@ public extension ObservableType where E: Occupiable {
         return self.flatMap { element -> Observable<E> in
             guard element.isNotEmpty else {
                 return try handler()
-                    .errorOnEmpty()
             }
             return Observable<E>.just(element)
         }

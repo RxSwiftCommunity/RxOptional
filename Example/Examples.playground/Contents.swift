@@ -8,7 +8,7 @@ Steps to Run
 - Run `pod install` in Example directory
 - Select RxOptional Examples Target
 - Build
-- Show Debug Area (cmd+shit+Y)
+- Show Debug Area (cmd+shift+Y)
 - Click blue play button in Debug Area
 
 */
@@ -99,11 +99,6 @@ example("errorOnEmpty") {
         .subscribe { print($0) }
 }
 
-/*:
- `.catchOnEmpty` guarantees that the hander function returns a Observable or Driver with
- non-empty elements by calling `.errorOnEmpty` or `.fatalErrorOnEmpty`
- respectfully.
-*/
 example("catchOnEmpty") {
     let _ = Observable<[String]>
         .of(["Single Element"], [], ["Two", "Elements"])
