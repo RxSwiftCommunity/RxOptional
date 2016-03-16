@@ -13,17 +13,3 @@ public enum RxOptionalError: ErrorType, CustomStringConvertible {
         }
     }
 }
-
-/// fatalError only in Debug build
-func RxOptionalFatalError(error: ErrorType) {
-    #if DEBUG
-        rxfatalError(error)
-    #else
-        print("fatalError: \(error)")
-    #endif
-}
-
-/// Overload fatalError to accept ErrorType
-@noreturn func fatalError(error: ErrorType) {
-    fatalError("\(error)")
-}

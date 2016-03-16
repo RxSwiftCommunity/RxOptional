@@ -51,24 +51,4 @@ public extension Driver where Element: OptionalType {
             return Driver<Element.Wrapped>.just(value)
         }
     }
-
-    /**
-     Unwraps optional values and if finds nil fatalErrors.
-
-     During release builds fatalErrors are logged, behaves exactly like
-     `.filterOnNil`. Durring Debug builds continutes after logging fatalError.
-
-     - returns: Driver with unwrapped value.
-     */
-    @available(*, deprecated, message="https://github.com/RxSwiftCommunity/RxOptional/issues/4")
-    @warn_unused_result(message="http://git.io/rxs.uo")
-    public func fatalErrorOnNil() -> Driver<Element.Wrapped> {
-        return self.flatMap { element -> Driver<Element.Wrapped> in
-            guard let value = element.value else {
-                RxOptionalFatalError(RxOptionalError.FoundNilWhileUnwrappingOptional(Element.self))
-                return Driver<Element.Wrapped>.empty()
-            }
-            return Driver<Element.Wrapped>.just(value)
-        }
-    }
 }

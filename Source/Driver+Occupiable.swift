@@ -35,24 +35,4 @@ public extension Driver where Element: Occupiable {
             return Driver<Element>.just(element)
         }
     }
-
-    /**
-     Unwraps optional values and if finds nil fatalErrors.
-
-     During release builds fatalErrors are logged. Durring Debug builds
-     continutes after logging fatalError.
-
-     - returns: Driver of unwrapped elements.
-     */
-    @available(*, deprecated, message="https://github.com/RxSwiftCommunity/RxOptional/issues/4")
-    @warn_unused_result(message="http://git.io/rxs.uo")
-    public func fatalErrorOnEmpty() -> Driver<Element> {
-        return self.flatMap { element -> Driver<Element> in
-            guard element.isNotEmpty else {
-                RxOptionalFatalError(RxOptionalError.EmptyOccupiable(Element.self))
-                return Driver.empty()
-            }
-            return Driver<Element>.just(element)
-        }
-    }
 }
