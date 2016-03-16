@@ -38,18 +38,6 @@ example("replaceNilWith") {
 }
 
 /*:
- During release builds fatalErrors are logged. Durring Debug builds
- `.fatalErrorOnNil()` sends Error event for Observables and Driver
- continutes after logging fatalError.
-*/
-example("fatalErrorOnNil") {
-    let _ = Observable<String?>
-        .of("One", nil, "Three")
-        .fatalErrorOnNil()  // Durring release fatalErrors will only be logged
-        .subscribe { print($0) }
-}
-
-/*:
  Unavailable on Driver
  
  By default errors with `RxOptionalError.FoundNilWhileUnwrappingOptional`.
@@ -76,18 +64,6 @@ example("filterEmpty") {
     let _ = Observable<[String]>
         .of(["Single Element"], [], ["Two", "Elements"])
         .filterEmpty()
-        .subscribe { print($0) }
-}
-
-/*:
- During release builds fatalErrors are logged. Durring Debug builds
- `.fatalErrorOnEmpty()` sends Error event for Observables and Driver
- continutes after logging fatalError.
-*/
-example("fatalErrorOnEmpty") {
-    let _ = Observable<[String]>
-        .of(["Single Element"], [], ["Two", "Elements"])
-        .fatalErrorOnEmpty()
         .subscribe { print($0) }
 }
 
