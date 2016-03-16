@@ -41,22 +41,6 @@ Next(Three)
 Completed
 ```
 
-##### fatalErrorOnNil
-During release builds fatalErrors are logged. Durring Debug builds
-`.fatalErrorOnNil()` sends Error event for Observables and Driver
-continutes after logging fatalError.
-```swift
-Observable<String?>
-    .of("One", nil, "Three")
-    .fatalErrorOnNil()
-    .subscribe { print($0) }
-```
-```text
-Next(One)
-fatal Error: Found nil while trying to unwrap type <Optional<String>>
-Error(Found nil while trying to unwrap type <Optional<String>>)
-```
-
 ##### errorOnNil
 Unavailable on Driver. By default errors with
 `RxOptionalError.FoundNilWhileUnwrappingOptional`.
@@ -111,22 +95,6 @@ Observable<[String]>
 Next(["Single Element"])
 Next(["Two", "Elements"])
 Completed
-```
-
-##### fatalErrorOnEmpty
-During release builds fatalErrors are logged. Durring Debug builds
-`.fatalErrorOnEmpty()` sends Error event for Observables and Driver
-continutes after logging fatalError.
-```swift
-Observable<[String]>
-    .of(["Single Element"], [], ["Two", "Elements"])
-    .fatalErrorOnEmpty()
-    .subscribe { print($0) }
-```
-```text
-Next(["Single Element"])
-fatal Error: Empty occupiable of type <Array<String>>
-Error(Empty occupiable of type <Array<String>>)
 ```
 
 ##### errorOnEmpty
