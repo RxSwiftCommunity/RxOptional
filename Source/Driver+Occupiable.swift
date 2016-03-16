@@ -47,6 +47,7 @@ public extension Driver where Element: Occupiable {
 
      - returns: Driver of unwrapped elements.
      */
+    @available(*, deprecated, message="https://github.com/RxSwiftCommunity/RxOptional/issues/4")
     @warn_unused_result(message="http://git.io/rxs.uo")
     public func fatalErrorOnEmpty() -> Driver<Element> {
         return self.flatMap { element -> Driver<Element> in
