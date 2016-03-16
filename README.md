@@ -143,9 +143,6 @@ Error(Empty occupiable of type <Array<String>>)
 ```
 
 ##### catchOnEmpty
-`.catchOnEmpty` guarantees that the hander function returns a Observable or Driver with
-non-empty elements by calling `.errorOnEmpty` or `.fatalErrorOnEmpty`
-respectfully.
 ```swift
 Observable<[String]>
     .of(["Single Element"], [], ["Two", "Elements"])
