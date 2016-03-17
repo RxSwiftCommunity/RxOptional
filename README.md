@@ -18,7 +18,8 @@ All operators are available on Driver as well unless otherwise marked.
 ```swift
 Observable<String?>
     .of("One", nil, "Three")
-    .filterNil() // Type is now Observable<String>
+    .filterNil()
+    // Type is now Observable<String>
     .subscribe { print($0) }
 ```
 ```text
@@ -31,7 +32,8 @@ Completed
 ```swift
 Observable<String?>
     .of("One", nil, "Three")
-    .replaceNilWith("Two") // Type is now Observable<String>
+    .replaceNilWith("Two")
+    // Type is now Observable<String>
     .subscribe { print($0) }
 ```
 ```text
@@ -42,12 +44,14 @@ Completed
 ```
 
 ##### errorOnNil
-Unavailable on Driver. By default errors with
-`RxOptionalError.FoundNilWhileUnwrappingOptional`.
+Unavailable on Driver.
+
+By default errors with `RxOptionalError.FoundNilWhileUnwrappingOptional`.
 ```swift
 Observable<String?>
     .of("One", nil, "Three")
     .errorOnNil()
+    // Type is now Observable<String>
     .subscribe { print($0) }
 ```
 ```text
@@ -61,7 +65,8 @@ Observable<String?>
     .of("One", nil, "Three")
     .catchOnNil {
         return Observable<String>.just("A String from a new Observable")
-    } // Type is now Observable<String>
+    }
+    // Type is now Observable<String>
     .subscribe { print($0) }
 ```
 ```text
@@ -98,6 +103,8 @@ Completed
 ```
 
 ##### errorOnEmpty
+Unavailable on Driver.
+
 By default errors with `RxOptionalError.EmptyOccupiable`.
 ```swift
 Observable<[String]>
@@ -132,7 +139,7 @@ Completed
 - Select RxOptional Examples Target
 - Build
 - Open Examples.playground
-- Show Debug Area (cmd+shit+Y)
+- Show Debug Area (cmd+shift+Y)
 - Click blue play button in Debug Area
 
 ## Requirements

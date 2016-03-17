@@ -26,14 +26,16 @@ public func example(description: String, action: () -> ()) {
 example("filterNil") {
     let _ = Observable<String?>
         .of("One", nil, "Three")
-        .filterNil() // Type is now Observable<String>
+        .filterNil()
+        // Type is now Observable<String>
         .subscribe { print($0) }
 }
 
 example("replaceNilWith") {
     let _ = Observable<String?>
         .of("One", nil, "Three")
-        .replaceNilWith("Two") // Type is now Observable<String>
+        .replaceNilWith("Two")
+        // Type is now Observable<String>
         .subscribe { print($0) }
 }
 
@@ -46,6 +48,7 @@ example("errorOnNil") {
     let _ = Observable<String?>
         .of("One", nil, "Three")
         .errorOnNil()
+        // Type is now Observable<String>
         .subscribe { print($0) }
 }
 
@@ -54,7 +57,8 @@ example("catchOnNil") {
         .of("One", nil, "Three")
         .catchOnNil {
             return Observable<String>.just("A String from a new Observable")
-        }  // Type is now Observable<String>
+        }
+        // Type is now Observable<String>
         .subscribe { print($0) }
 }
 
@@ -67,7 +71,11 @@ example("filterEmpty") {
         .subscribe { print($0) }
 }
 
-//: By default errors with `RxOptionalError.EmptyOccupiable`.
+/*:
+ Unavailable on Driver
+
+ By default errors with `RxOptionalError.EmptyOccupiable`.
+ */
 example("errorOnEmpty") {
     let _ = Observable<[String]>
         .of(["Single Element"], [], ["Two", "Elements"])
