@@ -21,8 +21,6 @@ public extension Driver where Element: Occupiable {
      When empty uses handler to call another Driver otherwise passes elemets.
 
      - parameter handler: Empty handler function, producing another Driver.
-     Guarantees non-empty by fatalErroring when handler returns an Driver
-     with empty elements.
 
      - returns: Driver containing the source sequence's elements,
      followed by the elements produced by the handler's resulting observable
@@ -33,26 +31,6 @@ public extension Driver where Element: Occupiable {
         return self.flatMap { element -> Driver<Element> in
             guard element.isNotEmpty else {
                 return handler()
-                    .fatalErrorOnEmpty()
-            }
-            return Driver<Element>.just(element)
-        }
-    }
-
-    /**
-     Unwraps optional values and if finds nil fatalErrors.
-
-     During release builds fatalErrors are logged. Durring Debug builds
-     continutes after logging fatalError.
-
-     - returns: Driver of unwrapped elements.
-     */
-    @warn_unused_result(message="http://git.io/rxs.uo")
-    public func fatalErrorOnEmpty() -> Driver<Element> {
-        return self.flatMap { element -> Driver<Element> in
-            guard element.isNotEmpty else {
-                RxOptionalFatalError(RxOptionalError.EmptyOccupiable(Element.self))
-                return Driver.empty()
             }
             return Driver<Element>.just(element)
         }

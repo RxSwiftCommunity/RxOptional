@@ -18,7 +18,8 @@ All operators are available on Driver as well unless otherwise marked.
 ```swift
 Observable<String?>
     .of("One", nil, "Three")
-    .filterNil() // Type is now Observable<String>
+    .filterNil()
+    // Type is now Observable<String>
     .subscribe { print($0) }
 ```
 ```text
@@ -31,7 +32,8 @@ Completed
 ```swift
 Observable<String?>
     .of("One", nil, "Three")
-    .replaceNilWith("Two") // Type is now Observable<String>
+    .replaceNilWith("Two")
+    // Type is now Observable<String>
     .subscribe { print($0) }
 ```
 ```text
@@ -41,29 +43,15 @@ Next(Three)
 Completed
 ```
 
-##### fatalErrorOnNil
-During release builds fatalErrors are logged. Durring Debug builds
-`.fatalErrorOnNil()` sends Error event for Observables and Driver
-continutes after logging fatalError.
-```swift
-Observable<String?>
-    .of("One", nil, "Three")
-    .fatalErrorOnNil()
-    .subscribe { print($0) }
-```
-```text
-Next(One)
-fatal Error: Found nil while trying to unwrap type <Optional<String>>
-Error(Found nil while trying to unwrap type <Optional<String>>)
-```
-
 ##### errorOnNil
-Unavailable on Driver. By default errors with
-`RxOptionalError.FoundNilWhileUnwrappingOptional`.
+Unavailable on Driver.
+
+By default errors with `RxOptionalError.FoundNilWhileUnwrappingOptional`.
 ```swift
 Observable<String?>
     .of("One", nil, "Three")
     .errorOnNil()
+    // Type is now Observable<String>
     .subscribe { print($0) }
 ```
 ```text
@@ -77,7 +65,8 @@ Observable<String?>
     .of("One", nil, "Three")
     .catchOnNil {
         return Observable<String>.just("A String from a new Observable")
-    } // Type is now Observable<String>
+    }
+    // Type is now Observable<String>
     .subscribe { print($0) }
 ```
 ```text
@@ -113,23 +102,9 @@ Next(["Two", "Elements"])
 Completed
 ```
 
-##### fatalErrorOnEmpty
-During release builds fatalErrors are logged. Durring Debug builds
-`.fatalErrorOnEmpty()` sends Error event for Observables and Driver
-continutes after logging fatalError.
-```swift
-Observable<[String]>
-    .of(["Single Element"], [], ["Two", "Elements"])
-    .fatalErrorOnEmpty()
-    .subscribe { print($0) }
-```
-```text
-Next(["Single Element"])
-fatal Error: Empty occupiable of type <Array<String>>
-Error(Empty occupiable of type <Array<String>>)
-```
-
 ##### errorOnEmpty
+Unavailable on Driver.
+
 By default errors with `RxOptionalError.EmptyOccupiable`.
 ```swift
 Observable<[String]>
@@ -143,9 +118,6 @@ Error(Empty occupiable of type <Array<String>>)
 ```
 
 ##### catchOnEmpty
-`.catchOnEmpty` guarantees that the hander function returns a Observable or Driver with
-non-empty elements by calling `.errorOnEmpty` or `.fatalErrorOnEmpty`
-respectfully.
 ```swift
 Observable<[String]>
     .of(["Single Element"], [], ["Two", "Elements"])
@@ -167,7 +139,7 @@ Completed
 - Select RxOptional Examples Target
 - Build
 - Open Examples.playground
-- Show Debug Area (cmd+shit+Y)
+- Show Debug Area (cmd+shift+Y)
 - Click blue play button in Debug Area
 
 ## Requirements
