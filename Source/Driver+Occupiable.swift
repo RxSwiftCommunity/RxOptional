@@ -3,9 +3,9 @@ import RxCocoa
 
 public extension Driver where Element: Occupiable {
     /**
-     Filter out empty occupibales.
+     Filters out empty elements.
 
-     - returns: Driver of only non-empty occupiables.
+     - returns: `Driver` of source `Driver`'s elements, with empty elements filtered out.
      */
     @warn_unused_result(message="http://git.io/rxs.uo")
     public func filterEmpty() -> Driver<Element> {
@@ -18,13 +18,11 @@ public extension Driver where Element: Occupiable {
     }
 
     /**
-     When empty uses handler to call another Driver otherwise passes elemets.
+     Replaces empty elements with result returned by `handler`.
 
-     - parameter handler: Empty handler function, producing another Driver.
+     - parameter handler: empty handler function that returns `Driver` of non-empty elements.
 
-     - returns: Driver containing the source sequence's elements,
-     followed by the elements produced by the handler's resulting observable
-     sequence when element was empty.
+     - returns: `Driver` of the source `Driver`'s elements, with empty elements replaced by the handler's returned non-empty elements.
      */
     @warn_unused_result(message="http://git.io/rxs.uo")
     public func catchOnEmpty(handler: () -> Driver<Element>) -> Driver<Element> {

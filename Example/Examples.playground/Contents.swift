@@ -3,28 +3,28 @@ import RxCocoa
 import RxOptional
 
 /*:
-Steps to Run
+ Steps to Run
+ 
+ - Run `pod install` in Example directory
+ - Select RxOptional Examples target
+ - Build
+ - Show Debug Area (cmd+shift+Y)
+ - Click blue play button in Debug Area
+ 
+ */
 
-- Run `pod install` in Example directory
-- Select RxOptional Examples Target
-- Build
-- Show Debug Area (cmd+shift+Y)
-- Click blue play button in Debug Area
-
-*/
-
-public func example(description: String, action: () -> ()) {
+public func example(description: String, action: Void -> Void) {
     print("\n--- \(description) example ---")
     action()
 }
 
-//: All operators are available on Driver as well unless otherwise marked.
+//: All operators are also available on `Driver`, unless otherwise noted.
 
 
 //: ## Optionals
 
 example("filterNil") {
-    let _ = Observable<String?>
+    _ = Observable<String?>
         .of("One", nil, "Three")
         .filterNil()
         // Type is now Observable<String>
@@ -32,7 +32,7 @@ example("filterNil") {
 }
 
 example("replaceNilWith") {
-    let _ = Observable<String?>
+    _ = Observable<String?>
         .of("One", nil, "Three")
         .replaceNilWith("Two")
         // Type is now Observable<String>
@@ -40,12 +40,12 @@ example("replaceNilWith") {
 }
 
 /*:
- Unavailable on Driver
+ Unavailable on `Driver`, because `Driver`s cannot error out.
  
- By default errors with `RxOptionalError.FoundNilWhileUnwrappingOptional`.
-*/
+ By default, errors with `RxOptionalError.FoundNilWhileUnwrappingOptional`.
+ */
 example("errorOnNil") {
-    let _ = Observable<String?>
+    _ = Observable<String?>
         .of("One", nil, "Three")
         .errorOnNil()
         // Type is now Observable<String>
@@ -53,10 +53,10 @@ example("errorOnNil") {
 }
 
 example("catchOnNil") {
-    let _ = Observable<String?>
+    _ = Observable<String?>
         .of("One", nil, "Three")
         .catchOnNil {
-            return Observable<String>.just("A String from a new Observable")
+            Observable<String>.just("A String from a new Observable")
         }
         // Type is now Observable<String>
         .subscribe { print($0) }
@@ -65,26 +65,26 @@ example("catchOnNil") {
 //: ## Occupilables
 
 example("filterEmpty") {
-    let _ = Observable<[String]>
+    _ = Observable<[String]>
         .of(["Single Element"], [], ["Two", "Elements"])
         .filterEmpty()
         .subscribe { print($0) }
 }
 
 /*:
- Unavailable on Driver
-
- By default errors with `RxOptionalError.EmptyOccupiable`.
+ Unavailable on `Driver`, because `Driver`s cannot error out.
+ 
+ By default, errors with `RxOptionalError.EmptyOccupiable`.
  */
 example("errorOnEmpty") {
-    let _ = Observable<[String]>
+    _ = Observable<[String]>
         .of(["Single Element"], [], ["Two", "Elements"])
         .errorOnEmpty()
         .subscribe { print($0) }
 }
 
 example("catchOnEmpty") {
-    let _ = Observable<[String]>
+    _ = Observable<[String]>
         .of(["Single Element"], [], ["Two", "Elements"])
         .catchOnEmpty {
             return Observable<[String]>.just(["Not Empty"])

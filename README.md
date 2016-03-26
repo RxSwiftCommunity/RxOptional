@@ -6,11 +6,11 @@
 [![Platform](https://img.shields.io/cocoapods/p/RxOptional.svg?style=flat)](http://cocoapods.org/pods/RxOptional)
 
 
-RxSwift extentions for Swift optionals and "Occupiable" types.
+RxSwift extensions for Swift optionals and "Occupiable" types.
 
 ## Usage
 
-All operators are available on Driver as well unless otherwise marked.
+All operators are also available on `Driver`, unless otherwise noted.
 
 ### Optional Operators
 
@@ -44,7 +44,7 @@ Completed
 ```
 
 ##### errorOnNil
-Unavailable on Driver.
+Unavailable on `Driver`, because `Driver`s cannot error out.
 
 By default errors with `RxOptionalError.FoundNilWhileUnwrappingOptional`.
 ```swift
@@ -86,7 +86,7 @@ Occupiables are:
 - `Set`
 
 Currently in Swift protocols cannot be extended to conform to other protocols.
-For now the types listed above conform to `Occupiable`. You can always conform
+For now the types listed above conform to `Occupiable`. You can also conform
 custom types to `Occupiable`.
 
 ##### filterEmpty
@@ -103,7 +103,7 @@ Completed
 ```
 
 ##### errorOnEmpty
-Unavailable on Driver.
+Unavailable on `Driver`, because `Driver`s cannot error out.
 
 By default errors with `RxOptionalError.EmptyOccupiable`.
 ```swift
@@ -136,9 +136,8 @@ Completed
 ## Running Examples.playground
 
 - Run `pod install` in Example directory
-- Select RxOptional Examples Target
+- Select RxOptional Examples target
 - Build
-- Open Examples.playground
 - Show Debug Area (cmd+shift+Y)
 - Click blue play button in Debug Area
 
@@ -153,7 +152,7 @@ RxOptional is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "RxOptional"
+pod 'RxOptional'
 ```
 
 ## Author
