@@ -2,9 +2,9 @@ import RxCocoa
 
 public extension Driver where Element: OptionalType {
     /**
-     Unwrap and filter out nil values.
+     Unwraps and filters out `nil` elements.
 
-     - returns: Driver with only succefully unwrapped values.
+     - returns: `Driver` of source `Driver`'s elements, with `nil` elements filtered out.
      */
     @warn_unused_result(message="http://git.io/rxs.uo")
     public func filterNil() -> Driver<Element.Wrapped> {
@@ -17,11 +17,11 @@ public extension Driver where Element: OptionalType {
     }
 
     /**
-     Unwraps optional and replace nil values with value.
+     Unwraps optional elements and replaces `nil` elements with `valueOnNil`.
 
-     - parameter valueOnNil: Value to emit when nil is found.
+     - parameter valueOnNil: value to use when `nil` is encountered.
 
-     - returns: Driver with unwrapped value or nilValue.
+     - returns: `Driver` of the source `Driver`'s unwrapped elements, with `nil` elements replaced by `valueOnNil`.
      */
     @warn_unused_result(message="http://git.io/rxs.uo")
     public func replaceNilWith(valueOnNil: Element.Wrapped) -> Driver<Element.Wrapped> {
@@ -34,13 +34,11 @@ public extension Driver where Element: OptionalType {
     }
 
     /**
-     Unwraps element and passes value if not nil. When nil uses handler to call another Observable
+     Unwraps optional elements and replaces `nil` elements with result returned by `handler`.
 
-     - parameter handler: Nil handler function, producing another observable sequence.
+     - parameter handler: `nil` handler function that returns `Driver` of non-`nil` elements.
 
-     - returns: Driver containing the source sequence's elements,
-     followed by the elements produced by the handler's resulting observable
-     sequence in case an nil was found while unwrapping.
+     - returns: `Driver` of the source `Driver`'s unwrapped elements, with `nil` elements replaced by the handler's returned non-`nil` elements.
      */
     @warn_unused_result(message="http://git.io/rxs.uo")
     public func catchOnNil(handler: () -> Driver<Element.Wrapped>) -> Driver<Element.Wrapped> {

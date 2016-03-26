@@ -3,9 +3,9 @@ import RxSwift
 
 public extension ObservableType where E: Occupiable {
     /**
-     Filter out empty occupibales.
+     Filter out empty occupiable elements.
 
-     - returns: Observbale of only non-empty occupiables.
+     - returns: `Observable` of source `Observable`'s occupiable elements, with empty occupiable elements filtered out.
      */
     @warn_unused_result(message="http://git.io/rxs.uo")
     public func filterEmpty() -> Observable<E> {
@@ -18,13 +18,11 @@ public extension ObservableType where E: Occupiable {
     }
 
     /**
-     When empty uses handler to call another Observbale otherwise passes elemets.
+     Replaces empty occupiable elements with result returned by `handler`.
 
-     - parameter handler: Empty handler function, producing another observable.
+     - parameter handler: empty handler throwing function that returns `Observable` of non-empty occupiable elements.
 
-     - returns: An observable sequence containing the source sequence's elements,
-     followed by the elements produced by the handler's resulting observable
-     sequence when element was empty.
+     - returns: `Observable` of the source `Observable`'s occupiable elements, with empty occupiable elements replaced by the handler's returned non-empty occupiable elements.
      */
     @warn_unused_result(message="http://git.io/rxs.uo")
     public func catchOnEmpty(handler: () throws -> Observable<E>) -> Observable<E> {
@@ -37,13 +35,13 @@ public extension ObservableType where E: Occupiable {
     }
 
     /**
-     Passes value if not empty. When empty throws error.
+     Throws an error if the source `Observable` contains an empty occupiable element; otherwise returns original source `Observable` of non-empty occupiable elements.
 
-     - parameter error: Error to throw when empty. Defaults to
-     `RxOptionalError.EmptyOccupiable`.
+     - parameter error: error to throw when an empty occupiable element is encountered. Defaults to `RxOptionalError.EmptyOccupiable`.
 
-     - returns: Observable containing the source sequence's elements,
-     or error if empty.
+     - throws: `error` if an empty occupiable element is encountered.
+
+     - returns: original source `Observable` of non-empty occupiable elements if it contains no empty occupiable elements.
      */
     @warn_unused_result(message="http://git.io/rxs.uo")
     public func errorOnEmpty(error: ErrorType = RxOptionalError.EmptyOccupiable(E.self)) -> Observable<E> {
