@@ -29,7 +29,7 @@
 		5E6819C0E34D39030363E767 /* Pods_RxOptional_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxOptional_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65A665B2B5CCAA4FA3C3C1A1 /* Pods-RxOptional Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxOptional Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxOptional Tests/Pods-RxOptional Tests.release.xcconfig"; sourceTree = "<group>"; };
-		6818D46E1C647E91008FF9B4 /* RxOptional Examples.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RxOptional Examples.h"; sourceTree = "<group>"; };
+		6818D46E1C647E91008FF9B4 /* RxOptional_Examples.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RxOptional_Examples.h; sourceTree = "<group>"; };
 		6818D46F1C647E91008FF9B4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68A2D23B1C767864003ED49C /* OptionalOperatorsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalOperatorsTests.swift; sourceTree = "<group>"; };
 		68A2D23E1C76FFB2003ED49C /* OccupiableOperatorsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OccupiableOperatorsTests.swift; sourceTree = "<group>"; };
@@ -41,6 +41,7 @@
 		92783A8C6E01EB9EA3F6F1EA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		9BC4BC68DE17D3490CD25490 /* Pods-RxOptional_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxOptional_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxOptional_Tests/Pods-RxOptional_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C7C63C55A051A069EF003D30 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D2E9AA071CA6900D006316AA /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		E11094565CE7AEE7E004F298 /* Pods-RxOptional Examples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxOptional Examples.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxOptional Examples/Pods-RxOptional Examples.release.xcconfig"; sourceTree = "<group>"; };
 		E76DFFC7C12623991AC00FE4 /* Pods-RxOptional Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxOptional Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxOptional Tests/Pods-RxOptional Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		FC258AA3091BA7EC5029B0D3 /* Pods_RxOptional_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxOptional_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,8 +123,9 @@
 		6818D46D1C647E80008FF9B4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6818D46E1C647E91008FF9B4 /* RxOptional Examples.h */,
+				6818D46E1C647E91008FF9B4 /* RxOptional_Examples.h */,
 				6818D46F1C647E91008FF9B4 /* Info.plist */,
+				D2E9AA071CA6900D006316AA /* module.modulemap */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -493,6 +495,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "$(SRCROOT)/Supporting Files/module.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.RxOptional-Example.RxOptional-Examples";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -518,6 +521,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "$(SRCROOT)/Supporting Files/module.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.RxOptional-Example.RxOptional-Examples";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
