@@ -9,10 +9,10 @@
 Pod::Spec.new do |s|
   s.name        = 'RxOptional'
   s.version     = '2.0.0'
-  s.summary     = 'RxSwift extentions for Swift optionals and Occupiable types'
+  s.summary     = 'RxSwift extensions for Swift optionals and Occupiable types'
 
   s.description = <<-DESC
-                  RxSwift extentions for Swift optionals and "Occupiable" types.
+                  RxSwift extensions for Swift optionals and "Occupiable" types.
                   DESC
 
   s.homepage    = 'https://github.com/RxSwiftCommunity/RxOptional'
