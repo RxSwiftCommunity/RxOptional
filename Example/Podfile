@@ -5,13 +5,10 @@ target 'RxOptional Examples' do
   pod 'RxOptional', :path => '../'
   pod 'RxSwift', '~> 2.0'
   pod 'RxCocoa', '~> 2.0'
-end
 
-target 'RxOptional Tests' do
-  pod 'RxOptional', :path => '../'
-  pod 'RxSwift', '~> 2.0'
-  pod 'RxCocoa', '~> 2.0'
-
-  pod 'Quick'
-  pod 'Nimble', :git => 'https://github.com/ashfurrow/Nimble.git', :branch => 'podspec-update'
+  target 'RxOptional Tests' do
+    inherit! :search_paths
+    pod 'Quick'
+    pod 'Nimble', :git => 'https://github.com/ashfurrow/Nimble.git', :branch => 'podspec-update'
+  end
 end
