@@ -1,15 +1,13 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-link_with 'RxOptional Examples', 'Examples'
-
-target 'RxOptional Examples', :exclusive => true do
+target 'RxOptional Examples' do
   pod 'RxOptional', :path => '../'
   pod 'RxSwift', '~> 2.0'
   pod 'RxCocoa', '~> 2.0'
 end
 
-target 'RxOptional Tests', :exclusive => true do
+target 'RxOptional Tests' do
   pod 'RxOptional', :path => '../'
   pod 'RxSwift', '~> 2.0'
   pod 'RxCocoa', '~> 2.0'
