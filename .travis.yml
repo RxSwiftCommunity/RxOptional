@@ -6,6 +6,4 @@ language: objective-c
 cache: cocoapods
 podfile: Example/Podfile
 osx_image: xcode7.3
-xcode_workspace: Example/RxOptional.xcworkspace
-xcode_scheme: RxOptional Examples
-xcode_sdk: iphonesimulator9.3
+script: set -o pipefail && xcodebuild -workspace 'Example/RxOptional.xcworkspace' -scheme 'RxOptional Examples' -configuration 'Debug' -sdk iphonesimulator9.3 -destination "name=iPhone 6s" test | xcpretty -c
