@@ -1,0 +1,39 @@
+PODS:
+  - Nimble (4.0.0)
+  - Quick (0.9.2)
+  - RxCocoa (2.4):
+    - RxSwift (~> 2.4)
+  - RxOptional (2.0.0):
+    - RxCocoa (~> 2.0)
+    - RxSwift (~> 2.0)
+  - RxSwift (2.4)
+
+DEPENDENCIES:
+  - Nimble (from `https://github.com/ashfurrow/Nimble.git`, branch `podspec-update`)
+  - Quick
+  - RxCocoa (~> 2.0)
+  - RxOptional (from `../`)
+  - RxSwift (~> 2.0)
+
+EXTERNAL SOURCES:
+  Nimble:
+    :branch: podspec-update
+    :git: https://github.com/ashfurrow/Nimble.git
+  RxOptional:
+    :path: ../
+
+CHECKOUT OPTIONS:
+  Nimble:
+    :commit: 1bc124bd247dc409c83700d7fd59f7d90d9eaa4b
+    :git: https://github.com/ashfurrow/Nimble.git
+
+SPEC CHECKSUMS:
+  Nimble: d97be6a063735012b260d94ff788b874dcc859a3
+  Quick: 18d057bc66451eedd5d1c8dc99ba2a5db6e60226
+  RxCocoa: 7d6cd877de99f5640306b3d6cf87f580c1d91b61
+  RxOptional: a2714820ddf9cf9233dc78178ce7cc9f6f4cf29d
+  RxSwift: 67b9ef4e8b34fb394e200e754c6a09cc16559f94
+
+PODFILE CHECKSUM: d68669eaf65f6466348a738a499dd167bbae76a7
+
+COCOAPODS: 1.0.0.beta.8
