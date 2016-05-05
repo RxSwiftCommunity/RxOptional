@@ -13,5 +13,5 @@ target 'RxOptional Tests' do
   pod 'RxCocoa', '~> 2.0'
 
   pod 'Quick'
-  pod 'Nimble', :git => 'https://github.com/ashfurrow/Nimble.git', :branch => 'podspec-update'
+  pod 'Nimble'
 end
