@@ -50,3 +50,19 @@ public extension Driver where Element: OptionalType {
         }
     }
 }
+
+public extension Driver where Element: OptionalType, Element.Wrapped: Equatable {
+    /**
+     Returns an observable sequence that contains only distinct contiguous elements according to equality operator.
+     
+     - seealso: [distinct operator on reactivex.io](http://reactivex.io/documentation/operators/distinct.html)
+     
+     - returns: An observable sequence only containing the distinct contiguous elements, based on equality operator, from the source sequence.
+     */
+    @warn_unused_result(message="http://git.io/rxs.uo")
+    public func distinctUntilChanged() -> Driver<Element> {
+        return self.distinctUntilChanged { (lhs, rhs) -> Bool in
+            return lhs.value == rhs.value
+        }
+    }
+}
