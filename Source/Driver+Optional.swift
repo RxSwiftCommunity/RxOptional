@@ -24,7 +24,7 @@ public extension Driver where Element: OptionalType {
      - returns: Driver with unwrapped value or nilValue.
      */
     @warn_unused_result(message: "http://git.io/rxs.uo")
-    public func replaceNilWith(valueOnNil: Element.Wrapped) -> Driver<Element.Wrapped> {
+    public func replaceNilWith(_ valueOnNil: Element.Wrapped) -> Driver<Element.Wrapped> {
         return self.map { element -> E.Wrapped in
             guard let value = element.value else {
                 return valueOnNil
@@ -43,7 +43,7 @@ public extension Driver where Element: OptionalType {
      sequence in case an nil was found while unwrapping.
      */
     @warn_unused_result(message: "http://git.io/rxs.uo")
-    public func catchOnNil(handler: () -> Driver<Element.Wrapped>) -> Driver<Element.Wrapped> {
+    public func catchOnNil(_ handler: () -> Driver<Element.Wrapped>) -> Driver<Element.Wrapped> {
         return self.flatMap { element -> Driver<Element.Wrapped> in
             guard let value = element.value else {
                 return handler()
