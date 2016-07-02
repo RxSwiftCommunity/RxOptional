@@ -220,9 +220,13 @@
 				TargetAttributes = {
 					68A45EE31C64860D00B4FAB3 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = L5858JLE35;
+						DevelopmentTeamName = "Thane Gill";
 					};
 					68B6CB181C64769700C5D21E = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = L5858JLE35;
+						DevelopmentTeamName = "Thane Gill";
 					};
 				};
 			};

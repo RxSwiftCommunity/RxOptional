@@ -10,7 +10,7 @@ public extension ObservableType where E: OptionalType {
 
      - returns: Observbale of only successfully unwrapped values.
      */
-    @warn_unused_result(message="http://git.io/rxs.uo")
+    @warn_unused_result(message: "http://git.io/rxs.uo")
     public func filterNil() -> Observable<E.Wrapped> {
         return self.flatMap { element -> Observable<E.Wrapped> in
             guard let value = element.value else {
@@ -28,8 +28,8 @@ public extension ObservableType where E: OptionalType {
 
      - returns: Observable of unwrapped value or Error.
      */
-    @warn_unused_result(message="http://git.io/rxs.uo")
-    public func errorOnNil(error: ErrorType = RxOptionalError.FoundNilWhileUnwrappingOptional(E.self)) -> Observable<E.Wrapped> {
+    @warn_unused_result(message: "http://git.io/rxs.uo")
+    public func errorOnNil(error: ErrorProtocol = RxOptionalError.FoundNilWhileUnwrappingOptional(E.self)) -> Observable<E.Wrapped> {
         return self.map { element -> E.Wrapped in
             guard let value = element.value else {
                 throw error
@@ -45,7 +45,7 @@ public extension ObservableType where E: OptionalType {
 
      - returns: Observable of unwrapped value or nilValue.
      */
-    @warn_unused_result(message="http://git.io/rxs.uo")
+    @warn_unused_result(message: "http://git.io/rxs.uo")
     public func replaceNilWith(valueOnNil: E.Wrapped) -> Observable<E.Wrapped> {
         return self.map { element -> E.Wrapped in
             guard let value = element.value else {
@@ -64,7 +64,7 @@ public extension ObservableType where E: OptionalType {
      followed by the elements produced by the handler's resulting observable
      sequence in case an nil was found while unwrapping.
      */
-    @warn_unused_result(message="http://git.io/rxs.uo")
+    @warn_unused_result(message: "http://git.io/rxs.uo")
     public func catchOnNil(handler: () throws -> Observable<E.Wrapped>) -> Observable<E.Wrapped> {
         return self.flatMap { element -> Observable<E.Wrapped> in
             guard let value = element.value else {

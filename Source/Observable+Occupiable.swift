@@ -7,7 +7,7 @@ public extension ObservableType where E: Occupiable {
 
      - returns: Observbale of only non-empty occupiables.
      */
-    @warn_unused_result(message="http://git.io/rxs.uo")
+    @warn_unused_result(message: "http://git.io/rxs.uo")
     public func filterEmpty() -> Observable<E> {
         return self.flatMap { element -> Observable<E> in
             guard element.isNotEmpty else {
@@ -26,7 +26,7 @@ public extension ObservableType where E: Occupiable {
      followed by the elements produced by the handler's resulting observable
      sequence when element was empty.
      */
-    @warn_unused_result(message="http://git.io/rxs.uo")
+    @warn_unused_result(message: "http://git.io/rxs.uo")
     public func catchOnEmpty(handler: () throws -> Observable<E>) -> Observable<E> {
         return self.flatMap { element -> Observable<E> in
             guard element.isNotEmpty else {
@@ -45,8 +45,8 @@ public extension ObservableType where E: Occupiable {
      - returns: Observable containing the source sequence's elements,
      or error if empty.
      */
-    @warn_unused_result(message="http://git.io/rxs.uo")
-    public func errorOnEmpty(error: ErrorType = RxOptionalError.EmptyOccupiable(E.self)) -> Observable<E> {
+    @warn_unused_result(message: "http://git.io/rxs.uo")
+    public func errorOnEmpty(error: ErrorProtocol = RxOptionalError.EmptyOccupiable(E.self)) -> Observable<E> {
         return self.map { element in
             guard element.isNotEmpty else {
                 throw error
