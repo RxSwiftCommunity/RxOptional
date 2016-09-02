@@ -27,7 +27,7 @@ public extension Driver where Element: Occupiable {
      sequence when element was empty.
      */
     @warn_unused_result(message: "http://git.io/rxs.uo")
-    public func catchOnEmpty(_ handler: () -> Driver<Element>) -> Driver<Element> {
+    public func catchOnEmpty(_ handler: @escaping () -> Driver<Element>) -> Driver<Element> {
         return self.flatMap { element -> Driver<Element> in
             guard element.isNotEmpty else {
                 return handler()
