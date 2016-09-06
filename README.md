@@ -76,6 +76,21 @@ Next(Three)
 Completed
 ```
 
+##### distinctUntilChanged
+```swift
+Observable<Int?>
+    .of(5, 6, 6, nil, nil, 3)
+    .distinctUntilChanged()
+    .subscribe { print($0) }
+```
+```text
+Next(Optional(5))
+Next(Optional(6))
+Next(nil)
+Next(Optional(3))
+Completed
+```
+
 ### Occupiable Operators
 
 Occupiables are:

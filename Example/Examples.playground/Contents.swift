@@ -39,6 +39,13 @@ example("replaceNilWith") {
         .subscribe { print($0) }
 }
 
+example("distinctUntilChanged") {
+    _ = Observable<Int?>
+        .of(5, 6, 6, nil, nil, 3)
+        .distinctUntilChanged()
+        .subscribe { print($0) }
+}
+
 /*:
  Unavailable on `Driver`, because `Driver`s cannot error out.
  

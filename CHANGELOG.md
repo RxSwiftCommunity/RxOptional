@@ -1,3 +1,6 @@
+# 2.1.0
+- Add `distinctUntilChanged` operator
+
 # 2.0.0
 - ** Breaking Change**: Remove `fatalErrorOn*` operators
 - ** Breaking Change**: Remove guarantees from `catchOnEmpty` operators
