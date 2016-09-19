@@ -59,10 +59,10 @@
 		4B5983DF1D9035A500409FC8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B5983C01D9035A500409FC8 /* Info.plist */; };
 		4B5983E01D9035A500409FC8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B5983C01D9035A500409FC8 /* Info.plist */; };
 		4B5983E11D9035A500409FC8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B5983C01D9035A500409FC8 /* Info.plist */; };
-		4B5983E21D9035A500409FC8 /* RxOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B5983C11D9035A500409FC8 /* RxOptional.h */; };
-		4B5983E31D9035A500409FC8 /* RxOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B5983C11D9035A500409FC8 /* RxOptional.h */; };
-		4B5983E41D9035A500409FC8 /* RxOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B5983C11D9035A500409FC8 /* RxOptional.h */; };
-		4B5983E51D9035A500409FC8 /* RxOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B5983C11D9035A500409FC8 /* RxOptional.h */; };
+		4B5983E21D9035A500409FC8 /* RxOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B5983C11D9035A500409FC8 /* RxOptional.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B5983E31D9035A500409FC8 /* RxOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B5983C11D9035A500409FC8 /* RxOptional.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B5983E41D9035A500409FC8 /* RxOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B5983C11D9035A500409FC8 /* RxOptional.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B5983E51D9035A500409FC8 /* RxOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B5983C11D9035A500409FC8 /* RxOptional.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4B5983EA1D9035BD00409FC8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B5983E71D9035BD00409FC8 /* Info.plist */; };
 		4B5983EB1D9035BD00409FC8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B5983E71D9035BD00409FC8 /* Info.plist */; };
 		4B5983EC1D9035BD00409FC8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B5983E71D9035BD00409FC8 /* Info.plist */; };
