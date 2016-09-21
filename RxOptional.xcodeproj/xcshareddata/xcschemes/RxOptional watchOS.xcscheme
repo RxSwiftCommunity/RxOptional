@@ -15,8 +15,22 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4B5983171D902EFD00409FC8"
-               BuildableName = "RxOptional watchOS.framework"
+               BuildableName = "RxOptional.framework"
                BlueprintName = "RxOptional watchOS"
+               ReferencedContainer = "container:RxOptional.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4B5983601D902FEE00409FC8"
+               BuildableName = "RxOptional watchOS Tests.xctest"
+               BlueprintName = "RxOptional watchOS Tests"
                ReferencedContainer = "container:RxOptional.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -43,7 +57,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4B5983171D902EFD00409FC8"
-            BuildableName = "RxOptional watchOS.framework"
+            BuildableName = "RxOptional.framework"
             BlueprintName = "RxOptional watchOS"
             ReferencedContainer = "container:RxOptional.xcodeproj">
          </BuildableReference>
@@ -65,7 +79,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4B5983171D902EFD00409FC8"
-            BuildableName = "RxOptional watchOS.framework"
+            BuildableName = "RxOptional.framework"
             BlueprintName = "RxOptional watchOS"
             ReferencedContainer = "container:RxOptional.xcodeproj">
          </BuildableReference>
@@ -83,7 +97,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4B5983171D902EFD00409FC8"
-            BuildableName = "RxOptional watchOS.framework"
+            BuildableName = "RxOptional.framework"
             BlueprintName = "RxOptional watchOS"
             ReferencedContainer = "container:RxOptional.xcodeproj">
          </BuildableReference>

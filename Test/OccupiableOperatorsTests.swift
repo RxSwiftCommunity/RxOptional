@@ -14,7 +14,9 @@ class OccupiableOperatorsSpec: QuickSpec {
                         .filterEmpty()
                         .toArray()
                         .subscribe(onNext: {
-                            expect($0).to(equal([[1], [3, 4], [5]]))
+                            expect($0[0]).to(equal([1]))
+                            expect($0[1]).to(equal([3, 4]))
+                            expect($0[2]).to(equal([5]))
                         })
                         .dispose()
 
@@ -41,7 +43,9 @@ class OccupiableOperatorsSpec: QuickSpec {
                         .asObservable()
                         .toArray()
                         .subscribe(onNext: {
-                            expect($0).to(equal([[1], [3, 4], [5]]))
+                            expect($0[0]).to(equal([1]))
+                            expect($0[1]).to(equal([3, 4]))
+                            expect($0[2]).to(equal([5]))
                         })
                         .dispose()
 
@@ -72,7 +76,10 @@ class OccupiableOperatorsSpec: QuickSpec {
                         }
                         .toArray()
                         .subscribe(onNext: {
-                            expect($0).to(equal([[1], [2], [3, 4], [5]]))
+                            expect($0[0]).to(equal([1]))
+                            expect($0[1]).to(equal([2]))
+                            expect($0[2]).to(equal([3, 4]))
+                            expect($0[3]).to(equal([5]))
                         })
                         .dispose()
                 }
@@ -87,7 +94,10 @@ class OccupiableOperatorsSpec: QuickSpec {
                     .asObservable()
                     .toArray()
                     .subscribe(onNext: {
-                        expect($0).to(equal([[1], [2], [3, 4], [5]]))
+                        expect($0[0]).to(equal([1]))
+                        expect($0[1]).to(equal([2]))
+                        expect($0[2]).to(equal([3, 4]))
+                        expect($0[3]).to(equal([5]))
                     })
                     .dispose()
             }
@@ -102,7 +112,9 @@ class OccupiableOperatorsSpec: QuickSpec {
                         .subscribe { event in
                             switch event {
                             case .next(let element):
-                                expect(element).to(equal([1]))
+                                expect(element[0]).to(equal([1]))
+                                expect(element[1]).to(equal([3, 4]))
+                                expect(element[2]).to(equal([5]))
                             case .error(let error):
                                 // FIXME: There should be a better way to do this and to check a more specific error.
                                 expect { throw error }

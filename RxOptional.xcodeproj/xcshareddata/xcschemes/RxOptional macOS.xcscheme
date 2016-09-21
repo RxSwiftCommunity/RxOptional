@@ -15,8 +15,22 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4B5983291D902F0800409FC8"
-               BuildableName = "RxOptional macOS.framework"
+               BuildableName = "RxOptional.framework"
                BlueprintName = "RxOptional macOS"
+               ReferencedContainer = "container:RxOptional.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4B59836D1D902FF100409FC8"
+               BuildableName = "RxOptional macOS Tests .xctest"
+               BlueprintName = "RxOptional macOS Tests "
                ReferencedContainer = "container:RxOptional.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -43,7 +57,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4B5983291D902F0800409FC8"
-            BuildableName = "RxOptional macOS.framework"
+            BuildableName = "RxOptional.framework"
             BlueprintName = "RxOptional macOS"
             ReferencedContainer = "container:RxOptional.xcodeproj">
          </BuildableReference>
@@ -65,7 +79,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4B5983291D902F0800409FC8"
-            BuildableName = "RxOptional macOS.framework"
+            BuildableName = "RxOptional.framework"
             BlueprintName = "RxOptional macOS"
             ReferencedContainer = "container:RxOptional.xcodeproj">
          </BuildableReference>
@@ -83,7 +97,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4B5983291D902F0800409FC8"
-            BuildableName = "RxOptional macOS.framework"
+            BuildableName = "RxOptional.framework"
             BlueprintName = "RxOptional macOS"
             ReferencedContainer = "container:RxOptional.xcodeproj">
          </BuildableReference>
