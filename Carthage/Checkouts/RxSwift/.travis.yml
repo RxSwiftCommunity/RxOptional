@@ -1,0 +1,13 @@
+language: objective-c
+
+osx_image: xcode8
+
+notifications:
+  slack: rxswift:3ykt2Z61f8GkdvhCZTYPduOL
+  email: false
+
+script: 
+  - "bundle exec danger --verbose"
+  - xcodebuild -version
+  - xcodebuild -showsdks
+  - ./scripts/all-tests.sh

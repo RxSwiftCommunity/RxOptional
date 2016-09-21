@@ -29,7 +29,7 @@ public extension ObservableType where E: OptionalType {
      - returns: Observable of unwrapped value or Error.
      */
     @warn_unused_result(message: "http://git.io/rxs.uo")
-    public func errorOnNil(_ error: ErrorProtocol = RxOptionalError.FoundNilWhileUnwrappingOptional(E.self)) -> Observable<E.Wrapped> {
+    public func errorOnNil(_ error: Error = RxOptionalError.FoundNilWhileUnwrappingOptional(E.self)) -> Observable<E.Wrapped> {
         return self.map { element -> E.Wrapped in
             guard let value = element.value else {
                 throw error
@@ -65,7 +65,7 @@ public extension ObservableType where E: OptionalType {
      sequence in case an nil was found while unwrapping.
      */
     @warn_unused_result(message: "http://git.io/rxs.uo")
-    public func catchOnNil(_ handler: () throws -> Observable<E.Wrapped>) -> Observable<E.Wrapped> {
+    public func catchOnNil(_ handler: @escaping () throws -> Observable<E.Wrapped>) -> Observable<E.Wrapped> {
         return self.flatMap { element -> Observable<E.Wrapped> in
             guard let value = element.value else {
                 return try handler()

@@ -43,7 +43,7 @@ public extension Driver where Element: OptionalType {
      sequence in case an nil was found while unwrapping.
      */
     @warn_unused_result(message: "http://git.io/rxs.uo")
-    public func catchOnNil(_ handler: () -> Driver<Element.Wrapped>) -> Driver<Element.Wrapped> {
+    public func catchOnNil(_ handler: @escaping () -> Driver<Element.Wrapped>) -> Driver<Element.Wrapped> {
         return self.flatMap { element -> Driver<Element.Wrapped> in
             guard let value = element.value else {
                 return handler()
