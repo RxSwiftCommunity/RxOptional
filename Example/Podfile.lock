@@ -3,7 +3,7 @@ PODS:
   - Quick (0.9.2)
   - RxCocoa (2.4):
     - RxSwift (~> 2.4)
-  - RxOptional (2.0.0):
+  - RxOptional (2.1.0):
     - RxCocoa (~> 2.0)
     - RxSwift (~> 2.0)
   - RxSwift (2.4)
@@ -17,13 +17,13 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   RxOptional:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
   Nimble: 0f3c8b8b084cda391209c3c5efbb48bedeeb920a
   Quick: 18d057bc66451eedd5d1c8dc99ba2a5db6e60226
   RxCocoa: 7d6cd877de99f5640306b3d6cf87f580c1d91b61
-  RxOptional: a2714820ddf9cf9233dc78178ce7cc9f6f4cf29d
+  RxOptional: 229b05b4f69f750fe4bbf8c0f7ef296789ed6c5e
   RxSwift: 67b9ef4e8b34fb394e200e754c6a09cc16559f94
 
 PODFILE CHECKSUM: 4e3cbf140f4cd577a9c27461e3f797805a12cd6f

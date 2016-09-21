@@ -8,7 +8,7 @@ podfile: Example/Podfile
 osx_image: xcode7.3
 install: 
   - bundle install
-  - cd Example ; bundle exec pod install
+  - bundle exec pod install --project-directory=Example
 xcode_workspace: Example/RxOptional.xcworkspace
 xcode_scheme: RxOptional Examples
 xcode_sdk: iphonesimulator9.3
