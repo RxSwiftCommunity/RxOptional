@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0730"
+   LastUpgradeVersion = "0800"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,23 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "68B6CB181C64769700C5D21E"
-               BuildableName = "RxOptional_Examples.framework"
-               BlueprintName = "RxOptional Examples"
+               BlueprintIdentifier = "4B5983171D902EFD00409FC8"
+               BuildableName = "RxOptional.framework"
+               BlueprintName = "RxOptional watchOS"
+               ReferencedContainer = "container:RxOptional.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4B5983601D902FEE00409FC8"
+               BuildableName = "RxOptional watchOS Tests.xctest"
+               BlueprintName = "RxOptional watchOS Tests"
                ReferencedContainer = "container:RxOptional.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +46,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "68A45EE31C64860D00B4FAB3"
-               BuildableName = "RxOptional Tests.xctest"
-               BlueprintName = "RxOptional Tests"
+               BlueprintIdentifier = "4B5983601D902FEE00409FC8"
+               BuildableName = "RxOptional watchOS Tests.xctest"
+               BlueprintName = "RxOptional watchOS Tests"
                ReferencedContainer = "container:RxOptional.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,9 +56,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "68B6CB181C64769700C5D21E"
-            BuildableName = "RxOptional_Examples.framework"
-            BlueprintName = "RxOptional Examples"
+            BlueprintIdentifier = "4B5983171D902EFD00409FC8"
+            BuildableName = "RxOptional.framework"
+            BlueprintName = "RxOptional watchOS"
             ReferencedContainer = "container:RxOptional.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,9 +78,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "68B6CB181C64769700C5D21E"
-            BuildableName = "RxOptional_Examples.framework"
-            BlueprintName = "RxOptional Examples"
+            BlueprintIdentifier = "4B5983171D902EFD00409FC8"
+            BuildableName = "RxOptional.framework"
+            BlueprintName = "RxOptional watchOS"
             ReferencedContainer = "container:RxOptional.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -82,9 +96,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "68B6CB181C64769700C5D21E"
-            BuildableName = "RxOptional_Examples.framework"
-            BlueprintName = "RxOptional Examples"
+            BlueprintIdentifier = "4B5983171D902EFD00409FC8"
+            BuildableName = "RxOptional.framework"
+            BlueprintName = "RxOptional watchOS"
             ReferencedContainer = "container:RxOptional.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

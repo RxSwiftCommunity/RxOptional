@@ -7,7 +7,7 @@ public extension Driver where Element: Occupiable {
 
      - returns: `Driver` of source `Driver`'s elements, with empty elements filtered out.
      */
-    @warn_unused_result(message="http://git.io/rxs.uo")
+    
     public func filterEmpty() -> Driver<Element> {
         return self.flatMap { element -> Driver<Element> in
             guard element.isNotEmpty else {
@@ -24,8 +24,8 @@ public extension Driver where Element: Occupiable {
 
      - returns: `Driver` of the source `Driver`'s elements, with empty elements replaced by the handler's returned non-empty elements.
      */
-    @warn_unused_result(message="http://git.io/rxs.uo")
-    public func catchOnEmpty(handler: () -> Driver<Element>) -> Driver<Element> {
+    
+    public func catchOnEmpty(_ handler: @escaping () -> Driver<Element>) -> Driver<Element> {
         return self.flatMap { element -> Driver<Element> in
             guard element.isNotEmpty else {
                 return handler()

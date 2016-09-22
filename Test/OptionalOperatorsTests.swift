@@ -20,9 +20,9 @@ class OptionalOperatorsSpec: QuickSpec {
                         .of(1, nil, 3, 4)
                         .filterNil()
                         .toArray()
-                        .subscribeNext {
+                        .subscribe(onNext: {
                             expect($0).to(equal([1, 3, 4]))
-                        }
+                        })                       
                         .dispose()
                 }
             }
@@ -41,9 +41,9 @@ class OptionalOperatorsSpec: QuickSpec {
                         .filterNil()
                         .asObservable()
                         .toArray()
-                        .subscribeNext {
+                        .subscribe(onNext: {
                             expect($0).to(equal([1, 3, 4]))
-                        }
+                        })
                         .dispose()
                 }
             }
@@ -65,13 +65,13 @@ class OptionalOperatorsSpec: QuickSpec {
                         .toArray()
                         .subscribe { event in
                             switch event {
-                            case .Next(let element):
+                            case .next(let element):
                                 expect(element).to(equal([1]))
-                            case .Error(let error):
+                            case .error(let error):
                                 // FIXME: There should be a better way to do this and to check a more specific error.
                                 expect { throw error }
                                     .to(throwError(errorType: RxOptionalError.self))
-                            case .Completed:
+                            case .completed:
                                 break
                             }
                         }
@@ -94,9 +94,9 @@ class OptionalOperatorsSpec: QuickSpec {
                         .of(1, nil, 3, 4)
                         .replaceNilWith(2)
                         .toArray()
-                        .subscribeNext {
+                        .subscribe(onNext: {
                             expect($0).to(equal([1, 2, 3, 4]))
-                        }
+                        })
                         .dispose()
                 }
             }
@@ -115,9 +115,9 @@ class OptionalOperatorsSpec: QuickSpec {
                         .replaceNilWith(2)
                         .asObservable()
                         .toArray()
-                        .subscribeNext {
+                        .subscribe(onNext: {
                             expect($0).to(equal([1, 2, 3, 4]))
-                        }
+                        })
                         .dispose()
                 }
             }
@@ -141,9 +141,9 @@ class OptionalOperatorsSpec: QuickSpec {
                             return Observable<Int>.just(2)
                         }
                         .toArray()
-                        .subscribeNext {
+                        .subscribe(onNext: {
                             expect($0).to(equal([1, 2, 3, 4]))
-                        }
+                        })
                         .dispose()
                 }
             }
@@ -166,9 +166,9 @@ class OptionalOperatorsSpec: QuickSpec {
                         }
                         .asObservable()
                         .toArray()
-                        .subscribeNext {
+                        .subscribe(onNext: {
                             expect($0).to(equal([1, 2, 3, 4]))
-                        }
+                        })
                         .dispose()
                 }
             }

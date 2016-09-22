@@ -1,5 +1,0 @@
-framework module RxOptional {
-  
-  umbrella header "RxOptional_Examples.h"
-  
-}
