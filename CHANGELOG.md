@@ -1,11 +1,18 @@
+# 3.0.0
+
+- Swift 3 compatibility
+
 # 2.1.0
+
 - Add `distinctUntilChanged` operator
 
 # 2.0.0
-- ** Breaking Change**: Remove `fatalErrorOn*` operators
-- ** Breaking Change**: Remove guarantees from `catchOnEmpty` operators
+
+- **Breaking Change**: Remove `fatalErrorOn*` operators
+- **Breaking Change**: Remove guarantees from `catchOnEmpty` operators
 
 # 1.2.0
+
 - Add unit tests
 - Move to RxSwiftCommunity
 - Deprecate 'fatalErrorOn*' operators

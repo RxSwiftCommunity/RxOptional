@@ -168,6 +168,8 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'RxOptional'
+pod 'RxCocoa', '3.0.0-beta.1'
+pod 'RxSwift', '3.0.0-beta.1'
 ```
 
 ## Author
