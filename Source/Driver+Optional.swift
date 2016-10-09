@@ -1,18 +1,18 @@
 import RxCocoa
 
-public extension Driver where Element: OptionalType {
+public extension SharedSequenceConvertibleType where SharingStrategy == DriverSharingStrategy, E: OptionalType {
     /**
      Unwraps and filters out `nil` elements.
 
      - returns: `Driver` of source `Driver`'s elements, with `nil` elements filtered out.
      */
     
-    public func filterNil() -> Driver<Element.Wrapped> {
-        return self.flatMap { element -> Driver<Element.Wrapped> in
+    public func filterNil() -> Driver<E.Wrapped> {
+        return self.flatMap { element -> Driver<E.Wrapped> in
             guard let value = element.value else {
-                return Driver<Element.Wrapped>.empty()
+                return Driver<E.Wrapped>.empty()
             }
-            return Driver<Element.Wrapped>.just(value)
+            return Driver<E.Wrapped>.just(value)
         }
     }
 
@@ -24,7 +24,7 @@ public extension Driver where Element: OptionalType {
      - returns: `Driver` of the source `Driver`'s unwrapped elements, with `nil` elements replaced by `valueOnNil`.
      */
     
-    public func replaceNilWith(_ valueOnNil: Element.Wrapped) -> Driver<Element.Wrapped> {
+    public func replaceNilWith(_ valueOnNil: E.Wrapped) -> Driver<E.Wrapped> {
         return self.map { element -> E.Wrapped in
             guard let value = element.value else {
                 return valueOnNil
@@ -41,17 +41,17 @@ public extension Driver where Element: OptionalType {
      - returns: `Driver` of the source `Driver`'s unwrapped elements, with `nil` elements replaced by the handler's returned non-`nil` elements.
      */
     
-    public func catchOnNil(_ handler: @escaping () -> Driver<Element.Wrapped>) -> Driver<Element.Wrapped> {
-        return self.flatMap { element -> Driver<Element.Wrapped> in
+    public func catchOnNil(_ handler: @escaping () -> Driver<E.Wrapped>) -> Driver<E.Wrapped> {
+        return self.flatMap { element -> Driver<E.Wrapped> in
             guard let value = element.value else {
                 return handler()
             }
-            return Driver<Element.Wrapped>.just(value)
+            return Driver<E.Wrapped>.just(value)
         }
     }
 }
 
-public extension Driver where Element: OptionalType, Element.Wrapped: Equatable {
+public extension SharedSequenceConvertibleType where SharingStrategy == DriverSharingStrategy, E: OptionalType, E.Wrapped: Equatable {
     /**
      Returns an observable sequence that contains only distinct contiguous elements according to equality operator.
      
@@ -60,7 +60,7 @@ public extension Driver where Element: OptionalType, Element.Wrapped: Equatable 
      - returns: An observable sequence only containing the distinct contiguous elements, based on equality operator, from the source sequence.
      */
     
-    public func distinctUntilChanged() -> Driver<Element> {
+    public func distinctUntilChanged() -> Driver<E> {
         return self.distinctUntilChanged { (lhs, rhs) -> Bool in
             return lhs.value == rhs.value
         }
