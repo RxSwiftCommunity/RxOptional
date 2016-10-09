@@ -1,3 +1,7 @@
+# 3.1.0
+
+- Migrated Driver extensions into SharedSequenceConvertibleType
+
 # 3.0.0
 
 - Swift 3 compatibility
