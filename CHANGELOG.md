@@ -1,3 +1,7 @@
+# 3.1.1
+
+- Improved Carthage support.
+
 # 3.1.0
 
 - Migrated Driver extensions into SharedSequenceConvertibleType
