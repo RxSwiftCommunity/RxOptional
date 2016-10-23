@@ -1,3 +1,7 @@
+# 3.1.3
+
+- RxSwift 3.0.0 support for Carthage.
+
 # 3.1.2
 
 - RxSwift 3.0.0-rc.1 support for Carthage.
