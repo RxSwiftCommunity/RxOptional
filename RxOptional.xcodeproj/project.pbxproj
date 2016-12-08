@@ -485,7 +485,7 @@
 			dependencies = (
 			);
 			name = "RxOptional tvOS";
-			productName = tv2;
+			productName = RxOptional;
 			productReference = 848273561DF9C9660083191B /* RxOptional.framework */;
 			productType = "com.apple.product-type.framework";
 		};

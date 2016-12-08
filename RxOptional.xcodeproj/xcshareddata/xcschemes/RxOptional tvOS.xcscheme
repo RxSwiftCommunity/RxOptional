@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "848273551DF9C9660083191B"
-               BuildableName = "RxOptional tvOS.framework"
+               BuildableName = "RxOptional.framework"
                BlueprintName = "RxOptional tvOS"
                ReferencedContainer = "container:RxOptional.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "848273551DF9C9660083191B"
-            BuildableName = "RxOptional tvOS.framework"
+            BuildableName = "RxOptional.framework"
             BlueprintName = "RxOptional tvOS"
             ReferencedContainer = "container:RxOptional.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "848273551DF9C9660083191B"
-            BuildableName = "RxOptional tvOS.framework"
+            BuildableName = "RxOptional.framework"
             BlueprintName = "RxOptional tvOS"
             ReferencedContainer = "container:RxOptional.xcodeproj">
          </BuildableReference>
