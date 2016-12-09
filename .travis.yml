@@ -6,11 +6,11 @@ language: objective-c
 cache: Carthage
 osx_image: xcode8.1
 xcode_sdk: iphonesimulator9.3
-xcode_scheme:
-- RxOptional iOS
-- RxOptional watchOS
-- RxOptional macOS
-- RxOptional tvOS
+env:
+  - PLATFORM=iOS
+  - PLATFORM=tvOS
+  - PLATFORM=Mac
+  - PLATFORM=watchOS
 
 before_install:
-- carthage bootstrap
+  - carthage bootstrap --platform $PLATFORM
