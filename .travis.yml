@@ -13,7 +13,4 @@ xcode_scheme:
 - RxOptional tvOS
 
 before_install:
-- brew update
-- brew unlink carthage
-- brew install carthage
 - carthage bootstrap
