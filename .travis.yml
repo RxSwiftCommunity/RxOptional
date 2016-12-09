@@ -4,7 +4,7 @@
 
 language: objective-c
 cache: Carthage
-osx_image: xcode8
+osx_image: xcode8.1
 xcode_sdk: iphonesimulator9.3
 xcode_scheme:
 - RxOptional iOS
@@ -13,7 +13,4 @@ xcode_scheme:
 - RxOptional tvOS
 
 before_install:
-- brew update
-- brew unlink carthage
-- brew install carthage
-- carthage bootstrap 
+- carthage bootstrap
