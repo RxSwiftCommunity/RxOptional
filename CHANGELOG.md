@@ -1,6 +1,6 @@
 # 3.2.0
 
-- Adds `filterOptionalKeepNil` operator.
+- Adds `filterNilKeepOptional`. 
 
 # 3.1.3
 

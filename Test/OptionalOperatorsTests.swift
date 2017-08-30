@@ -22,7 +22,19 @@ class OptionalOperatorsSpec: QuickSpec {
                         .toArray()
                         .subscribe(onNext: {
                             expect($0).to(equal([1, 3, 4]))
-                        })                       
+                        })
+                        .dispose()
+                }
+
+
+                it("filters nil values and keeps types") {
+                    Observable<Int?>
+                        .of(1, nil, 3, 4)
+                        .filterNilKeepOptional()
+                        .toArray()
+                        .subscribe(onNext: {
+                            expect($0).to(equal([1, 3, 4]))
+                        })
                         .dispose()
                 }
             }
