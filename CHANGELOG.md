@@ -1,3 +1,5 @@
+- Adds `filterNilKeepOptional`. 
+
 # 3.1.3
 
 - RxSwift 3.0.0 support for Carthage.
