@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name        = 'RxOptional'
-  s.version     = '3.2.0'
+  s.version     = '3.3.0'
   s.summary     = 'RxSwift extensions for Swift optionals and Occupiable types'
 
   s.description = <<-DESC
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Source/*.swift'
 
-  s.dependency 'RxSwift'
-  s.dependency 'RxCocoa'
+  s.dependency 'RxSwift', '~> 4.0.0-rc.0'
+  s.dependency 'RxCocoa', '~> 4.0.0-rc.0'
   s.frameworks = 'Foundation'
 end
