@@ -1,3 +1,7 @@
+# 3.3.0
+
+- Upgrades to RxSwift 4.0.
+
 # 3.2.0
 
 - Adds `filterNilKeepOptional`. 
