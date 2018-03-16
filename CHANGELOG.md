@@ -1,3 +1,7 @@
+# master
+
+- Swift 4.1 compatibility
+
 # 3.3.0
 
 - Upgrades to RxSwift 4.0.

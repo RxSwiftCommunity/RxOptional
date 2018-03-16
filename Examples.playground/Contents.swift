@@ -39,12 +39,14 @@ example("replaceNilWith") {
         .subscribe { print($0) }
 }
 
+#if !swift(>=3.3) || (swift(>=4.0) && !swift(>=4.1))
 example("distinctUntilChanged") {
     _ = Observable<Int?>
         .of(5, 6, 6, nil, nil, 3)
         .distinctUntilChanged()
         .subscribe { print($0) }
 }
+#endif
 
 /*:
  Unavailable on `Driver`, because `Driver`s cannot error out.

@@ -46,16 +46,9 @@
 		4B5983DA1D9035A500409FC8 /* RxOptionalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983BE1D9035A500409FC8 /* RxOptionalError.swift */; };
 		4B5983DB1D9035A500409FC8 /* RxOptionalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983BE1D9035A500409FC8 /* RxOptionalError.swift */; };
 		4B5983DC1D9035A500409FC8 /* RxOptionalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983BE1D9035A500409FC8 /* RxOptionalError.swift */; };
-		4B5983DE1D9035A500409FC8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B5983C01D9035A500409FC8 /* Info.plist */; };
-		4B5983DF1D9035A500409FC8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B5983C01D9035A500409FC8 /* Info.plist */; };
-		4B5983E01D9035A500409FC8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B5983C01D9035A500409FC8 /* Info.plist */; };
 		4B5983E21D9035A500409FC8 /* RxOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B5983C11D9035A500409FC8 /* RxOptional.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4B5983E31D9035A500409FC8 /* RxOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B5983C11D9035A500409FC8 /* RxOptional.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4B5983E41D9035A500409FC8 /* RxOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B5983C11D9035A500409FC8 /* RxOptional.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4B5983EA1D9035BD00409FC8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B5983E71D9035BD00409FC8 /* Info.plist */; };
-		4B5983EB1D9035BD00409FC8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B5983E71D9035BD00409FC8 /* Info.plist */; };
-		4B5983EC1D9035BD00409FC8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B5983E71D9035BD00409FC8 /* Info.plist */; };
-		4B5983ED1D9035BD00409FC8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B5983E71D9035BD00409FC8 /* Info.plist */; };
 		4B5983EE1D9035BD00409FC8 /* OccupiableOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983E81D9035BD00409FC8 /* OccupiableOperatorsTests.swift */; };
 		4B5983EF1D9035BD00409FC8 /* OccupiableOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983E81D9035BD00409FC8 /* OccupiableOperatorsTests.swift */; };
 		4B5983F01D9035BD00409FC8 /* OccupiableOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983E81D9035BD00409FC8 /* OccupiableOperatorsTests.swift */; };
@@ -66,7 +59,6 @@
 		4B5983F51D9035BD00409FC8 /* OptionalOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983E91D9035BD00409FC8 /* OptionalOperatorsTests.swift */; };
 		8482735E1DF9C9840083191B /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5983A91D9030C800409FC8 /* RxSwift.framework */; };
 		8482735F1DF9C9840083191B /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5983A81D9030C800409FC8 /* RxCocoa.framework */; };
-		848273601DF9C9D30083191B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B5983C01D9035A500409FC8 /* Info.plist */; };
 		848273611DF9C9DC0083191B /* RxOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B5983C11D9035A500409FC8 /* RxOptional.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		848273651DF9CE3C0083191B /* Driver+Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983B81D9035A500409FC8 /* Driver+Occupiable.swift */; };
 		848273661DF9CE3C0083191B /* Driver+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983B91D9035A500409FC8 /* Driver+Optional.swift */; };
@@ -111,7 +103,7 @@
 /* Begin PBXFileReference section */
 		4B5982E11D902B8F00409FC8 /* RxOptional.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxOptional.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B5982FE1D902BA600409FC8 /* RxOptional iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RxOptional iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B5983091D902EC000409FC8 /* Examples.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Examples.playground; sourceTree = "<group>"; };
+		4B5983091D902EC000409FC8 /* Examples.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Examples.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4B5983271D902EFD00409FC8 /* RxOptional.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxOptional.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B5983391D902F0800409FC8 /* RxOptional.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxOptional.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B59836B1D902FEE00409FC8 /* RxOptional watchOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RxOptional watchOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -496,7 +488,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = muukii;
 				TargetAttributes = {
 					4B5982E01D902B8F00409FC8 = {
@@ -559,7 +551,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B5983DE1D9035A500409FC8 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,7 +558,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B5983EA1D9035BD00409FC8 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,7 +565,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B5983DF1D9035A500409FC8 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,7 +572,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B5983E01D9035A500409FC8 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,7 +579,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B5983EB1D9035BD00409FC8 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,7 +586,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B5983EC1D9035BD00409FC8 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,7 +593,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B5983ED1D9035BD00409FC8 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -615,7 +600,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				848273601DF9C9D30083191B /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -749,15 +733,24 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -802,15 +795,24 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -942,7 +944,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 2.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.RxOptional;
 				PRODUCT_NAME = RxOptional;
@@ -970,7 +972,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 2.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.RxOptional;
 				PRODUCT_NAME = RxOptional;
