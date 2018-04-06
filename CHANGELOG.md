@@ -1,5 +1,7 @@
 # master
 
+# 3.4.0
+
 - Swift 4.1 compatibility
 
 # 3.3.0

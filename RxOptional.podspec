@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name        = 'RxOptional'
-  s.version     = '3.3.0'
+  s.version     = '3.4.0'
   s.summary     = 'RxSwift extensions for Swift optionals and Occupiable types'
 
   s.description = <<-DESC
