@@ -9,7 +9,7 @@ RxSwift extensions for Swift optionals and "Occupiable" types.
 
 ## Usage
 
-All operators are also available on `Driver`, unless otherwise noted.
+All operators are also available on `Driver` and `Signal`, unless otherwise noted.
 
 ### Optional Operators
 

@@ -22,12 +22,12 @@
 		4B5983A31D9030B300409FC8 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5983A11D9030B300409FC8 /* RxSwift.framework */; };
 		4B5983A61D9030C100409FC8 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5983A41D9030C100409FC8 /* RxCocoa.framework */; };
 		4B5983A71D9030C100409FC8 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5983A51D9030C100409FC8 /* RxSwift.framework */; };
-		4B5983C21D9035A500409FC8 /* Driver+Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983B81D9035A500409FC8 /* Driver+Occupiable.swift */; };
-		4B5983C31D9035A500409FC8 /* Driver+Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983B81D9035A500409FC8 /* Driver+Occupiable.swift */; };
-		4B5983C41D9035A500409FC8 /* Driver+Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983B81D9035A500409FC8 /* Driver+Occupiable.swift */; };
-		4B5983C61D9035A500409FC8 /* Driver+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983B91D9035A500409FC8 /* Driver+Optional.swift */; };
-		4B5983C71D9035A500409FC8 /* Driver+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983B91D9035A500409FC8 /* Driver+Optional.swift */; };
-		4B5983C81D9035A500409FC8 /* Driver+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983B91D9035A500409FC8 /* Driver+Optional.swift */; };
+		4B5983C21D9035A500409FC8 /* SharedSequence+Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983B81D9035A500409FC8 /* SharedSequence+Occupiable.swift */; };
+		4B5983C31D9035A500409FC8 /* SharedSequence+Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983B81D9035A500409FC8 /* SharedSequence+Occupiable.swift */; };
+		4B5983C41D9035A500409FC8 /* SharedSequence+Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983B81D9035A500409FC8 /* SharedSequence+Occupiable.swift */; };
+		4B5983C61D9035A500409FC8 /* SharedSequence+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983B91D9035A500409FC8 /* SharedSequence+Optional.swift */; };
+		4B5983C71D9035A500409FC8 /* SharedSequence+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983B91D9035A500409FC8 /* SharedSequence+Optional.swift */; };
+		4B5983C81D9035A500409FC8 /* SharedSequence+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983B91D9035A500409FC8 /* SharedSequence+Optional.swift */; };
 		4B5983CA1D9035A500409FC8 /* Observable+Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983BA1D9035A500409FC8 /* Observable+Occupiable.swift */; };
 		4B5983CB1D9035A500409FC8 /* Observable+Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983BA1D9035A500409FC8 /* Observable+Occupiable.swift */; };
 		4B5983CC1D9035A500409FC8 /* Observable+Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983BA1D9035A500409FC8 /* Observable+Occupiable.swift */; };
@@ -60,8 +60,8 @@
 		8482735E1DF9C9840083191B /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5983A91D9030C800409FC8 /* RxSwift.framework */; };
 		8482735F1DF9C9840083191B /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5983A81D9030C800409FC8 /* RxCocoa.framework */; };
 		848273611DF9C9DC0083191B /* RxOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B5983C11D9035A500409FC8 /* RxOptional.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		848273651DF9CE3C0083191B /* Driver+Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983B81D9035A500409FC8 /* Driver+Occupiable.swift */; };
-		848273661DF9CE3C0083191B /* Driver+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983B91D9035A500409FC8 /* Driver+Optional.swift */; };
+		848273651DF9CE3C0083191B /* SharedSequence+Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983B81D9035A500409FC8 /* SharedSequence+Occupiable.swift */; };
+		848273661DF9CE3C0083191B /* SharedSequence+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983B91D9035A500409FC8 /* SharedSequence+Optional.swift */; };
 		848273671DF9CE3C0083191B /* Observable+Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983BA1D9035A500409FC8 /* Observable+Occupiable.swift */; };
 		848273681DF9CE3C0083191B /* Observable+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983BB1D9035A500409FC8 /* Observable+Optional.swift */; };
 		848273691DF9CE3C0083191B /* Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983BC1D9035A500409FC8 /* Occupiable.swift */; };
@@ -123,8 +123,8 @@
 		4B5983A51D9030C100409FC8 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/Mac/RxSwift.framework; sourceTree = "<group>"; };
 		4B5983A81D9030C800409FC8 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/tvOS/RxCocoa.framework; sourceTree = "<group>"; };
 		4B5983A91D9030C800409FC8 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/tvOS/RxSwift.framework; sourceTree = "<group>"; };
-		4B5983B81D9035A500409FC8 /* Driver+Occupiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Driver+Occupiable.swift"; sourceTree = "<group>"; };
-		4B5983B91D9035A500409FC8 /* Driver+Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Driver+Optional.swift"; sourceTree = "<group>"; };
+		4B5983B81D9035A500409FC8 /* SharedSequence+Occupiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SharedSequence+Occupiable.swift"; sourceTree = "<group>"; };
+		4B5983B91D9035A500409FC8 /* SharedSequence+Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SharedSequence+Optional.swift"; sourceTree = "<group>"; };
 		4B5983BA1D9035A500409FC8 /* Observable+Occupiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Occupiable.swift"; sourceTree = "<group>"; };
 		4B5983BB1D9035A500409FC8 /* Observable+Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Optional.swift"; sourceTree = "<group>"; };
 		4B5983BC1D9035A500409FC8 /* Occupiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Occupiable.swift; sourceTree = "<group>"; };
@@ -268,8 +268,8 @@
 		4B5983B71D9035A500409FC8 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				4B5983B81D9035A500409FC8 /* Driver+Occupiable.swift */,
-				4B5983B91D9035A500409FC8 /* Driver+Optional.swift */,
+				4B5983B81D9035A500409FC8 /* SharedSequence+Occupiable.swift */,
+				4B5983B91D9035A500409FC8 /* SharedSequence+Optional.swift */,
 				4B5983BA1D9035A500409FC8 /* Observable+Occupiable.swift */,
 				4B5983BB1D9035A500409FC8 /* Observable+Optional.swift */,
 				4B5983BC1D9035A500409FC8 /* Occupiable.swift */,
@@ -610,8 +610,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B5983C61D9035A500409FC8 /* Driver+Optional.swift in Sources */,
-				4B5983C21D9035A500409FC8 /* Driver+Occupiable.swift in Sources */,
+				4B5983C61D9035A500409FC8 /* SharedSequence+Optional.swift in Sources */,
+				4B5983C21D9035A500409FC8 /* SharedSequence+Occupiable.swift in Sources */,
 				4B5983D21D9035A500409FC8 /* Occupiable.swift in Sources */,
 				4B5983DA1D9035A500409FC8 /* RxOptionalError.swift in Sources */,
 				4B5983CA1D9035A500409FC8 /* Observable+Occupiable.swift in Sources */,
@@ -633,8 +633,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B5983C71D9035A500409FC8 /* Driver+Optional.swift in Sources */,
-				4B5983C31D9035A500409FC8 /* Driver+Occupiable.swift in Sources */,
+				4B5983C71D9035A500409FC8 /* SharedSequence+Optional.swift in Sources */,
+				4B5983C31D9035A500409FC8 /* SharedSequence+Occupiable.swift in Sources */,
 				4B5983D31D9035A500409FC8 /* Occupiable.swift in Sources */,
 				4B5983DB1D9035A500409FC8 /* RxOptionalError.swift in Sources */,
 				4B5983CB1D9035A500409FC8 /* Observable+Occupiable.swift in Sources */,
@@ -647,8 +647,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B5983C81D9035A500409FC8 /* Driver+Optional.swift in Sources */,
-				4B5983C41D9035A500409FC8 /* Driver+Occupiable.swift in Sources */,
+				4B5983C81D9035A500409FC8 /* SharedSequence+Optional.swift in Sources */,
+				4B5983C41D9035A500409FC8 /* SharedSequence+Occupiable.swift in Sources */,
 				4B5983D41D9035A500409FC8 /* Occupiable.swift in Sources */,
 				4B5983DC1D9035A500409FC8 /* RxOptionalError.swift in Sources */,
 				4B5983CC1D9035A500409FC8 /* Observable+Occupiable.swift in Sources */,
@@ -690,11 +690,11 @@
 			files = (
 				848273691DF9CE3C0083191B /* Occupiable.swift in Sources */,
 				848273671DF9CE3C0083191B /* Observable+Occupiable.swift in Sources */,
-				848273651DF9CE3C0083191B /* Driver+Occupiable.swift in Sources */,
+				848273651DF9CE3C0083191B /* SharedSequence+Occupiable.swift in Sources */,
 				8482736A1DF9CE3C0083191B /* OptionalType.swift in Sources */,
 				8482736B1DF9CE3C0083191B /* RxOptionalError.swift in Sources */,
 				848273681DF9CE3C0083191B /* Observable+Optional.swift in Sources */,
-				848273661DF9CE3C0083191B /* Driver+Optional.swift in Sources */,
+				848273661DF9CE3C0083191B /* SharedSequence+Optional.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
