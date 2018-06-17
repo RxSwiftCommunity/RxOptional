@@ -1,5 +1,7 @@
 # master
 
+- Loosen generic constraints to work with any SharingStrategy, instead of just Driver.
+
 # 3.4.0
 
 - Swift 4.1 compatibility
@@ -10,7 +12,7 @@
 
 # 3.2.0
 
-- Adds `filterNilKeepOptional`. 
+- Adds `filterNilKeepOptional`.
 
 # 3.1.3
 

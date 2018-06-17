@@ -59,6 +59,27 @@ class OptionalOperatorsSpec: QuickSpec {
                         .dispose()
                 }
             }
+            
+            context("Signal") {
+                it("unwraps the optional") {
+                    // Check on compile
+                    let _: Signal<Int> = Signal<Int?>
+                        .just(nil)
+                        .filterNil()
+                }
+                
+                it("filters nil values") {
+                    Signal<Int?>
+                        .of(1, nil, 3, 4)
+                        .filterNil()
+                        .asObservable()
+                        .toArray()
+                        .subscribe(onNext: {
+                            expect($0).to(equal([1, 3, 4]))
+                        })
+                        .dispose()
+                }
+            }
         }
 
         describe("Error On Nil") {
