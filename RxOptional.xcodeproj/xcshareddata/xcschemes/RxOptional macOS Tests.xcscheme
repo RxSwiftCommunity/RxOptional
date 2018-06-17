@@ -17,8 +17,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4B59836D1D902FF100409FC8"
-               BuildableName = "RxOptional macOS Tests .xctest"
-               BlueprintName = "RxOptional macOS Tests "
+               BuildableName = "RxOptional macOS Tests.xctest"
+               BlueprintName = "RxOptional macOS Tests"
                ReferencedContainer = "container:RxOptional.xcodeproj">
             </BuildableReference>
          </TestableReference>
