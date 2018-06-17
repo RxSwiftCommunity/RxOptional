@@ -1,10 +1,9 @@
 # RxOptional
 
-[![Build Status](https://travis-ci.org/RxSwiftCommunity/RxOptional.svg?branch=master)](https://travis-ci.org/RxSwiftCommunity/RxOptional)
+[![CircleCI](https://img.shields.io/circleci/project/github/RxSwiftCommunity/RxOptional/master.svg)](https://circleci.com/gh/RxSwiftCommunity/RxOptional/tree/master)
 [![Version](https://img.shields.io/cocoapods/v/RxOptional.svg?style=flat)](http://cocoapods.org/pods/RxOptional)
 [![License](https://img.shields.io/cocoapods/l/RxOptional.svg?style=flat)](http://cocoapods.org/pods/RxOptional)
 [![Platform](https://img.shields.io/cocoapods/p/RxOptional.svg?style=flat)](http://cocoapods.org/pods/RxOptional)
-
 
 RxSwift extensions for Swift optionals and "Occupiable" types.
 

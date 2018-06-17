@@ -9,14 +9,11 @@
 /* Begin PBXBuildFile section */
 		4B5983031D902BA600409FC8 /* RxOptional.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5982E11D902B8F00409FC8 /* RxOptional.framework */; };
 		4B5983661D902FEE00409FC8 /* RxOptional.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5982E11D902B8F00409FC8 /* RxOptional.framework */; };
-		4B5983731D902FF100409FC8 /* RxOptional.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5982E11D902B8F00409FC8 /* RxOptional.framework */; };
 		4B5983801D902FF300409FC8 /* RxOptional.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5982E11D902B8F00409FC8 /* RxOptional.framework */; };
 		4B5983901D90306D00409FC8 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B59838E1D90306D00409FC8 /* Nimble.framework */; };
 		4B5983911D90306D00409FC8 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B59838F1D90306D00409FC8 /* Quick.framework */; };
 		4B5983921D90308700409FC8 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B59838E1D90306D00409FC8 /* Nimble.framework */; };
 		4B5983931D90308700409FC8 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B59838F1D90306D00409FC8 /* Quick.framework */; };
-		4B5983961D90308E00409FC8 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5983941D90308E00409FC8 /* Nimble.framework */; };
-		4B5983971D90308E00409FC8 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5983951D90308E00409FC8 /* Quick.framework */; };
 		4B59839A1D90309B00409FC8 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5983981D90309B00409FC8 /* Nimble.framework */; };
 		4B59839B1D90309B00409FC8 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5983991D90309B00409FC8 /* Quick.framework */; };
 		4B59839E1D9030A800409FC8 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B59839C1D9030A800409FC8 /* RxCocoa.framework */; };
@@ -57,6 +54,9 @@
 		4B5983F31D9035BD00409FC8 /* OptionalOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983E91D9035BD00409FC8 /* OptionalOperatorsTests.swift */; };
 		4B5983F41D9035BD00409FC8 /* OptionalOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983E91D9035BD00409FC8 /* OptionalOperatorsTests.swift */; };
 		4B5983F51D9035BD00409FC8 /* OptionalOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983E91D9035BD00409FC8 /* OptionalOperatorsTests.swift */; };
+		783A3C7220D6B6D70022CF68 /* RxOptional.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5983391D902F0800409FC8 /* RxOptional.framework */; };
+		783A3C7320D6B6DF0022CF68 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5983941D90308E00409FC8 /* Nimble.framework */; };
+		783A3C7420D6B6DF0022CF68 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5983951D90308E00409FC8 /* Quick.framework */; };
 		8482735E1DF9C9840083191B /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5983A91D9030C800409FC8 /* RxSwift.framework */; };
 		8482735F1DF9C9840083191B /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5983A81D9030C800409FC8 /* RxCocoa.framework */; };
 		848273611DF9C9DC0083191B /* RxOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B5983C11D9035A500409FC8 /* RxOptional.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -107,7 +107,7 @@
 		4B5983271D902EFD00409FC8 /* RxOptional.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxOptional.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B5983391D902F0800409FC8 /* RxOptional.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxOptional.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B59836B1D902FEE00409FC8 /* RxOptional watchOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RxOptional watchOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B5983781D902FF100409FC8 /* RxOptional macOS Tests .xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RxOptional macOS Tests .xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B5983781D902FF100409FC8 /* RxOptional macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RxOptional macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B5983851D902FF300409FC8 /* RxOptional tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RxOptional tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B59838E1D90306D00409FC8 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		4B59838F1D90306D00409FC8 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
@@ -190,9 +190,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B5983731D902FF100409FC8 /* RxOptional.framework in Frameworks */,
-				4B5983961D90308E00409FC8 /* Nimble.framework in Frameworks */,
-				4B5983971D90308E00409FC8 /* Quick.framework in Frameworks */,
+				783A3C7220D6B6D70022CF68 /* RxOptional.framework in Frameworks */,
+				783A3C7320D6B6DF0022CF68 /* Nimble.framework in Frameworks */,
+				783A3C7420D6B6DF0022CF68 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,7 +237,7 @@
 				4B5983271D902EFD00409FC8 /* RxOptional.framework */,
 				4B5983391D902F0800409FC8 /* RxOptional.framework */,
 				4B59836B1D902FEE00409FC8 /* RxOptional watchOS Tests.xctest */,
-				4B5983781D902FF100409FC8 /* RxOptional macOS Tests .xctest */,
+				4B5983781D902FF100409FC8 /* RxOptional macOS Tests.xctest */,
 				4B5983851D902FF300409FC8 /* RxOptional tvOS Tests.xctest */,
 				848273561DF9C9660083191B /* RxOptional.framework */,
 			);
@@ -427,9 +427,9 @@
 			productReference = 4B59836B1D902FEE00409FC8 /* RxOptional watchOS Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		4B59836D1D902FF100409FC8 /* RxOptional macOS Tests  */ = {
+		4B59836D1D902FF100409FC8 /* RxOptional macOS Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4B5983751D902FF100409FC8 /* Build configuration list for PBXNativeTarget "RxOptional macOS Tests " */;
+			buildConfigurationList = 4B5983751D902FF100409FC8 /* Build configuration list for PBXNativeTarget "RxOptional macOS Tests" */;
 			buildPhases = (
 				4B5983701D902FF100409FC8 /* Sources */,
 				4B5983721D902FF100409FC8 /* Frameworks */,
@@ -440,9 +440,9 @@
 			dependencies = (
 				4B59838A1D90303C00409FC8 /* PBXTargetDependency */,
 			);
-			name = "RxOptional macOS Tests ";
+			name = "RxOptional macOS Tests";
 			productName = RxOptionalTests;
-			productReference = 4B5983781D902FF100409FC8 /* RxOptional macOS Tests .xctest */;
+			productReference = 4B5983781D902FF100409FC8 /* RxOptional macOS Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		4B59837A1D902FF300409FC8 /* RxOptional tvOS Tests */ = {
@@ -539,7 +539,7 @@
 				4B5983171D902EFD00409FC8 /* RxOptional watchOS */,
 				4B5983601D902FEE00409FC8 /* RxOptional watchOS Tests */,
 				4B5983291D902F0800409FC8 /* RxOptional macOS */,
-				4B59836D1D902FF100409FC8 /* RxOptional macOS Tests  */,
+				4B59836D1D902FF100409FC8 /* RxOptional macOS Tests */,
 				848273551DF9C9660083191B /* RxOptional tvOS */,
 				4B59837A1D902FF300409FC8 /* RxOptional tvOS Tests */,
 			);
@@ -988,6 +988,7 @@
 		4B5983371D902F0800409FC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -1015,6 +1016,7 @@
 		4B5983381D902F0800409FC8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -1075,13 +1077,14 @@
 		4B5983761D902FF100409FC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				DEVELOPMENT_TEAM = KU2QEJ9K3Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				INFOPLIST_FILE = Test/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(SRCROOT)/Carthage/Build/Mac";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(SRCROOT)/Carthage/Build/Mac @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.RxOptionalTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -1092,13 +1095,14 @@
 		4B5983771D902FF100409FC8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				DEVELOPMENT_TEAM = KU2QEJ9K3Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				INFOPLIST_FILE = Test/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(SRCROOT)/Carthage/Build/Mac";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(SRCROOT)/Carthage/Build/Mac @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.RxOptionalTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -1253,7 +1257,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4B5983751D902FF100409FC8 /* Build configuration list for PBXNativeTarget "RxOptional macOS Tests " */ = {
+		4B5983751D902FF100409FC8 /* Build configuration list for PBXNativeTarget "RxOptional macOS Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4B5983761D902FF100409FC8 /* Debug */,
