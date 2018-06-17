@@ -1,0 +1,81 @@
+version: 2
+jobs:
+  "RxOptional Tests":
+    working_directory: ~/RxSwiftCommunity/RxOptional
+    parallelism: 1
+    shell: /bin/bash --login
+    environment:
+      XCODE_TEST_REPORTS: /tmp/xcode-test-results
+      LANG: en_US.UTF-8
+    macos:
+      xcode: '9.2.0'
+    steps:
+      - checkout
+      - run: mkdir -p $CIRCLE_ARTIFACTS $CIRCLE_TEST_REPORTS $XCODE_TEST_REPORTS
+      - restore_cache:
+          keys:
+            - v1-dep-{{ .Branch }}-
+            - v1-dep-master-
+            - v1-dep-
+      - run:
+          name: Update Homebrew
+          command: brew update
+      - run:
+          name: Install Swiftlint
+          command: brew install swiftlint
+      - run: 
+          name: Bootstrap Carthage
+          command: scripts/bootstrap-if-needed.sh
+      - save_cache:
+          key: v1-dep-{{ .Branch }}-{{ epoch }}
+          paths:
+            - Carthage
+      - run:
+          name: Test macOS
+          command: xcodebuild test -scheme "RxOptional macOS" -project RxOptional.xcodeproj -sdk macosx -destination "arch=x86_64" | xcpretty -c -r html --output $XCODE_TEST_REPORTS/macOS.html
+      - run:
+          name: Test iOS
+          command: xcodebuild test -scheme "RxOptional iOS" -project RxOptional.xcodeproj -sdk iphonesimulator -destination "name=iPhone X" | xcpretty -c -r html --output $XCODE_TEST_REPORTS/iOS.html
+      - run:
+          name: Test tvOS
+          command: xcodebuild test -scheme "RxOptional tvOS" -project RxOptional.xcodeproj -sdk appletvsimulator -destination "name=Apple TV 4K (at 1080p)" | xcpretty -c -r html --output $XCODE_TEST_REPORTS/tvOS.html
+      - run:
+          name: Test watchOS
+          command: xcodebuild test -scheme "RxOptional watchOS" -project RxOptional.xcodeproj -sdk watchos -destination "name=Apple Watch Series 3 - 38mm" | xcpretty -c -r html --output $XCODE_TEST_REPORTS/watchOS.html
+      - store_artifacts:
+          path: /tmp/xcode-test-results
+  "RxOptional Release":
+    working_directory: ~/RxSwiftCommunity/RxOptional
+    parallelism: 1
+    shell: /bin/bash --login
+    environment:
+      LANG: en_US.UTF-8
+    macos:
+      xcode: '9.2.0'
+    steps:
+      - checkout
+      - run:
+          name: Setup CocoaPods
+          command: pod setup
+      - run:
+          name: Override Circle CI Config
+          command: rm ~/.cocoapods/config.yaml # This hack is needed since CircleCI forces --verbose
+      - run:
+          name: Push Podspec to Trunk
+          command: pod trunk push --skip-tests --allow-warnings
+workflows:
+  version: 2
+  build:
+    jobs:
+      - "RxOptional Tests":
+          filters:
+            tags:
+              ignore: /[0-9]+(\.[0-9]+)*/
+  release:
+    jobs:
+      - "RxOptional Release":
+          filters:
+            branches:
+              ignore: /.*/
+            tags:
+              only: /[0-9]+(\.[0-9]+)*/
