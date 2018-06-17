@@ -1,5 +1,7 @@
 # master
 
+# 3.5.0
+
 - Loosen generic constraints to work with any SharingStrategy, instead of just Driver.
 
 # 3.4.0
