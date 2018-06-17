@@ -32,13 +32,13 @@ jobs:
             - Carthage
       - run:
           name: Test macOS
-          command: xcodebuild test -scheme "RxOptional macOS" -project RxOptional.xcodeproj -sdk macosx -destination "arch=x86_64" | xcpretty -c -r html --output $XCODE_TEST_REPORTS/macOS.html
+          command: set -o pipefail && xcodebuild test -scheme "RxOptional macOS" -project RxOptional.xcodeproj -sdk macosx -destination "arch=x86_64" | xcpretty -c -r html --output $XCODE_TEST_REPORTS/macOS.html
       - run:
           name: Test iOS
-          command: xcodebuild test -scheme "RxOptional iOS" -project RxOptional.xcodeproj -sdk iphonesimulator -destination "name=iPhone X" | xcpretty -c -r html --output $XCODE_TEST_REPORTS/iOS.html
+          command: set -o pipefail && xcodebuild test -scheme "RxOptional iOS" -project RxOptional.xcodeproj -sdk iphonesimulator -destination "name=iPhone X" | xcpretty -c -r html --output $XCODE_TEST_REPORTS/iOS.html
       - run:
           name: Test tvOS
-          command: xcodebuild test -scheme "RxOptional tvOS" -project RxOptional.xcodeproj -sdk appletvsimulator -destination "name=Apple TV 4K (at 1080p)" | xcpretty -c -r html --output $XCODE_TEST_REPORTS/tvOS.html
+          command: set -o pipefail && xcodebuild test -scheme "RxOptional tvOS" -project RxOptional.xcodeproj -sdk appletvsimulator -destination "name=Apple TV 4K (at 1080p)" | xcpretty -c -r html --output $XCODE_TEST_REPORTS/tvOS.html
       - store_artifacts:
           path: /tmp/xcode-test-results
   "RxOptional Release":
