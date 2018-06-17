@@ -24,9 +24,9 @@ jobs:
           key: v1-dep-{{ .Branch }}-{{ epoch }}
           paths:
             - Carthage
-      - run:
-          name: Test macOS
-          command: set -o pipefail && xcodebuild test -scheme "RxOptional macOS" -project RxOptional.xcodeproj -sdk macosx -destination "arch=x86_64" | xcpretty -c -r html --output $XCODE_TEST_REPORTS/macOS.html
+      # - run:
+      #     name: Test macOS
+      #     command: xcodebuild test -scheme "RxOptional macOS" -project RxOptional.xcodeproj -sdk macosx -destination "arch=x86_64"
       - run:
           name: Test iOS
           command: set -o pipefail && xcodebuild test -scheme "RxOptional iOS" -project RxOptional.xcodeproj -sdk iphonesimulator -destination "name=iPhone X" | xcpretty -c -r html --output $XCODE_TEST_REPORTS/iOS.html
