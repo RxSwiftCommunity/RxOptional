@@ -69,6 +69,12 @@
 		8482736B1DF9CE3C0083191B /* RxOptionalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983BE1D9035A500409FC8 /* RxOptionalError.swift */; };
 		A9AD4DE9207C6D7E00298702 /* PrimitiveSequence+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD4DE8207C6D7E00298702 /* PrimitiveSequence+Optional.swift */; };
 		A9EFF2EE20FDE12E005A3187 /* PrimativeSequence+Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EFF2ED20FDE12E005A3187 /* PrimativeSequence+Occupiable.swift */; };
+		A9EFF2F420FE30D0005A3187 /* PrimativeSequence+Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EFF2ED20FDE12E005A3187 /* PrimativeSequence+Occupiable.swift */; };
+		A9EFF2F520FE30D0005A3187 /* PrimitiveSequence+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD4DE8207C6D7E00298702 /* PrimitiveSequence+Optional.swift */; };
+		A9EFF2F620FE30D1005A3187 /* PrimativeSequence+Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EFF2ED20FDE12E005A3187 /* PrimativeSequence+Occupiable.swift */; };
+		A9EFF2F720FE30D1005A3187 /* PrimitiveSequence+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD4DE8207C6D7E00298702 /* PrimitiveSequence+Optional.swift */; };
+		A9EFF2F820FE30D1005A3187 /* PrimativeSequence+Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EFF2ED20FDE12E005A3187 /* PrimativeSequence+Occupiable.swift */; };
+		A9EFF2F920FE30D1005A3187 /* PrimitiveSequence+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD4DE8207C6D7E00298702 /* PrimitiveSequence+Optional.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -642,7 +648,9 @@
 				4B5983C31D9035A500409FC8 /* SharedSequence+Occupiable.swift in Sources */,
 				4B5983D31D9035A500409FC8 /* Occupiable.swift in Sources */,
 				4B5983DB1D9035A500409FC8 /* RxOptionalError.swift in Sources */,
+				A9EFF2F520FE30D0005A3187 /* PrimitiveSequence+Optional.swift in Sources */,
 				4B5983CB1D9035A500409FC8 /* Observable+Occupiable.swift in Sources */,
+				A9EFF2F420FE30D0005A3187 /* PrimativeSequence+Occupiable.swift in Sources */,
 				4B5983CF1D9035A500409FC8 /* Observable+Optional.swift in Sources */,
 				4B5983D71D9035A500409FC8 /* OptionalType.swift in Sources */,
 			);
@@ -656,7 +664,9 @@
 				4B5983C41D9035A500409FC8 /* SharedSequence+Occupiable.swift in Sources */,
 				4B5983D41D9035A500409FC8 /* Occupiable.swift in Sources */,
 				4B5983DC1D9035A500409FC8 /* RxOptionalError.swift in Sources */,
+				A9EFF2F720FE30D1005A3187 /* PrimitiveSequence+Optional.swift in Sources */,
 				4B5983CC1D9035A500409FC8 /* Observable+Occupiable.swift in Sources */,
+				A9EFF2F620FE30D1005A3187 /* PrimativeSequence+Occupiable.swift in Sources */,
 				4B5983D01D9035A500409FC8 /* Observable+Optional.swift in Sources */,
 				4B5983D81D9035A500409FC8 /* OptionalType.swift in Sources */,
 			);
@@ -697,7 +707,9 @@
 				848273671DF9CE3C0083191B /* Observable+Occupiable.swift in Sources */,
 				848273651DF9CE3C0083191B /* SharedSequence+Occupiable.swift in Sources */,
 				8482736A1DF9CE3C0083191B /* OptionalType.swift in Sources */,
+				A9EFF2F920FE30D1005A3187 /* PrimitiveSequence+Optional.swift in Sources */,
 				8482736B1DF9CE3C0083191B /* RxOptionalError.swift in Sources */,
+				A9EFF2F820FE30D1005A3187 /* PrimativeSequence+Occupiable.swift in Sources */,
 				848273681DF9CE3C0083191B /* Observable+Optional.swift in Sources */,
 				848273661DF9CE3C0083191B /* SharedSequence+Optional.swift in Sources */,
 			);
