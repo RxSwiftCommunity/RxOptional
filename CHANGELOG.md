@@ -1,5 +1,7 @@
 # master
 
+- Add optional and occupiable operators to Single trait.
+
 # 3.5.0
 
 - Loosen generic constraints to work with any SharingStrategy, instead of just Driver.
