@@ -111,6 +111,32 @@ class OptionalOperatorsSpec: QuickSpec {
                         .dispose()
                 }
             }
+            
+            context("Single") {
+                it("unwraps the optional") {
+                    // Check on compile
+                    let _: Single<Int> = Single<Int?>
+                        .just(nil)
+                        .errorOnNil()
+                }
+                
+                it("throws default error") {
+                    Single<Int?>
+                        .just(nil)
+                        .errorOnNil()
+                        .subscribe { event in
+                            switch event {
+                            case .success:
+                                break
+                            case .error(let error):
+                                // FIXME: There should be a better way to do this and to check a more specific error.
+                                expect { throw error }
+                                    .to(throwError(errorType: RxOptionalError.self))
+                            }
+                        }
+                        .dispose()
+                }
+            }
         }
 
         describe("replaceNilWith") {
@@ -150,6 +176,25 @@ class OptionalOperatorsSpec: QuickSpec {
                         .toArray()
                         .subscribe(onNext: {
                             expect($0).to(equal([1, 2, 3, 4]))
+                        })
+                        .dispose()
+                }
+            }
+            
+            context("Single") {
+                it("unwraps the optional") {
+                    // Check on compile
+                    let _: Single<Int> = Single<Int?>
+                        .just(nil)
+                        .replaceNilWith(0)
+                }
+                
+                it("replaces nil values") {
+                    Single<Int?>
+                        .just(nil)
+                        .replaceNilWith(2)
+                        .subscribe(onSuccess: {
+                            expect($0).to(equal(2))
                         })
                         .dispose()
                 }
@@ -201,6 +246,29 @@ class OptionalOperatorsSpec: QuickSpec {
                         .toArray()
                         .subscribe(onNext: {
                             expect($0).to(equal([1, 2, 3, 4]))
+                        })
+                        .dispose()
+                }
+            }
+            
+            context("Single") {
+                it("unwraps the optional") {
+                    // Check on compile
+                    let _: Single<Int> = Single<Int?>
+                        .just(nil)
+                        .catchOnNil {
+                            return Single<Int>.just(0)
+                        }
+                }
+                
+                it("catches nil and continues with new observable") {
+                    Single<Int?>
+                        .just(nil)
+                        .catchOnNil {
+                            return Single<Int>.just(2)
+                        }
+                        .subscribe(onSuccess: {
+                            expect($0).to(equal(2))
                         })
                         .dispose()
                 }

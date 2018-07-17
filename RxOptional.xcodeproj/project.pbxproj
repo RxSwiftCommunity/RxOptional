@@ -67,6 +67,8 @@
 		848273691DF9CE3C0083191B /* Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983BC1D9035A500409FC8 /* Occupiable.swift */; };
 		8482736A1DF9CE3C0083191B /* OptionalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983BD1D9035A500409FC8 /* OptionalType.swift */; };
 		8482736B1DF9CE3C0083191B /* RxOptionalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983BE1D9035A500409FC8 /* RxOptionalError.swift */; };
+		A9AD4DE9207C6D7E00298702 /* PrimitiveSequence+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD4DE8207C6D7E00298702 /* PrimitiveSequence+Optional.swift */; };
+		A9EFF2EE20FDE12E005A3187 /* PrimativeSequence+Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EFF2ED20FDE12E005A3187 /* PrimativeSequence+Occupiable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +138,8 @@
 		4B5983E81D9035BD00409FC8 /* OccupiableOperatorsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OccupiableOperatorsTests.swift; sourceTree = "<group>"; };
 		4B5983E91D9035BD00409FC8 /* OptionalOperatorsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalOperatorsTests.swift; sourceTree = "<group>"; };
 		848273561DF9C9660083191B /* RxOptional.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxOptional.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9AD4DE8207C6D7E00298702 /* PrimitiveSequence+Optional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PrimitiveSequence+Optional.swift"; sourceTree = "<group>"; };
+		A9EFF2ED20FDE12E005A3187 /* PrimativeSequence+Occupiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PrimativeSequence+Occupiable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,6 +276,8 @@
 				4B5983B91D9035A500409FC8 /* SharedSequence+Optional.swift */,
 				4B5983BA1D9035A500409FC8 /* Observable+Occupiable.swift */,
 				4B5983BB1D9035A500409FC8 /* Observable+Optional.swift */,
+				A9EFF2ED20FDE12E005A3187 /* PrimativeSequence+Occupiable.swift */,
+				A9AD4DE8207C6D7E00298702 /* PrimitiveSequence+Optional.swift */,
 				4B5983BC1D9035A500409FC8 /* Occupiable.swift */,
 				4B5983BD1D9035A500409FC8 /* OptionalType.swift */,
 				4B5983BE1D9035A500409FC8 /* RxOptionalError.swift */,
@@ -610,7 +616,9 @@
 				4B5983C61D9035A500409FC8 /* SharedSequence+Optional.swift in Sources */,
 				4B5983C21D9035A500409FC8 /* SharedSequence+Occupiable.swift in Sources */,
 				4B5983D21D9035A500409FC8 /* Occupiable.swift in Sources */,
+				A9EFF2EE20FDE12E005A3187 /* PrimativeSequence+Occupiable.swift in Sources */,
 				4B5983DA1D9035A500409FC8 /* RxOptionalError.swift in Sources */,
+				A9AD4DE9207C6D7E00298702 /* PrimitiveSequence+Optional.swift in Sources */,
 				4B5983CA1D9035A500409FC8 /* Observable+Occupiable.swift in Sources */,
 				4B5983CE1D9035A500409FC8 /* Observable+Optional.swift in Sources */,
 				4B5983D61D9035A500409FC8 /* OptionalType.swift in Sources */,

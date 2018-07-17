@@ -14,6 +14,8 @@ All operators are also available on `Driver` and `Signal`, unless otherwise note
 ### Optional Operators
 
 ##### filterNil
+Unavailable on `Single`, because `Single`s only emit once.
+
 ```swift
 Observable<String?>
     .of("One", nil, "Three")
@@ -104,6 +106,8 @@ For now the types listed above conform to `Occupiable`. You can also conform
 custom types to `Occupiable`.
 
 ##### filterEmpty
+Unavailable on `Single`, because `Single`s only emit once.
+
 ```swift
 Observable<[String]>
     .of(["Single Element"], [], ["Two", "Elements"])
