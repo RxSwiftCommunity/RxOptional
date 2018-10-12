@@ -858,7 +858,7 @@
 				PRODUCT_NAME = RxOptional;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -884,7 +884,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.RxOptional;
 				PRODUCT_NAME = RxOptional;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
