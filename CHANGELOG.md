@@ -1,6 +1,6 @@
 # master
 
-- Upgreades to RxSwift 4.3.1
+- Updated for Swift 4.2 and Xcode 10.
 
 # 3.5.0
 
