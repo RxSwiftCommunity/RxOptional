@@ -1,5 +1,7 @@
 # master
 
+- Updated for Swift 4.2 and Xcode 10.
+
 # 3.5.0
 
 - Loosen generic constraints to work with any SharingStrategy, instead of just Driver.
