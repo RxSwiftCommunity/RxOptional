@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Source/*.swift'
 
-  s.dependency 'RxSwift', '~> 4.3.1'
-  s.dependency 'RxCocoa', '~> 4.3.1'
+  s.dependency 'RxSwift', '~> 4.0'
+  s.dependency 'RxCocoa', '~> 4.0'
   s.frameworks = 'Foundation'
 end
