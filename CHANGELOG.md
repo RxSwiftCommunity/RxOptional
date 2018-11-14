@@ -2,6 +2,10 @@
 
 - Nothing yet!
 
+# 3.6.2
+
+- Updates RxSwift version.
+
 # 3.6.0
 
 - Updated for Swift 4.2 and Xcode 10.
