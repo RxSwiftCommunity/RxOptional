@@ -1,6 +1,6 @@
 # master
 
-- Nothing yet!
+- Update WatchOS deployment target to 3.0.
 
 # 3.6.2
 
