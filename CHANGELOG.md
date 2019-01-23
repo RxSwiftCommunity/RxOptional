@@ -1,6 +1,7 @@
 # master
 
 - Update WatchOS deployment target to 3.0.
+- Simplified the `Occupiable` conformances to target _all_ types that conform to `Collection`.
 
 # 3.6.2
 

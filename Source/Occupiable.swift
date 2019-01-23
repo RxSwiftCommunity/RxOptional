@@ -15,8 +15,4 @@ public extension Occupiable {
     }
 }
 
-extension String: Occupiable { }
-// I can't think of a way to combine these collection types. Suggestions welcomed!
-extension Array: Occupiable { }
-extension Dictionary: Occupiable { }
-extension Set: Occupiable { }
+extension Collection: Occupiable { }
