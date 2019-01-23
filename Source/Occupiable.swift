@@ -20,3 +20,14 @@ extension String: Occupiable { }
 extension Array: Occupiable { }
 extension Dictionary: Occupiable { }
 extension Set: Occupiable { }
+
+extension Optional: Occupiable where Wrapped: Occupiable {
+    public var isEmpty: Bool {
+        switch self {
+        case .none:
+            return true
+        case .some(let value):
+            return value.isEmpty
+        }
+    }
+}

@@ -1,6 +1,7 @@
 # master
 
 - Update WatchOS deployment target to 3.0.
+- Optional now conforms to Occupiable, which means you can call `isEmpty` and `isNotEmpty` directly on optional values.
 
 # 3.6.2
 
