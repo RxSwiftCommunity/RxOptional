@@ -7,7 +7,7 @@ public extension SharedSequenceConvertibleType where E: OptionalType {
      - returns: `Driver` of source `Driver`'s elements, with `nil` elements filtered out.
      */
     
-    public func filterNil() -> SharedSequence<SharingStrategy,E.Wrapped> {
+    func filterNil() -> SharedSequence<SharingStrategy,E.Wrapped> {
         return flatMap { element -> SharedSequence<SharingStrategy,E.Wrapped> in
             guard let value = element.value else {
                 return SharedSequence<SharingStrategy,E.Wrapped>.empty()
@@ -24,7 +24,7 @@ public extension SharedSequenceConvertibleType where E: OptionalType {
      - returns: `Driver` of the source `Driver`'s unwrapped elements, with `nil` elements replaced by `valueOnNil`.
      */
     
-    public func replaceNilWith(_ valueOnNil: E.Wrapped) -> SharedSequence<SharingStrategy,E.Wrapped> {
+    func replaceNilWith(_ valueOnNil: E.Wrapped) -> SharedSequence<SharingStrategy,E.Wrapped> {
         return map { element -> E.Wrapped in
             guard let value = element.value else {
                 return valueOnNil
@@ -41,7 +41,7 @@ public extension SharedSequenceConvertibleType where E: OptionalType {
      - returns: `Driver` of the source `Driver`'s unwrapped elements, with `nil` elements replaced by the handler's returned non-`nil` elements.
      */
     
-    public func catchOnNil(_ handler: @escaping () -> SharedSequence<SharingStrategy,E.Wrapped>) -> SharedSequence<SharingStrategy,E.Wrapped> {
+    func catchOnNil(_ handler: @escaping () -> SharedSequence<SharingStrategy,E.Wrapped>) -> SharedSequence<SharingStrategy,E.Wrapped> {
         return flatMap { element -> SharedSequence<SharingStrategy,E.Wrapped> in
             guard let value = element.value else {
                 return handler()
@@ -61,7 +61,7 @@ public extension SharedSequenceConvertibleType where E: OptionalType, E.Wrapped:
      - returns: An observable sequence only containing the distinct contiguous elements, based on equality operator, from the source sequence.
      */
     
-    public func distinctUntilChanged() -> SharedSequence<SharingStrategy,E> {
+    func distinctUntilChanged() -> SharedSequence<SharingStrategy,E> {
         return self.distinctUntilChanged { (lhs, rhs) -> Bool in
             return lhs.value == rhs.value
         }
