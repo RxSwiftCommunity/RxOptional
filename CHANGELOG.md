@@ -1,5 +1,6 @@
 # master
 
+- Bump major version requirement to RxSwift 5.0.
 - Update WatchOS deployment target to 3.0.
 
 # 3.6.2
