@@ -19,7 +19,7 @@ jobs:
             - v1-dep-
       - run:
           name: Bootstrap Carthage
-          command: scripts/bootstrap.sh
+          command: carthage build --no-use-binaries
       - save_cache:
           key: v1-dep-{{ .Branch }}-{{ epoch }}
           paths:
