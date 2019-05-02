@@ -8,12 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4B5983031D902BA600409FC8 /* RxOptional.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5982E11D902B8F00409FC8 /* RxOptional.framework */; };
-		4B5983661D902FEE00409FC8 /* RxOptional.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5982E11D902B8F00409FC8 /* RxOptional.framework */; };
 		4B5983801D902FF300409FC8 /* RxOptional.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5982E11D902B8F00409FC8 /* RxOptional.framework */; };
 		4B5983901D90306D00409FC8 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B59838E1D90306D00409FC8 /* Nimble.framework */; };
 		4B5983911D90306D00409FC8 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B59838F1D90306D00409FC8 /* Quick.framework */; };
-		4B5983921D90308700409FC8 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B59838E1D90306D00409FC8 /* Nimble.framework */; };
-		4B5983931D90308700409FC8 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B59838F1D90306D00409FC8 /* Quick.framework */; };
 		4B59839A1D90309B00409FC8 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5983981D90309B00409FC8 /* Nimble.framework */; };
 		4B59839B1D90309B00409FC8 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5983991D90309B00409FC8 /* Quick.framework */; };
 		4B59839E1D9030A800409FC8 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B59839C1D9030A800409FC8 /* RxCocoa.framework */; };
@@ -47,11 +44,9 @@
 		4B5983E31D9035A500409FC8 /* RxOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B5983C11D9035A500409FC8 /* RxOptional.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4B5983E41D9035A500409FC8 /* RxOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B5983C11D9035A500409FC8 /* RxOptional.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4B5983EE1D9035BD00409FC8 /* OccupiableOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983E81D9035BD00409FC8 /* OccupiableOperatorsTests.swift */; };
-		4B5983EF1D9035BD00409FC8 /* OccupiableOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983E81D9035BD00409FC8 /* OccupiableOperatorsTests.swift */; };
 		4B5983F01D9035BD00409FC8 /* OccupiableOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983E81D9035BD00409FC8 /* OccupiableOperatorsTests.swift */; };
 		4B5983F11D9035BD00409FC8 /* OccupiableOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983E81D9035BD00409FC8 /* OccupiableOperatorsTests.swift */; };
 		4B5983F21D9035BD00409FC8 /* OptionalOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983E91D9035BD00409FC8 /* OptionalOperatorsTests.swift */; };
-		4B5983F31D9035BD00409FC8 /* OptionalOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983E91D9035BD00409FC8 /* OptionalOperatorsTests.swift */; };
 		4B5983F41D9035BD00409FC8 /* OptionalOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983E91D9035BD00409FC8 /* OptionalOperatorsTests.swift */; };
 		4B5983F51D9035BD00409FC8 /* OptionalOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983E91D9035BD00409FC8 /* OptionalOperatorsTests.swift */; };
 		783A3C7220D6B6D70022CF68 /* RxOptional.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5983391D902F0800409FC8 /* RxOptional.framework */; };
@@ -77,13 +72,6 @@
 			remoteGlobalIDString = 4B5982E01D902B8F00409FC8;
 			remoteInfo = RxOptional;
 		};
-		4B5983871D90303600409FC8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4B5982D81D902B8F00409FC8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4B5983171D902EFD00409FC8;
-			remoteInfo = "RxOptional watchOS";
-		};
 		4B5983891D90303C00409FC8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4B5982D81D902B8F00409FC8 /* Project object */;
@@ -103,10 +91,8 @@
 /* Begin PBXFileReference section */
 		4B5982E11D902B8F00409FC8 /* RxOptional.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxOptional.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B5982FE1D902BA600409FC8 /* RxOptional iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RxOptional iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B5983091D902EC000409FC8 /* Examples.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Examples.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		4B5983271D902EFD00409FC8 /* RxOptional.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxOptional.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B5983391D902F0800409FC8 /* RxOptional.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxOptional.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B59836B1D902FEE00409FC8 /* RxOptional watchOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RxOptional watchOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B5983781D902FF100409FC8 /* RxOptional macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RxOptional macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B5983851D902FF300409FC8 /* RxOptional tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RxOptional tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B59838E1D90306D00409FC8 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
@@ -136,6 +122,7 @@
 		4B5983E81D9035BD00409FC8 /* OccupiableOperatorsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OccupiableOperatorsTests.swift; sourceTree = "<group>"; };
 		4B5983E91D9035BD00409FC8 /* OptionalOperatorsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalOperatorsTests.swift; sourceTree = "<group>"; };
 		848273561DF9C9660083191B /* RxOptional.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxOptional.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2B44FCF227B866600E0763B /* Examples.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Examples.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,16 +163,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4B5983651D902FEE00409FC8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4B5983661D902FEE00409FC8 /* RxOptional.framework in Frameworks */,
-				4B5983921D90308700409FC8 /* Nimble.framework in Frameworks */,
-				4B5983931D90308700409FC8 /* Quick.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4B5983721D902FF100409FC8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -221,7 +198,7 @@
 		4B5982D71D902B8F00409FC8 = {
 			isa = PBXGroup;
 			children = (
-				4B5983091D902EC000409FC8 /* Examples.playground */,
+				A2B44FCF227B866600E0763B /* Examples.playground */,
 				4B5983B71D9035A500409FC8 /* Source */,
 				4B5983E61D9035BD00409FC8 /* Test */,
 				4B5982E21D902B8F00409FC8 /* Products */,
@@ -236,7 +213,6 @@
 				4B5982FE1D902BA600409FC8 /* RxOptional iOS Tests.xctest */,
 				4B5983271D902EFD00409FC8 /* RxOptional.framework */,
 				4B5983391D902F0800409FC8 /* RxOptional.framework */,
-				4B59836B1D902FEE00409FC8 /* RxOptional watchOS Tests.xctest */,
 				4B5983781D902FF100409FC8 /* RxOptional macOS Tests.xctest */,
 				4B5983851D902FF300409FC8 /* RxOptional tvOS Tests.xctest */,
 				848273561DF9C9660083191B /* RxOptional.framework */,
@@ -409,24 +385,6 @@
 			productReference = 4B5983391D902F0800409FC8 /* RxOptional.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		4B5983601D902FEE00409FC8 /* RxOptional watchOS Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4B5983681D902FEE00409FC8 /* Build configuration list for PBXNativeTarget "RxOptional watchOS Tests" */;
-			buildPhases = (
-				4B5983631D902FEE00409FC8 /* Sources */,
-				4B5983651D902FEE00409FC8 /* Frameworks */,
-				4B5983671D902FEE00409FC8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4B5983881D90303600409FC8 /* PBXTargetDependency */,
-			);
-			name = "RxOptional watchOS Tests";
-			productName = RxOptionalTests;
-			productReference = 4B59836B1D902FEE00409FC8 /* RxOptional watchOS Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		4B59836D1D902FF100409FC8 /* RxOptional macOS Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B5983751D902FF100409FC8 /* Build configuration list for PBXNativeTarget "RxOptional macOS Tests" */;
@@ -488,7 +446,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = muukii;
 				TargetAttributes = {
 					4B5982E01D902B8F00409FC8 = {
@@ -502,9 +460,6 @@
 						ProvisioningStyle = Automatic;
 					};
 					4B5983171D902EFD00409FC8 = {
-						DevelopmentTeam = KU2QEJ9K3Z;
-					};
-					4B5983601D902FEE00409FC8 = {
 						DevelopmentTeam = KU2QEJ9K3Z;
 					};
 					4B59836D1D902FF100409FC8 = {
@@ -521,10 +476,11 @@
 			};
 			buildConfigurationList = 4B5982DB1D902B8F00409FC8 /* Build configuration list for PBXProject "RxOptional" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 4B5982D71D902B8F00409FC8;
 			productRefGroup = 4B5982E21D902B8F00409FC8 /* Products */;
@@ -534,7 +490,6 @@
 				4B5982E01D902B8F00409FC8 /* RxOptional iOS */,
 				4B5982FD1D902BA600409FC8 /* RxOptional iOS Tests */,
 				4B5983171D902EFD00409FC8 /* RxOptional watchOS */,
-				4B5983601D902FEE00409FC8 /* RxOptional watchOS Tests */,
 				4B5983291D902F0800409FC8 /* RxOptional macOS */,
 				4B59836D1D902FF100409FC8 /* RxOptional macOS Tests */,
 				848273551DF9C9660083191B /* RxOptional tvOS */,
@@ -566,13 +521,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4B5983351D902F0800409FC8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4B5983671D902FEE00409FC8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -654,15 +602,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4B5983631D902FEE00409FC8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4B5983EF1D9035BD00409FC8 /* OccupiableOperatorsTests.swift in Sources */,
-				4B5983F31D9035BD00409FC8 /* OptionalOperatorsTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4B5983701D902FF100409FC8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -703,11 +642,6 @@
 			target = 4B5982E01D902B8F00409FC8 /* RxOptional iOS */;
 			targetProxy = 4B5983041D902BA600409FC8 /* PBXContainerItemProxy */;
 		};
-		4B5983881D90303600409FC8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4B5983171D902EFD00409FC8 /* RxOptional watchOS */;
-			targetProxy = 4B5983871D90303600409FC8 /* PBXContainerItemProxy */;
-		};
 		4B59838A1D90303C00409FC8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4B5983291D902F0800409FC8 /* RxOptional macOS */;
@@ -726,6 +660,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -772,12 +707,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -788,6 +724,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -828,10 +765,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -854,13 +792,13 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.RxOptional;
 				PRODUCT_NAME = RxOptional;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -881,12 +819,12 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.RxOptional;
 				PRODUCT_NAME = RxOptional;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -902,10 +840,11 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				INFOPLIST_FILE = Test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(SRCROOT)/Carthage/Build/iOS";
 				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.RxOptionalTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -920,10 +859,11 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				INFOPLIST_FILE = Test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(SRCROOT)/Carthage/Build/iOS";
 				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.RxOptionalTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -943,16 +883,16 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.RxOptional;
 				PRODUCT_NAME = RxOptional;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Debug;
 		};
@@ -972,15 +912,15 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.RxOptional;
 				PRODUCT_NAME = RxOptional;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Release;
 		};
@@ -1001,6 +941,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.RxOptional;
@@ -1008,7 +949,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1029,47 +970,14 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.RxOptional;
 				PRODUCT_NAME = RxOptional;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
-		4B5983691D902FEE00409FC8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = KU2QEJ9K3Z;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = Test/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(SRCROOT)/Carthage/Build/watchOS";
-				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.RxOptionalTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SWIFT_VERSION = 4.0;
-			};
-			name = Debug;
-		};
-		4B59836A1D902FEE00409FC8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = KU2QEJ9K3Z;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = Test/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(SRCROOT)/Carthage/Build/watchOS";
-				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.RxOptionalTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1083,11 +991,12 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				INFOPLIST_FILE = Test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(SRCROOT)/Carthage/Build/Mac @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.RxOptionalTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1101,11 +1010,12 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				INFOPLIST_FILE = Test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(SRCROOT)/Carthage/Build/Mac @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.RxOptionalTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1120,11 +1030,12 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(SRCROOT)/Carthage/Build/tvOS";
 				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.RxOptionalTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1139,11 +1050,12 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(SRCROOT)/Carthage/Build/tvOS";
 				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.RxOptionalTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1162,12 +1074,13 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.RxOptional;
 				PRODUCT_NAME = RxOptional;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -1188,12 +1101,13 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.RxOptional;
 				PRODUCT_NAME = RxOptional;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -1243,15 +1157,6 @@
 			buildConfigurations = (
 				4B5983371D902F0800409FC8 /* Debug */,
 				4B5983381D902F0800409FC8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4B5983681D902FEE00409FC8 /* Build configuration list for PBXNativeTarget "RxOptional watchOS Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4B5983691D902FEE00409FC8 /* Debug */,
-				4B59836A1D902FEE00409FC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
