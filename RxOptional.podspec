@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name        = 'RxOptional'
-  s.version     = '3.6.2'
+  s.version     = '4.0.0'
   s.summary     = 'RxSwift extensions for Swift optionals and Occupiable types'
 
   s.description = <<-DESC
@@ -15,14 +15,14 @@ Pod::Spec.new do |s|
                     :tag => s.version.to_s
                   }
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
   s.osx.deployment_target = '10.10'
-  s.watchos.deployment_target = '2.0'
+  s.watchos.deployment_target = '3.0'
   s.tvos.deployment_target = '9.0'
 
   s.source_files = 'Source/*.swift'
 
-  s.dependency 'RxSwift', '~> 4.0'
-  s.dependency 'RxCocoa', '~> 4.0'
+  s.dependency 'RxSwift', '~> 5'
+  s.dependency 'RxCocoa', '~> 5'
   s.frameworks = 'Foundation'
 end

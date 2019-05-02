@@ -8,7 +8,7 @@ jobs:
       XCODE_TEST_REPORTS: /tmp/xcode-test-results
       LANG: en_US.UTF-8
     macos:
-      xcode: '10.0.0'
+      xcode: '10.2.0'
     steps:
       - checkout
       - run: mkdir -p $CIRCLE_ARTIFACTS $CIRCLE_TEST_REPORTS $XCODE_TEST_REPORTS
@@ -25,20 +25,20 @@ jobs:
           paths:
             - Carthage
       - run:
-          name: Test macOS, Swift 4
-          command: set -o pipefail && xcodebuild test SWIFT_VERSION=4.0 -scheme "RxOptional macOS" -project RxOptional.xcodeproj -sdk macosx -destination "arch=x86_64" | xcpretty -c -r html --output $XCODE_TEST_REPORTS/macOS_swift4.html
+          name: Test macOS, Swift 5
+          command: set -o pipefail && xcodebuild test SWIFT_VERSION=5.0 -scheme "RxOptional macOS" -project RxOptional.xcodeproj -sdk macosx -destination "arch=x86_64" | xcpretty -c -r html --output $XCODE_TEST_REPORTS/macOS_swift5.html
       - run:
           name: Test macOS, Swift 4.2
           command: set -o pipefail && xcodebuild test SWIFT_VERSION=4.2 -scheme "RxOptional macOS" -project RxOptional.xcodeproj -sdk macosx -destination "arch=x86_64" | xcpretty -c -r html --output $XCODE_TEST_REPORTS/macOS_swift4_2.html
       - run:
-          name: Test iOS, Swift 4
-          command: set -o pipefail && xcodebuild test SWIFT_VERSION=4.0 -scheme "RxOptional iOS" -project RxOptional.xcodeproj -sdk iphonesimulator -destination "name=iPhone X" | xcpretty -c -r html --output $XCODE_TEST_REPORTS/iOS_swift4.html
+          name: Test iOS, Swift 5
+          command: set -o pipefail && xcodebuild test SWIFT_VERSION=5.0 -scheme "RxOptional iOS" -project RxOptional.xcodeproj -sdk iphonesimulator -destination "name=iPhone X" | xcpretty -c -r html --output $XCODE_TEST_REPORTS/iOS_swift5.html
       - run:
           name: Test iOS, Swift 4.2
           command: set -o pipefail && xcodebuild test SWIFT_VERSION=4.2 -scheme "RxOptional iOS" -project RxOptional.xcodeproj -sdk iphonesimulator -destination "name=iPhone X" | xcpretty -c -r html --output $XCODE_TEST_REPORTS/iOS_swift4.2.html
       - run:
-          name: Test tvOS, Swift 4
-          command: set -o pipefail && xcodebuild test SWIFT_VERSION=4.0 -scheme "RxOptional tvOS" -project RxOptional.xcodeproj -sdk appletvsimulator -destination "name=Apple TV 4K (at 1080p)" | xcpretty -c -r html --output $XCODE_TEST_REPORTS/tvOS_swift4.html
+          name: Test tvOS, Swift 5
+          command: set -o pipefail && xcodebuild test SWIFT_VERSION=5.0 -scheme "RxOptional tvOS" -project RxOptional.xcodeproj -sdk appletvsimulator -destination "name=Apple TV 4K (at 1080p)" | xcpretty -c -r html --output $XCODE_TEST_REPORTS/tvOS_swift5.html
       - run:
           name: Test tvOS, Swift 4.2
           command: set -o pipefail && xcodebuild test SWIFT_VERSION=4.2 -scheme "RxOptional tvOS" -project RxOptional.xcodeproj -sdk appletvsimulator -destination "name=Apple TV 4K (at 1080p)" | xcpretty -c -r html --output $XCODE_TEST_REPORTS/tvOS_swift4_2.html
@@ -51,7 +51,7 @@ jobs:
     environment:
       LANG: en_US.UTF-8
     macos:
-      xcode: '10.0.0'
+      xcode: '10.2.0'
     steps:
       - checkout
       - run:

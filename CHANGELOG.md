@@ -1,5 +1,9 @@
 # master
 
+# 4.0.0
+
+- Requires RxSwift 5 & Xcode 10.2.
+- Minimum iOS deployment target is iOS 9.
 - Update WatchOS deployment target to 3.0.
 
 # 3.6.2
