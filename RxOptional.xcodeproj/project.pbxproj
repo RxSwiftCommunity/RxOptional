@@ -121,6 +121,7 @@
 		4B5983E71D9035BD00409FC8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B5983E81D9035BD00409FC8 /* OccupiableOperatorsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OccupiableOperatorsTests.swift; sourceTree = "<group>"; };
 		4B5983E91D9035BD00409FC8 /* OptionalOperatorsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalOperatorsTests.swift; sourceTree = "<group>"; };
+		8260378F2331307B00E3F5EA /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		848273561DF9C9660083191B /* RxOptional.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxOptional.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2B44FCF227B866600E0763B /* Examples.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Examples.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
@@ -198,6 +199,7 @@
 		4B5982D71D902B8F00409FC8 = {
 			isa = PBXGroup;
 			children = (
+				8260378F2331307B00E3F5EA /* Package.swift */,
 				A2B44FCF227B866600E0763B /* Examples.playground */,
 				4B5983B71D9035A500409FC8 /* Source */,
 				4B5983E61D9035BD00409FC8 /* Test */,
