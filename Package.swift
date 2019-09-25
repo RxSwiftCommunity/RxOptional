@@ -18,12 +18,12 @@ let package = Package(
         .target(
             name: "RxOptional",
             dependencies: ["RxSwift", "RxCocoa"],
-            path: "Sources"
+            path: "Source"
         ),
         .testTarget(
             name: "RxOptionalTests",
             dependencies: ["RxOptional", "Quick", "Nimble"],
-            path: "Tests"
+            path: "Test"
         )
     ],
     swiftLanguageVersions: [.v5]
