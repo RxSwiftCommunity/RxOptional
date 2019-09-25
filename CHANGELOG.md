@@ -1,5 +1,9 @@
 # master
 
+# 4.1.0
+
+- Support SPM(Swift Package Manager)
+
 # 4.0.0
 
 - Requires RxSwift 5 & Xcode 10.2.
