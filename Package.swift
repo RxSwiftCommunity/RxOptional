@@ -12,7 +12,7 @@ let package = Package(
     targets: [
         .target(
             name: "RxOptional",
-            dependencies: ["RxSwift"],
+            dependencies: ["RxSwift", "RxCocoa"],
             path: "Sources"
         )
     ],
