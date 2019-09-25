@@ -199,8 +199,8 @@
 			isa = PBXGroup;
 			children = (
 				A2B44FCF227B866600E0763B /* Examples.playground */,
-				4B5983B71D9035A500409FC8 /* Source */,
-				4B5983E61D9035BD00409FC8 /* Test */,
+				4B5983B71D9035A500409FC8 /* Sources */,
+				4B5983E61D9035BD00409FC8 /* Tests */,
 				4B5982E21D902B8F00409FC8 /* Products */,
 				4B59838D1D90306D00409FC8 /* Frameworks */,
 			);
@@ -241,7 +241,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4B5983B71D9035A500409FC8 /* Source */ = {
+		4B5983B71D9035A500409FC8 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				4B5983B81D9035A500409FC8 /* SharedSequence+Occupiable.swift */,
@@ -253,7 +253,7 @@
 				4B5983BE1D9035A500409FC8 /* RxOptionalError.swift */,
 				4B5983BF1D9035A500409FC8 /* Supporting Files */,
 			);
-			path = Source;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		4B5983BF1D9035A500409FC8 /* Supporting Files */ = {
@@ -265,14 +265,14 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4B5983E61D9035BD00409FC8 /* Test */ = {
+		4B5983E61D9035BD00409FC8 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				4B5983E71D9035BD00409FC8 /* Info.plist */,
 				4B5983E81D9035BD00409FC8 /* OccupiableOperatorsTests.swift */,
 				4B5983E91D9035BD00409FC8 /* OptionalOperatorsTests.swift */,
 			);
-			path = Test;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -790,7 +790,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -817,7 +817,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -881,7 +881,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/watchOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -910,7 +910,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/watchOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -939,7 +939,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -968,7 +968,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1072,7 +1072,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1099,7 +1099,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

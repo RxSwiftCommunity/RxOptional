@@ -15,5 +15,6 @@ let package = Package(
             dependencies: ["RxSwift"],
             path: "Sources"
         )
-    ]
+    ],
+    swiftLanguageVersions: [.v5]
 )
