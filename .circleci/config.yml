@@ -42,6 +42,9 @@ jobs:
       - run:
           name: Test tvOS, Swift 4.2
           command: set -o pipefail && xcodebuild test SWIFT_VERSION=4.2 -scheme "RxOptional tvOS" -project RxOptional.xcodeproj -sdk appletvsimulator -destination "name=Apple TV 4K (at 1080p)" | xcpretty -c -r html --output $XCODE_TEST_REPORTS/tvOS_swift4_2.html
+      - run:
+          name: Test Swift Package
+          command: swift test
       - store_artifacts:
           path: /tmp/xcode-test-results
   "RxOptional Release":
