@@ -3,8 +3,8 @@ import PackageDescription
 
 let package = Package(
     name: "RxOptional",
-    platform: [
-        .macOS(.v10_10), .iOS(.v9), .tvOS(v9), .watchOS(.v3)
+    platforms: [
+        .macOS(.v10_10), .iOS(.v9), .tvOS(.v9), .watchOS(.v3)
     ],
     products: [
         .library(name: "RxOptional", targets: ["RxOptional"]),
