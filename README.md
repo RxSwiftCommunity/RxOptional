@@ -211,7 +211,7 @@ import PackageDescription
 let package = Package(
     name: "ProjectName",
     dependencies: [
-        .Package(url: "https://github.com/RxSwiftCommunity/RxOptional", .upToNextMajor(from: "3.1.3"))
+        .Package(url: "https://github.com/RxSwiftCommunity/RxOptional")
     ]
 )
 ```
