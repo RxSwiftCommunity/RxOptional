@@ -8,7 +8,7 @@ jobs:
       XCODE_TEST_REPORTS: /tmp/xcode-test-results
       LANG: en_US.UTF-8
     macos:
-      xcode: '10.2.0'
+      xcode: "10.2.0"
     steps:
       - checkout
       - run: mkdir -p $CIRCLE_ARTIFACTS $CIRCLE_TEST_REPORTS $XCODE_TEST_REPORTS
@@ -17,7 +17,7 @@ jobs:
             - v1-dep-{{ .Branch }}-
             - v1-dep-master-
             - v1-dep-
-      - run: 
+      - run:
           name: Bootstrap Carthage
           command: scripts/bootstrap-if-needed.sh
       - save_cache:
@@ -42,6 +42,9 @@ jobs:
       - run:
           name: Test tvOS, Swift 4.2
           command: set -o pipefail && xcodebuild test SWIFT_VERSION=4.2 -scheme "RxOptional tvOS" -project RxOptional.xcodeproj -sdk appletvsimulator -destination "name=Apple TV 4K (at 1080p)" | xcpretty -c -r html --output $XCODE_TEST_REPORTS/tvOS_swift4_2.html
+      - run:
+          name: Test Swift Package
+          command: swift test | xcpretty -c -r html --output $XCODE_TEST_REPORTS/SPM_swift5.html
       - store_artifacts:
           path: /tmp/xcode-test-results
   "RxOptional Release":
@@ -51,7 +54,7 @@ jobs:
     environment:
       LANG: en_US.UTF-8
     macos:
-      xcode: '10.2.0'
+      xcode: "10.2.0"
     steps:
       - checkout
       - run:
