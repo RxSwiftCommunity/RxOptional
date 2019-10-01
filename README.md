@@ -205,7 +205,7 @@ $ carthage update
 
 To use RxOptional as a Swift Package Manager package just add the following in your Package.swift file.
 
-```
+```swift
 import PackageDescription
 
 let package = Package(
