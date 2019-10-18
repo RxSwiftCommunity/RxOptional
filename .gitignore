@@ -35,3 +35,7 @@ Pods/
 
 # Swift Package Manager
 .build/
+Packages
+xcuserdata
+DerivedData/
+*.xcodeproj
