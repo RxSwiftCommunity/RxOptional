@@ -25,6 +25,9 @@ jobs:
           paths:
             - Carthage
       - run:
+          name: Generate xcodeproj
+          command: swift package --generate-xcodeproj
+      - run:
           name: Test macOS, Swift 5
           command: set -o pipefail && xcodebuild test SWIFT_VERSION=5.0 -scheme "RxOptional-Package" -project RxOptional.xcodeproj -sdk macosx -destination "arch=x86_64" | xcpretty -c -r html --output $XCODE_TEST_REPORTS/macOS_swift5.html
       - run:
