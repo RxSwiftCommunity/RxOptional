@@ -47,18 +47,10 @@
 		12C50B96235DF6D900AB72E1 /* LinuxMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B8C235DF6D900AB72E1 /* LinuxMain.swift */; };
 		12C50B97235DF6D900AB72E1 /* LinuxMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B8C235DF6D900AB72E1 /* LinuxMain.swift */; };
 		12C50B98235DF6D900AB72E1 /* LinuxMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B8C235DF6D900AB72E1 /* LinuxMain.swift */; };
-		12C50B9E235DF8C200AB72E1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12C50B9B235DF8C200AB72E1 /* Info.plist */; };
-		12C50BA0235DF97600AB72E1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12C50B9F235DF97600AB72E1 /* Info.plist */; };
-		12C50BA1235DF97600AB72E1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12C50B9F235DF97600AB72E1 /* Info.plist */; };
-		12C50BA2235DF97600AB72E1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12C50B9F235DF97600AB72E1 /* Info.plist */; };
 		12C50BA3235DF9E300AB72E1 /* RxOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = 12C50B9A235DF8C200AB72E1 /* RxOptional.h */; };
 		12C50BA4235DF9E300AB72E1 /* RxOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = 12C50B9A235DF8C200AB72E1 /* RxOptional.h */; };
 		12C50BA5235DF9E400AB72E1 /* RxOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = 12C50B9A235DF8C200AB72E1 /* RxOptional.h */; };
 		12C50BA6235DF9E500AB72E1 /* RxOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = 12C50B9A235DF8C200AB72E1 /* RxOptional.h */; };
-		12C50BA7235DF9EA00AB72E1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12C50B9B235DF8C200AB72E1 /* Info.plist */; };
-		12C50BA8235DF9EB00AB72E1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12C50B9B235DF8C200AB72E1 /* Info.plist */; };
-		12C50BA9235DF9EC00AB72E1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12C50B9B235DF8C200AB72E1 /* Info.plist */; };
-		12C50BAA235DF9ED00AB72E1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12C50B9B235DF8C200AB72E1 /* Info.plist */; };
 		4B5983031D902BA600409FC8 /* RxOptional.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5982E11D902B8F00409FC8 /* RxOptional.framework */; };
 		4B5983801D902FF300409FC8 /* RxOptional.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5982E11D902B8F00409FC8 /* RxOptional.framework */; };
 		4B5983901D90306D00409FC8 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B59838E1D90306D00409FC8 /* Nimble.framework */; };
@@ -539,7 +531,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12C50BA7235DF9EA00AB72E1 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,7 +538,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12C50BA0235DF97600AB72E1 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,7 +545,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12C50BA8235DF9EB00AB72E1 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,7 +552,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12C50BA9235DF9EC00AB72E1 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,7 +559,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12C50BA1235DF97600AB72E1 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,8 +566,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12C50BA2235DF97600AB72E1 /* Info.plist in Resources */,
-				12C50B9E235DF8C200AB72E1 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,7 +573,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12C50BAA235DF9ED00AB72E1 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
