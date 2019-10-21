@@ -7,6 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12C50B56235DF6B200AB72E1 /* Observable+Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B4F235DF6B200AB72E1 /* Observable+Occupiable.swift */; };
+		12C50B58235DF6B300AB72E1 /* Observable+Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B4F235DF6B200AB72E1 /* Observable+Occupiable.swift */; };
+		12C50B59235DF6B300AB72E1 /* Observable+Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B4F235DF6B200AB72E1 /* Observable+Occupiable.swift */; };
+		12C50B5B235DF6B300AB72E1 /* Observable+Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B4F235DF6B200AB72E1 /* Observable+Occupiable.swift */; };
+		12C50B5D235DF6B300AB72E1 /* RxOptionalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B50235DF6B200AB72E1 /* RxOptionalError.swift */; };
+		12C50B5F235DF6B300AB72E1 /* RxOptionalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B50235DF6B200AB72E1 /* RxOptionalError.swift */; };
+		12C50B60235DF6B300AB72E1 /* RxOptionalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B50235DF6B200AB72E1 /* RxOptionalError.swift */; };
+		12C50B62235DF6B300AB72E1 /* RxOptionalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B50235DF6B200AB72E1 /* RxOptionalError.swift */; };
+		12C50B64235DF6B300AB72E1 /* Observable+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B51235DF6B200AB72E1 /* Observable+Optional.swift */; };
+		12C50B66235DF6B300AB72E1 /* Observable+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B51235DF6B200AB72E1 /* Observable+Optional.swift */; };
+		12C50B67235DF6B300AB72E1 /* Observable+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B51235DF6B200AB72E1 /* Observable+Optional.swift */; };
+		12C50B69235DF6B300AB72E1 /* Observable+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B51235DF6B200AB72E1 /* Observable+Optional.swift */; };
+		12C50B6B235DF6B300AB72E1 /* SharedSequence+Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B52235DF6B200AB72E1 /* SharedSequence+Occupiable.swift */; };
+		12C50B6D235DF6B300AB72E1 /* SharedSequence+Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B52235DF6B200AB72E1 /* SharedSequence+Occupiable.swift */; };
+		12C50B6E235DF6B300AB72E1 /* SharedSequence+Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B52235DF6B200AB72E1 /* SharedSequence+Occupiable.swift */; };
+		12C50B70235DF6B300AB72E1 /* SharedSequence+Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B52235DF6B200AB72E1 /* SharedSequence+Occupiable.swift */; };
+		12C50B72235DF6B300AB72E1 /* OptionalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B53235DF6B200AB72E1 /* OptionalType.swift */; };
+		12C50B74235DF6B300AB72E1 /* OptionalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B53235DF6B200AB72E1 /* OptionalType.swift */; };
+		12C50B75235DF6B300AB72E1 /* OptionalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B53235DF6B200AB72E1 /* OptionalType.swift */; };
+		12C50B77235DF6B300AB72E1 /* OptionalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B53235DF6B200AB72E1 /* OptionalType.swift */; };
+		12C50B79235DF6B300AB72E1 /* Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B54235DF6B200AB72E1 /* Occupiable.swift */; };
+		12C50B7B235DF6B300AB72E1 /* Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B54235DF6B200AB72E1 /* Occupiable.swift */; };
+		12C50B7C235DF6B300AB72E1 /* Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B54235DF6B200AB72E1 /* Occupiable.swift */; };
+		12C50B7E235DF6B300AB72E1 /* Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B54235DF6B200AB72E1 /* Occupiable.swift */; };
+		12C50B80235DF6B300AB72E1 /* SharedSequence+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B55235DF6B200AB72E1 /* SharedSequence+Optional.swift */; };
+		12C50B82235DF6B300AB72E1 /* SharedSequence+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B55235DF6B200AB72E1 /* SharedSequence+Optional.swift */; };
+		12C50B83235DF6B300AB72E1 /* SharedSequence+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B55235DF6B200AB72E1 /* SharedSequence+Optional.swift */; };
+		12C50B85235DF6B300AB72E1 /* SharedSequence+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B55235DF6B200AB72E1 /* SharedSequence+Optional.swift */; };
+		12C50B8D235DF6D900AB72E1 /* OptionalOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B89235DF6D900AB72E1 /* OptionalOperatorsTests.swift */; };
+		12C50B8E235DF6D900AB72E1 /* OptionalOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B89235DF6D900AB72E1 /* OptionalOperatorsTests.swift */; };
+		12C50B8F235DF6D900AB72E1 /* OptionalOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B89235DF6D900AB72E1 /* OptionalOperatorsTests.swift */; };
+		12C50B90235DF6D900AB72E1 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B8A235DF6D900AB72E1 /* XCTestManifests.swift */; };
+		12C50B91235DF6D900AB72E1 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B8A235DF6D900AB72E1 /* XCTestManifests.swift */; };
+		12C50B92235DF6D900AB72E1 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B8A235DF6D900AB72E1 /* XCTestManifests.swift */; };
+		12C50B93235DF6D900AB72E1 /* OccupiableOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B8B235DF6D900AB72E1 /* OccupiableOperatorsTests.swift */; };
+		12C50B94235DF6D900AB72E1 /* OccupiableOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B8B235DF6D900AB72E1 /* OccupiableOperatorsTests.swift */; };
+		12C50B95235DF6D900AB72E1 /* OccupiableOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B8B235DF6D900AB72E1 /* OccupiableOperatorsTests.swift */; };
+		12C50BA3235DF9E300AB72E1 /* RxOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = 12C50B9A235DF8C200AB72E1 /* RxOptional.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12C50BA4235DF9E300AB72E1 /* RxOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = 12C50B9A235DF8C200AB72E1 /* RxOptional.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12C50BA5235DF9E400AB72E1 /* RxOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = 12C50B9A235DF8C200AB72E1 /* RxOptional.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12C50BA6235DF9E500AB72E1 /* RxOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = 12C50B9A235DF8C200AB72E1 /* RxOptional.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4B5983031D902BA600409FC8 /* RxOptional.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5982E11D902B8F00409FC8 /* RxOptional.framework */; };
 		4B5983801D902FF300409FC8 /* RxOptional.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5982E11D902B8F00409FC8 /* RxOptional.framework */; };
 		4B5983901D90306D00409FC8 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B59838E1D90306D00409FC8 /* Nimble.framework */; };
@@ -19,49 +60,11 @@
 		4B5983A31D9030B300409FC8 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5983A11D9030B300409FC8 /* RxSwift.framework */; };
 		4B5983A61D9030C100409FC8 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5983A41D9030C100409FC8 /* RxCocoa.framework */; };
 		4B5983A71D9030C100409FC8 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5983A51D9030C100409FC8 /* RxSwift.framework */; };
-		4B5983C21D9035A500409FC8 /* SharedSequence+Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983B81D9035A500409FC8 /* SharedSequence+Occupiable.swift */; };
-		4B5983C31D9035A500409FC8 /* SharedSequence+Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983B81D9035A500409FC8 /* SharedSequence+Occupiable.swift */; };
-		4B5983C41D9035A500409FC8 /* SharedSequence+Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983B81D9035A500409FC8 /* SharedSequence+Occupiable.swift */; };
-		4B5983C61D9035A500409FC8 /* SharedSequence+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983B91D9035A500409FC8 /* SharedSequence+Optional.swift */; };
-		4B5983C71D9035A500409FC8 /* SharedSequence+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983B91D9035A500409FC8 /* SharedSequence+Optional.swift */; };
-		4B5983C81D9035A500409FC8 /* SharedSequence+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983B91D9035A500409FC8 /* SharedSequence+Optional.swift */; };
-		4B5983CA1D9035A500409FC8 /* Observable+Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983BA1D9035A500409FC8 /* Observable+Occupiable.swift */; };
-		4B5983CB1D9035A500409FC8 /* Observable+Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983BA1D9035A500409FC8 /* Observable+Occupiable.swift */; };
-		4B5983CC1D9035A500409FC8 /* Observable+Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983BA1D9035A500409FC8 /* Observable+Occupiable.swift */; };
-		4B5983CE1D9035A500409FC8 /* Observable+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983BB1D9035A500409FC8 /* Observable+Optional.swift */; };
-		4B5983CF1D9035A500409FC8 /* Observable+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983BB1D9035A500409FC8 /* Observable+Optional.swift */; };
-		4B5983D01D9035A500409FC8 /* Observable+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983BB1D9035A500409FC8 /* Observable+Optional.swift */; };
-		4B5983D21D9035A500409FC8 /* Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983BC1D9035A500409FC8 /* Occupiable.swift */; };
-		4B5983D31D9035A500409FC8 /* Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983BC1D9035A500409FC8 /* Occupiable.swift */; };
-		4B5983D41D9035A500409FC8 /* Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983BC1D9035A500409FC8 /* Occupiable.swift */; };
-		4B5983D61D9035A500409FC8 /* OptionalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983BD1D9035A500409FC8 /* OptionalType.swift */; };
-		4B5983D71D9035A500409FC8 /* OptionalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983BD1D9035A500409FC8 /* OptionalType.swift */; };
-		4B5983D81D9035A500409FC8 /* OptionalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983BD1D9035A500409FC8 /* OptionalType.swift */; };
-		4B5983DA1D9035A500409FC8 /* RxOptionalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983BE1D9035A500409FC8 /* RxOptionalError.swift */; };
-		4B5983DB1D9035A500409FC8 /* RxOptionalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983BE1D9035A500409FC8 /* RxOptionalError.swift */; };
-		4B5983DC1D9035A500409FC8 /* RxOptionalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983BE1D9035A500409FC8 /* RxOptionalError.swift */; };
-		4B5983E21D9035A500409FC8 /* RxOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B5983C11D9035A500409FC8 /* RxOptional.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4B5983E31D9035A500409FC8 /* RxOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B5983C11D9035A500409FC8 /* RxOptional.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4B5983E41D9035A500409FC8 /* RxOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B5983C11D9035A500409FC8 /* RxOptional.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4B5983EE1D9035BD00409FC8 /* OccupiableOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983E81D9035BD00409FC8 /* OccupiableOperatorsTests.swift */; };
-		4B5983F01D9035BD00409FC8 /* OccupiableOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983E81D9035BD00409FC8 /* OccupiableOperatorsTests.swift */; };
-		4B5983F11D9035BD00409FC8 /* OccupiableOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983E81D9035BD00409FC8 /* OccupiableOperatorsTests.swift */; };
-		4B5983F21D9035BD00409FC8 /* OptionalOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983E91D9035BD00409FC8 /* OptionalOperatorsTests.swift */; };
-		4B5983F41D9035BD00409FC8 /* OptionalOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983E91D9035BD00409FC8 /* OptionalOperatorsTests.swift */; };
-		4B5983F51D9035BD00409FC8 /* OptionalOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983E91D9035BD00409FC8 /* OptionalOperatorsTests.swift */; };
 		783A3C7220D6B6D70022CF68 /* RxOptional.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5983391D902F0800409FC8 /* RxOptional.framework */; };
 		783A3C7320D6B6DF0022CF68 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5983941D90308E00409FC8 /* Nimble.framework */; };
 		783A3C7420D6B6DF0022CF68 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5983951D90308E00409FC8 /* Quick.framework */; };
 		8482735E1DF9C9840083191B /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5983A91D9030C800409FC8 /* RxSwift.framework */; };
 		8482735F1DF9C9840083191B /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5983A81D9030C800409FC8 /* RxCocoa.framework */; };
-		848273611DF9C9DC0083191B /* RxOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B5983C11D9035A500409FC8 /* RxOptional.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		848273651DF9CE3C0083191B /* SharedSequence+Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983B81D9035A500409FC8 /* SharedSequence+Occupiable.swift */; };
-		848273661DF9CE3C0083191B /* SharedSequence+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983B91D9035A500409FC8 /* SharedSequence+Optional.swift */; };
-		848273671DF9CE3C0083191B /* Observable+Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983BA1D9035A500409FC8 /* Observable+Occupiable.swift */; };
-		848273681DF9CE3C0083191B /* Observable+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983BB1D9035A500409FC8 /* Observable+Optional.swift */; };
-		848273691DF9CE3C0083191B /* Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983BC1D9035A500409FC8 /* Occupiable.swift */; };
-		8482736A1DF9CE3C0083191B /* OptionalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983BD1D9035A500409FC8 /* OptionalType.swift */; };
-		8482736B1DF9CE3C0083191B /* RxOptionalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5983BE1D9035A500409FC8 /* RxOptionalError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +92,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12C50B4F235DF6B200AB72E1 /* Observable+Occupiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Occupiable.swift"; sourceTree = "<group>"; };
+		12C50B50235DF6B200AB72E1 /* RxOptionalError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxOptionalError.swift; sourceTree = "<group>"; };
+		12C50B51235DF6B200AB72E1 /* Observable+Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Optional.swift"; sourceTree = "<group>"; };
+		12C50B52235DF6B200AB72E1 /* SharedSequence+Occupiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SharedSequence+Occupiable.swift"; sourceTree = "<group>"; };
+		12C50B53235DF6B200AB72E1 /* OptionalType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalType.swift; sourceTree = "<group>"; };
+		12C50B54235DF6B200AB72E1 /* Occupiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Occupiable.swift; sourceTree = "<group>"; };
+		12C50B55235DF6B200AB72E1 /* SharedSequence+Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SharedSequence+Optional.swift"; sourceTree = "<group>"; };
+		12C50B89235DF6D900AB72E1 /* OptionalOperatorsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalOperatorsTests.swift; sourceTree = "<group>"; };
+		12C50B8A235DF6D900AB72E1 /* XCTestManifests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
+		12C50B8B235DF6D900AB72E1 /* OccupiableOperatorsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OccupiableOperatorsTests.swift; sourceTree = "<group>"; };
+		12C50B8C235DF6D900AB72E1 /* LinuxMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
+		12C50B9A235DF8C200AB72E1 /* RxOptional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RxOptional.h; sourceTree = "<group>"; };
+		12C50B9B235DF8C200AB72E1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12C50B9F235DF97600AB72E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = Tests/Info.plist; sourceTree = SOURCE_ROOT; };
 		4B5982E11D902B8F00409FC8 /* RxOptional.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxOptional.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B5982FE1D902BA600409FC8 /* RxOptional iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RxOptional iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B5983271D902EFD00409FC8 /* RxOptional.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxOptional.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,18 +126,6 @@
 		4B5983A51D9030C100409FC8 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/Mac/RxSwift.framework; sourceTree = "<group>"; };
 		4B5983A81D9030C800409FC8 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/tvOS/RxCocoa.framework; sourceTree = "<group>"; };
 		4B5983A91D9030C800409FC8 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/tvOS/RxSwift.framework; sourceTree = "<group>"; };
-		4B5983B81D9035A500409FC8 /* SharedSequence+Occupiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SharedSequence+Occupiable.swift"; sourceTree = "<group>"; };
-		4B5983B91D9035A500409FC8 /* SharedSequence+Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SharedSequence+Optional.swift"; sourceTree = "<group>"; };
-		4B5983BA1D9035A500409FC8 /* Observable+Occupiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Occupiable.swift"; sourceTree = "<group>"; };
-		4B5983BB1D9035A500409FC8 /* Observable+Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Optional.swift"; sourceTree = "<group>"; };
-		4B5983BC1D9035A500409FC8 /* Occupiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Occupiable.swift; sourceTree = "<group>"; };
-		4B5983BD1D9035A500409FC8 /* OptionalType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalType.swift; sourceTree = "<group>"; };
-		4B5983BE1D9035A500409FC8 /* RxOptionalError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxOptionalError.swift; sourceTree = "<group>"; };
-		4B5983C01D9035A500409FC8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4B5983C11D9035A500409FC8 /* RxOptional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RxOptional.h; sourceTree = "<group>"; };
-		4B5983E71D9035BD00409FC8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4B5983E81D9035BD00409FC8 /* OccupiableOperatorsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OccupiableOperatorsTests.swift; sourceTree = "<group>"; };
-		4B5983E91D9035BD00409FC8 /* OptionalOperatorsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalOperatorsTests.swift; sourceTree = "<group>"; };
 		8260378F2331307B00E3F5EA /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		848273561DF9C9660083191B /* RxOptional.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxOptional.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2B44FCF227B866600E0763B /* Examples.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Examples.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -196,13 +201,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12C50B4D235DF6B200AB72E1 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				12C50B4E235DF6B200AB72E1 /* RxOptional */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		12C50B4E235DF6B200AB72E1 /* RxOptional */ = {
+			isa = PBXGroup;
+			children = (
+				12C50B99235DF8C200AB72E1 /* Supporting Files */,
+				12C50B4F235DF6B200AB72E1 /* Observable+Occupiable.swift */,
+				12C50B50235DF6B200AB72E1 /* RxOptionalError.swift */,
+				12C50B51235DF6B200AB72E1 /* Observable+Optional.swift */,
+				12C50B52235DF6B200AB72E1 /* SharedSequence+Occupiable.swift */,
+				12C50B53235DF6B200AB72E1 /* OptionalType.swift */,
+				12C50B54235DF6B200AB72E1 /* Occupiable.swift */,
+				12C50B55235DF6B200AB72E1 /* SharedSequence+Optional.swift */,
+			);
+			path = RxOptional;
+			sourceTree = "<group>";
+		};
+		12C50B87235DF6D900AB72E1 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				12C50B9F235DF97600AB72E1 /* Info.plist */,
+				12C50B88235DF6D900AB72E1 /* RxOptionalTests */,
+				12C50B8C235DF6D900AB72E1 /* LinuxMain.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		12C50B88235DF6D900AB72E1 /* RxOptionalTests */ = {
+			isa = PBXGroup;
+			children = (
+				12C50B89235DF6D900AB72E1 /* OptionalOperatorsTests.swift */,
+				12C50B8A235DF6D900AB72E1 /* XCTestManifests.swift */,
+				12C50B8B235DF6D900AB72E1 /* OccupiableOperatorsTests.swift */,
+			);
+			path = RxOptionalTests;
+			sourceTree = "<group>";
+		};
+		12C50B99235DF8C200AB72E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				12C50B9A235DF8C200AB72E1 /* RxOptional.h */,
+				12C50B9B235DF8C200AB72E1 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		4B5982D71D902B8F00409FC8 = {
 			isa = PBXGroup;
 			children = (
+				12C50B87235DF6D900AB72E1 /* Tests */,
+				12C50B4D235DF6B200AB72E1 /* Sources */,
 				8260378F2331307B00E3F5EA /* Package.swift */,
 				A2B44FCF227B866600E0763B /* Examples.playground */,
-				4B5983B71D9035A500409FC8 /* Source */,
-				4B5983E61D9035BD00409FC8 /* Test */,
 				4B5982E21D902B8F00409FC8 /* Products */,
 				4B59838D1D90306D00409FC8 /* Frameworks */,
 			);
@@ -243,40 +300,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4B5983B71D9035A500409FC8 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				4B5983B81D9035A500409FC8 /* SharedSequence+Occupiable.swift */,
-				4B5983B91D9035A500409FC8 /* SharedSequence+Optional.swift */,
-				4B5983BA1D9035A500409FC8 /* Observable+Occupiable.swift */,
-				4B5983BB1D9035A500409FC8 /* Observable+Optional.swift */,
-				4B5983BC1D9035A500409FC8 /* Occupiable.swift */,
-				4B5983BD1D9035A500409FC8 /* OptionalType.swift */,
-				4B5983BE1D9035A500409FC8 /* RxOptionalError.swift */,
-				4B5983BF1D9035A500409FC8 /* Supporting Files */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		4B5983BF1D9035A500409FC8 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				4B5983C01D9035A500409FC8 /* Info.plist */,
-				4B5983C11D9035A500409FC8 /* RxOptional.h */,
-			);
-			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		4B5983E61D9035BD00409FC8 /* Test */ = {
-			isa = PBXGroup;
-			children = (
-				4B5983E71D9035BD00409FC8 /* Info.plist */,
-				4B5983E81D9035BD00409FC8 /* OccupiableOperatorsTests.swift */,
-				4B5983E91D9035BD00409FC8 /* OptionalOperatorsTests.swift */,
-			);
-			path = Test;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -284,7 +307,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B5983E21D9035A500409FC8 /* RxOptional.h in Headers */,
+				12C50BA3235DF9E300AB72E1 /* RxOptional.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +315,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B5983E31D9035A500409FC8 /* RxOptional.h in Headers */,
+				12C50BA4235DF9E300AB72E1 /* RxOptional.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +323,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B5983E41D9035A500409FC8 /* RxOptional.h in Headers */,
+				12C50BA5235DF9E400AB72E1 /* RxOptional.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,7 +331,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				848273611DF9C9DC0083191B /* RxOptional.h in Headers */,
+				12C50BA6235DF9E500AB72E1 /* RxOptional.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,13 +580,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B5983C61D9035A500409FC8 /* SharedSequence+Optional.swift in Sources */,
-				4B5983C21D9035A500409FC8 /* SharedSequence+Occupiable.swift in Sources */,
-				4B5983D21D9035A500409FC8 /* Occupiable.swift in Sources */,
-				4B5983DA1D9035A500409FC8 /* RxOptionalError.swift in Sources */,
-				4B5983CA1D9035A500409FC8 /* Observable+Occupiable.swift in Sources */,
-				4B5983CE1D9035A500409FC8 /* Observable+Optional.swift in Sources */,
-				4B5983D61D9035A500409FC8 /* OptionalType.swift in Sources */,
+				12C50B6B235DF6B300AB72E1 /* SharedSequence+Occupiable.swift in Sources */,
+				12C50B5D235DF6B300AB72E1 /* RxOptionalError.swift in Sources */,
+				12C50B80235DF6B300AB72E1 /* SharedSequence+Optional.swift in Sources */,
+				12C50B79235DF6B300AB72E1 /* Occupiable.swift in Sources */,
+				12C50B72235DF6B300AB72E1 /* OptionalType.swift in Sources */,
+				12C50B56235DF6B200AB72E1 /* Observable+Occupiable.swift in Sources */,
+				12C50B64235DF6B300AB72E1 /* Observable+Optional.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,8 +594,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B5983EE1D9035BD00409FC8 /* OccupiableOperatorsTests.swift in Sources */,
-				4B5983F21D9035BD00409FC8 /* OptionalOperatorsTests.swift in Sources */,
+				12C50B93235DF6D900AB72E1 /* OccupiableOperatorsTests.swift in Sources */,
+				12C50B8D235DF6D900AB72E1 /* OptionalOperatorsTests.swift in Sources */,
+				12C50B90235DF6D900AB72E1 /* XCTestManifests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,13 +604,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B5983C71D9035A500409FC8 /* SharedSequence+Optional.swift in Sources */,
-				4B5983C31D9035A500409FC8 /* SharedSequence+Occupiable.swift in Sources */,
-				4B5983D31D9035A500409FC8 /* Occupiable.swift in Sources */,
-				4B5983DB1D9035A500409FC8 /* RxOptionalError.swift in Sources */,
-				4B5983CB1D9035A500409FC8 /* Observable+Occupiable.swift in Sources */,
-				4B5983CF1D9035A500409FC8 /* Observable+Optional.swift in Sources */,
-				4B5983D71D9035A500409FC8 /* OptionalType.swift in Sources */,
+				12C50B6D235DF6B300AB72E1 /* SharedSequence+Occupiable.swift in Sources */,
+				12C50B5F235DF6B300AB72E1 /* RxOptionalError.swift in Sources */,
+				12C50B82235DF6B300AB72E1 /* SharedSequence+Optional.swift in Sources */,
+				12C50B7B235DF6B300AB72E1 /* Occupiable.swift in Sources */,
+				12C50B74235DF6B300AB72E1 /* OptionalType.swift in Sources */,
+				12C50B58235DF6B300AB72E1 /* Observable+Occupiable.swift in Sources */,
+				12C50B66235DF6B300AB72E1 /* Observable+Optional.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -594,13 +618,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B5983C81D9035A500409FC8 /* SharedSequence+Optional.swift in Sources */,
-				4B5983C41D9035A500409FC8 /* SharedSequence+Occupiable.swift in Sources */,
-				4B5983D41D9035A500409FC8 /* Occupiable.swift in Sources */,
-				4B5983DC1D9035A500409FC8 /* RxOptionalError.swift in Sources */,
-				4B5983CC1D9035A500409FC8 /* Observable+Occupiable.swift in Sources */,
-				4B5983D01D9035A500409FC8 /* Observable+Optional.swift in Sources */,
-				4B5983D81D9035A500409FC8 /* OptionalType.swift in Sources */,
+				12C50B6E235DF6B300AB72E1 /* SharedSequence+Occupiable.swift in Sources */,
+				12C50B60235DF6B300AB72E1 /* RxOptionalError.swift in Sources */,
+				12C50B83235DF6B300AB72E1 /* SharedSequence+Optional.swift in Sources */,
+				12C50B7C235DF6B300AB72E1 /* Occupiable.swift in Sources */,
+				12C50B75235DF6B300AB72E1 /* OptionalType.swift in Sources */,
+				12C50B59235DF6B300AB72E1 /* Observable+Occupiable.swift in Sources */,
+				12C50B67235DF6B300AB72E1 /* Observable+Optional.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,8 +632,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B5983F01D9035BD00409FC8 /* OccupiableOperatorsTests.swift in Sources */,
-				4B5983F41D9035BD00409FC8 /* OptionalOperatorsTests.swift in Sources */,
+				12C50B94235DF6D900AB72E1 /* OccupiableOperatorsTests.swift in Sources */,
+				12C50B8E235DF6D900AB72E1 /* OptionalOperatorsTests.swift in Sources */,
+				12C50B91235DF6D900AB72E1 /* XCTestManifests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,8 +642,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B5983F11D9035BD00409FC8 /* OccupiableOperatorsTests.swift in Sources */,
-				4B5983F51D9035BD00409FC8 /* OptionalOperatorsTests.swift in Sources */,
+				12C50B95235DF6D900AB72E1 /* OccupiableOperatorsTests.swift in Sources */,
+				12C50B8F235DF6D900AB72E1 /* OptionalOperatorsTests.swift in Sources */,
+				12C50B92235DF6D900AB72E1 /* XCTestManifests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,13 +652,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				848273691DF9CE3C0083191B /* Occupiable.swift in Sources */,
-				848273671DF9CE3C0083191B /* Observable+Occupiable.swift in Sources */,
-				848273651DF9CE3C0083191B /* SharedSequence+Occupiable.swift in Sources */,
-				8482736A1DF9CE3C0083191B /* OptionalType.swift in Sources */,
-				8482736B1DF9CE3C0083191B /* RxOptionalError.swift in Sources */,
-				848273681DF9CE3C0083191B /* Observable+Optional.swift in Sources */,
-				848273661DF9CE3C0083191B /* SharedSequence+Optional.swift in Sources */,
+				12C50B70235DF6B300AB72E1 /* SharedSequence+Occupiable.swift in Sources */,
+				12C50B62235DF6B300AB72E1 /* RxOptionalError.swift in Sources */,
+				12C50B85235DF6B300AB72E1 /* SharedSequence+Optional.swift in Sources */,
+				12C50B7E235DF6B300AB72E1 /* Occupiable.swift in Sources */,
+				12C50B77235DF6B300AB72E1 /* OptionalType.swift in Sources */,
+				12C50B5B235DF6B300AB72E1 /* Observable+Occupiable.swift in Sources */,
+				12C50B69235DF6B300AB72E1 /* Observable+Optional.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -792,7 +818,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "Sources/RxOptional/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -819,7 +845,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "Sources/RxOptional/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -834,6 +860,7 @@
 		4B5983071D902BA600409FC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = KU2QEJ9K3Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -841,7 +868,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = Test/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(SRCROOT)/Carthage/Build/iOS";
 				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.RxOptionalTests;
@@ -853,6 +880,7 @@
 		4B5983081D902BA600409FC8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = KU2QEJ9K3Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -860,7 +888,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = Test/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(SRCROOT)/Carthage/Build/iOS";
 				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.RxOptionalTests;
@@ -883,7 +911,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/watchOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "Sources/RxOptional/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -912,7 +940,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/watchOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "Sources/RxOptional/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -941,7 +969,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "Sources/RxOptional/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -970,7 +998,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "Sources/RxOptional/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -986,13 +1014,13 @@
 		4B5983761D902FF100409FC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = KU2QEJ9K3Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = Test/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(SRCROOT)/Carthage/Build/Mac @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.RxOptionalTests;
@@ -1005,13 +1033,13 @@
 		4B5983771D902FF100409FC8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = KU2QEJ9K3Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = Test/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(SRCROOT)/Carthage/Build/Mac @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.RxOptionalTests;
@@ -1031,7 +1059,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = Test/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(SRCROOT)/Carthage/Build/tvOS";
 				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.RxOptionalTests;
@@ -1051,7 +1079,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = Test/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(SRCROOT)/Carthage/Build/tvOS";
 				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.RxOptionalTests;
@@ -1074,7 +1102,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "Sources/RxOptional/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1101,7 +1129,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "Sources/RxOptional/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
