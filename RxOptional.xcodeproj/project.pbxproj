@@ -44,9 +44,6 @@
 		12C50B93235DF6D900AB72E1 /* OccupiableOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B8B235DF6D900AB72E1 /* OccupiableOperatorsTests.swift */; };
 		12C50B94235DF6D900AB72E1 /* OccupiableOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B8B235DF6D900AB72E1 /* OccupiableOperatorsTests.swift */; };
 		12C50B95235DF6D900AB72E1 /* OccupiableOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B8B235DF6D900AB72E1 /* OccupiableOperatorsTests.swift */; };
-		12C50B96235DF6D900AB72E1 /* LinuxMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B8C235DF6D900AB72E1 /* LinuxMain.swift */; };
-		12C50B97235DF6D900AB72E1 /* LinuxMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B8C235DF6D900AB72E1 /* LinuxMain.swift */; };
-		12C50B98235DF6D900AB72E1 /* LinuxMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B8C235DF6D900AB72E1 /* LinuxMain.swift */; };
 		12C50BA3235DF9E300AB72E1 /* RxOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = 12C50B9A235DF8C200AB72E1 /* RxOptional.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		12C50BA4235DF9E300AB72E1 /* RxOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = 12C50B9A235DF8C200AB72E1 /* RxOptional.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		12C50BA5235DF9E400AB72E1 /* RxOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = 12C50B9A235DF8C200AB72E1 /* RxOptional.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -600,7 +597,6 @@
 				12C50B93235DF6D900AB72E1 /* OccupiableOperatorsTests.swift in Sources */,
 				12C50B8D235DF6D900AB72E1 /* OptionalOperatorsTests.swift in Sources */,
 				12C50B90235DF6D900AB72E1 /* XCTestManifests.swift in Sources */,
-				12C50B96235DF6D900AB72E1 /* LinuxMain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,7 +635,6 @@
 				12C50B94235DF6D900AB72E1 /* OccupiableOperatorsTests.swift in Sources */,
 				12C50B8E235DF6D900AB72E1 /* OptionalOperatorsTests.swift in Sources */,
 				12C50B91235DF6D900AB72E1 /* XCTestManifests.swift in Sources */,
-				12C50B97235DF6D900AB72E1 /* LinuxMain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,7 +645,6 @@
 				12C50B95235DF6D900AB72E1 /* OccupiableOperatorsTests.swift in Sources */,
 				12C50B8F235DF6D900AB72E1 /* OptionalOperatorsTests.swift in Sources */,
 				12C50B92235DF6D900AB72E1 /* XCTestManifests.swift in Sources */,
-				12C50B98235DF6D900AB72E1 /* LinuxMain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
