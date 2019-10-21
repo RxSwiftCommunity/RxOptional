@@ -47,6 +47,18 @@
 		12C50B96235DF6D900AB72E1 /* LinuxMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B8C235DF6D900AB72E1 /* LinuxMain.swift */; };
 		12C50B97235DF6D900AB72E1 /* LinuxMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B8C235DF6D900AB72E1 /* LinuxMain.swift */; };
 		12C50B98235DF6D900AB72E1 /* LinuxMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C50B8C235DF6D900AB72E1 /* LinuxMain.swift */; };
+		12C50B9E235DF8C200AB72E1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12C50B9B235DF8C200AB72E1 /* Info.plist */; };
+		12C50BA0235DF97600AB72E1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12C50B9F235DF97600AB72E1 /* Info.plist */; };
+		12C50BA1235DF97600AB72E1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12C50B9F235DF97600AB72E1 /* Info.plist */; };
+		12C50BA2235DF97600AB72E1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12C50B9F235DF97600AB72E1 /* Info.plist */; };
+		12C50BA3235DF9E300AB72E1 /* RxOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = 12C50B9A235DF8C200AB72E1 /* RxOptional.h */; };
+		12C50BA4235DF9E300AB72E1 /* RxOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = 12C50B9A235DF8C200AB72E1 /* RxOptional.h */; };
+		12C50BA5235DF9E400AB72E1 /* RxOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = 12C50B9A235DF8C200AB72E1 /* RxOptional.h */; };
+		12C50BA6235DF9E500AB72E1 /* RxOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = 12C50B9A235DF8C200AB72E1 /* RxOptional.h */; };
+		12C50BA7235DF9EA00AB72E1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12C50B9B235DF8C200AB72E1 /* Info.plist */; };
+		12C50BA8235DF9EB00AB72E1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12C50B9B235DF8C200AB72E1 /* Info.plist */; };
+		12C50BA9235DF9EC00AB72E1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12C50B9B235DF8C200AB72E1 /* Info.plist */; };
+		12C50BAA235DF9ED00AB72E1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12C50B9B235DF8C200AB72E1 /* Info.plist */; };
 		4B5983031D902BA600409FC8 /* RxOptional.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5982E11D902B8F00409FC8 /* RxOptional.framework */; };
 		4B5983801D902FF300409FC8 /* RxOptional.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5982E11D902B8F00409FC8 /* RxOptional.framework */; };
 		4B5983901D90306D00409FC8 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B59838E1D90306D00409FC8 /* Nimble.framework */; };
@@ -102,6 +114,9 @@
 		12C50B8A235DF6D900AB72E1 /* XCTestManifests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		12C50B8B235DF6D900AB72E1 /* OccupiableOperatorsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OccupiableOperatorsTests.swift; sourceTree = "<group>"; };
 		12C50B8C235DF6D900AB72E1 /* LinuxMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
+		12C50B9A235DF8C200AB72E1 /* RxOptional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RxOptional.h; sourceTree = "<group>"; };
+		12C50B9B235DF8C200AB72E1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12C50B9F235DF97600AB72E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = Tests/Info.plist; sourceTree = SOURCE_ROOT; };
 		4B5982E11D902B8F00409FC8 /* RxOptional.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxOptional.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B5982FE1D902BA600409FC8 /* RxOptional iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RxOptional iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B5983271D902EFD00409FC8 /* RxOptional.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxOptional.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -208,6 +223,7 @@
 		12C50B4E235DF6B200AB72E1 /* RxOptional */ = {
 			isa = PBXGroup;
 			children = (
+				12C50B99235DF8C200AB72E1 /* Supporting Files */,
 				12C50B4F235DF6B200AB72E1 /* Observable+Occupiable.swift */,
 				12C50B50235DF6B200AB72E1 /* RxOptionalError.swift */,
 				12C50B51235DF6B200AB72E1 /* Observable+Optional.swift */,
@@ -222,6 +238,7 @@
 		12C50B87235DF6D900AB72E1 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				12C50B9F235DF97600AB72E1 /* Info.plist */,
 				12C50B88235DF6D900AB72E1 /* RxOptionalTests */,
 				12C50B8C235DF6D900AB72E1 /* LinuxMain.swift */,
 			);
@@ -236,6 +253,15 @@
 				12C50B8B235DF6D900AB72E1 /* OccupiableOperatorsTests.swift */,
 			);
 			path = RxOptionalTests;
+			sourceTree = "<group>";
+		};
+		12C50B99235DF8C200AB72E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				12C50B9A235DF8C200AB72E1 /* RxOptional.h */,
+				12C50B9B235DF8C200AB72E1 /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		4B5982D71D902B8F00409FC8 = {
@@ -292,6 +318,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12C50BA3235DF9E300AB72E1 /* RxOptional.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +326,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12C50BA4235DF9E300AB72E1 /* RxOptional.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +334,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12C50BA5235DF9E400AB72E1 /* RxOptional.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +342,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12C50BA6235DF9E500AB72E1 /* RxOptional.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +539,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12C50BA7235DF9EA00AB72E1 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +547,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12C50BA0235DF97600AB72E1 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,6 +555,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12C50BA8235DF9EB00AB72E1 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,6 +563,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12C50BA9235DF9EC00AB72E1 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,6 +571,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12C50BA1235DF97600AB72E1 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,6 +579,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12C50BA2235DF97600AB72E1 /* Info.plist in Resources */,
+				12C50B9E235DF8C200AB72E1 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,6 +588,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12C50BAA235DF9ED00AB72E1 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -802,7 +840,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "Sources/RxOptional/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -829,7 +867,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "Sources/RxOptional/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -852,7 +890,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = Test/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(SRCROOT)/Carthage/Build/iOS";
 				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.RxOptionalTests;
@@ -872,7 +910,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = Test/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(SRCROOT)/Carthage/Build/iOS";
 				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.RxOptionalTests;
@@ -895,7 +933,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/watchOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "Sources/RxOptional/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -924,7 +962,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/watchOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "Sources/RxOptional/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -953,7 +991,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "Sources/RxOptional/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -982,7 +1020,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "Sources/RxOptional/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1004,7 +1042,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = Test/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(SRCROOT)/Carthage/Build/Mac @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.RxOptionalTests;
@@ -1023,7 +1061,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = Test/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(SRCROOT)/Carthage/Build/Mac @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.RxOptionalTests;
@@ -1043,7 +1081,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = Test/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(SRCROOT)/Carthage/Build/tvOS";
 				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.RxOptionalTests;
@@ -1063,7 +1101,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = Test/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(SRCROOT)/Carthage/Build/tvOS";
 				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.RxOptionalTests;
@@ -1086,7 +1124,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "Sources/RxOptional/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1113,7 +1151,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "Sources/RxOptional/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
