@@ -51,6 +51,20 @@ public extension SharedSequenceConvertibleType where Element: OptionalType {
     }
 }
 
+public extension SharedSequenceConvertibleType {
+    /**
+     Unwraps and filters out `nil` result returned by `transform`
+     
+     - parameter transform: A transform function to apply to each source element.
+     
+     - returns: `Driver` of source `transform` result, with `nil` elements filtered out.
+     */
+    
+    func filterNil<Value>(_ transform: @escaping (Element) -> Value?) -> SharedSequence<SharingStrategy, Value> {
+        return self.map(transform).filterNil()
+    }
+}
+
 #if !swift(>=3.3) || (swift(>=4.0) && !swift(>=4.1))
 public extension SharedSequenceConvertibleType where Element: OptionalType, Element.Wrapped: Equatable {
     /**
