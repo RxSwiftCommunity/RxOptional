@@ -29,6 +29,20 @@ next(Three)
 completed
 ```
 
+```swift
+Observable<String>
+    .of("1", "lee", "3")
+    .filterNil { Int($0) }
+    // Type is now Observable<Int>
+    .subscribe { print($0) }
+```
+
+```text
+next(1)
+next(3)
+completed
+```
+
 ##### replaceNilWith
 
 ```swift
