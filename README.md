@@ -194,7 +194,7 @@ pod 'RxOptional'
 Add this to `Cartfile`
 
 ```
-github "RxSwiftCommunity/RxOptional" ~> 3.1.3
+github "RxSwiftCommunity/RxOptional" ~> 4.1.0
 ```
 
 ```
