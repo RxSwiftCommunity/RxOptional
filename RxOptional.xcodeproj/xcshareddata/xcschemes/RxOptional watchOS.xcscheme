@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1020"
+   LastUpgradeVersion = "1230"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4B5983171D902EFD00409FC8"
+               BlueprintIdentifier = "05FC215B00A883816D509533"
                BuildableName = "RxOptional.framework"
                BlueprintName = "RxOptional watchOS"
-               ReferencedContainer = "container:RxOptional.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "NO"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4B5983601D902FEE00409FC8"
-               BuildableName = "RxOptional watchOS Tests.xctest"
-               BlueprintName = "RxOptional watchOS Tests"
                ReferencedContainer = "container:RxOptional.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -41,29 +27,17 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
-      <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4B5983601D902FEE00409FC8"
-               BuildableName = "RxOptional watchOS Tests.xctest"
-               BlueprintName = "RxOptional watchOS Tests"
-               ReferencedContainer = "container:RxOptional.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-      </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4B5983171D902EFD00409FC8"
+            BlueprintIdentifier = "05FC215B00A883816D509533"
             BuildableName = "RxOptional.framework"
             BlueprintName = "RxOptional watchOS"
             ReferencedContainer = "container:RxOptional.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
+      <Testables>
+      </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -78,14 +52,12 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4B5983171D902EFD00409FC8"
+            BlueprintIdentifier = "05FC215B00A883816D509533"
             BuildableName = "RxOptional.framework"
             BlueprintName = "RxOptional watchOS"
             ReferencedContainer = "container:RxOptional.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -93,15 +65,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4B5983171D902EFD00409FC8"
+            BlueprintIdentifier = "05FC215B00A883816D509533"
             BuildableName = "RxOptional.framework"
             BlueprintName = "RxOptional watchOS"
             ReferencedContainer = "container:RxOptional.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

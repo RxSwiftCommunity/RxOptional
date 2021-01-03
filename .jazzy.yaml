@@ -1,0 +1,5 @@
+output: ../docs/RxOptional
+module: RxOptional
+xcodebuild_arguments: 
+  - -scheme
+  - RxOptional iOS

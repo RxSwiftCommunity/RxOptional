@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1020"
+   LastUpgradeVersion = "1230"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4B5982E01D902B8F00409FC8"
+               BlueprintIdentifier = "6F69539CB7F6307A6DBF3899"
                BuildableName = "RxOptional.framework"
                BlueprintName = "RxOptional iOS"
                ReferencedContainer = "container:RxOptional.xcodeproj">
@@ -28,9 +28,9 @@
             buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4B5982FD1D902BA600409FC8"
-               BuildableName = "RxOptional iOS Tests.xctest"
-               BlueprintName = "RxOptional iOS Tests"
+               BlueprintIdentifier = "7B1875DF13DB304EC80B85DB"
+               BuildableName = "RxOptionalTests iOS.xctest"
+               BlueprintName = "RxOptionalTests iOS"
                ReferencedContainer = "container:RxOptional.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -40,30 +40,29 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
-      <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4B5982FD1D902BA600409FC8"
-               BuildableName = "RxOptional iOS Tests.xctest"
-               BlueprintName = "RxOptional iOS Tests"
-               ReferencedContainer = "container:RxOptional.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-      </Testables>
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4B5982E01D902B8F00409FC8"
+            BlueprintIdentifier = "6F69539CB7F6307A6DBF3899"
             BuildableName = "RxOptional.framework"
             BlueprintName = "RxOptional iOS"
             ReferencedContainer = "container:RxOptional.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7B1875DF13DB304EC80B85DB"
+               BuildableName = "RxOptionalTests iOS.xctest"
+               BlueprintName = "RxOptionalTests iOS"
+               ReferencedContainer = "container:RxOptional.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -78,14 +77,12 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4B5982E01D902B8F00409FC8"
+            BlueprintIdentifier = "6F69539CB7F6307A6DBF3899"
             BuildableName = "RxOptional.framework"
             BlueprintName = "RxOptional iOS"
             ReferencedContainer = "container:RxOptional.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -93,15 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4B5982E01D902B8F00409FC8"
+            BlueprintIdentifier = "6F69539CB7F6307A6DBF3899"
             BuildableName = "RxOptional.framework"
             BlueprintName = "RxOptional iOS"
             ReferencedContainer = "container:RxOptional.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

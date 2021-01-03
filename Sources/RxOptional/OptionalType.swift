@@ -4,13 +4,13 @@ import Foundation
 // Credit to Artsy and @ashfurrow
 
 public protocol OptionalType {
-    associatedtype Wrapped
-    var value: Wrapped? { get }
+  associatedtype Wrapped
+  var value: Wrapped? { get }
 }
 
 extension Optional: OptionalType {
-    /// Cast `Optional<Wrapped>` to `Wrapped?`
-    public var value: Wrapped? {
-        return self
-    }
+  /// Cast `Optional<Wrapped>` to `Wrapped?`
+  public var value: Wrapped? {
+    return self
+  }
 }
