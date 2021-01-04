@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "05FC215B00A883816D509533"
-               BuildableName = "RxOptional.framework"
+               BuildableName = "RxOptional watchOS.framework"
                BlueprintName = "RxOptional watchOS"
                ReferencedContainer = "container:RxOptional.xcodeproj">
             </BuildableReference>
@@ -26,18 +26,19 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      onlyGenerateCoverageForSpecifiedTargets = "NO"
       shouldUseLaunchSchemeArgsEnv = "YES">
+      <Testables>
+      </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "05FC215B00A883816D509533"
-            BuildableName = "RxOptional.framework"
+            BuildableName = "RxOptional watchOS.framework"
             BlueprintName = "RxOptional watchOS"
             ReferencedContainer = "container:RxOptional.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <Testables>
-      </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -53,11 +54,13 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "05FC215B00A883816D509533"
-            BuildableName = "RxOptional.framework"
+            BuildableName = "RxOptional watchOS.framework"
             BlueprintName = "RxOptional watchOS"
             ReferencedContainer = "container:RxOptional.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
+      <CommandLineArguments>
+      </CommandLineArguments>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -70,11 +73,13 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "05FC215B00A883816D509533"
-            BuildableName = "RxOptional.framework"
+            BuildableName = "RxOptional watchOS.framework"
             BlueprintName = "RxOptional watchOS"
             ReferencedContainer = "container:RxOptional.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <CommandLineArguments>
+      </CommandLineArguments>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

@@ -14,24 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6A00D0484A59D091E8911045"
-               BuildableName = "RxOptional macOS.framework"
-               BlueprintName = "RxOptional macOS"
-               ReferencedContainer = "container:RxOptional.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "NO"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "65A933B3482F525E66DC8D53"
-               BuildableName = "RxOptionalTests macOS.xctest"
-               BlueprintName = "RxOptionalTests macOS"
-               ReferencedContainer = "container:RxOptional.xcodeproj">
+               BlueprintIdentifier = "FAB6F6791C2CEE68B3AF6A89"
+               BuildableName = "RxOptional watchOS.framework"
+               BlueprintName = "RxOptional watchOS"
+               ReferencedContainer = "container:RxOptional-SPM.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -40,32 +26,19 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      codeCoverageEnabled = "YES"
       onlyGenerateCoverageForSpecifiedTargets = "NO"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "65A933B3482F525E66DC8D53"
-               BuildableName = "RxOptionalTests macOS.xctest"
-               BlueprintName = "RxOptionalTests macOS"
-               ReferencedContainer = "container:RxOptional.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6A00D0484A59D091E8911045"
-            BuildableName = "RxOptional macOS.framework"
-            BlueprintName = "RxOptional macOS"
-            ReferencedContainer = "container:RxOptional.xcodeproj">
+            BlueprintIdentifier = "FAB6F6791C2CEE68B3AF6A89"
+            BuildableName = "RxOptional watchOS.framework"
+            BlueprintName = "RxOptional watchOS"
+            ReferencedContainer = "container:RxOptional-SPM.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <CommandLineArguments>
-      </CommandLineArguments>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -80,10 +53,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6A00D0484A59D091E8911045"
-            BuildableName = "RxOptional macOS.framework"
-            BlueprintName = "RxOptional macOS"
-            ReferencedContainer = "container:RxOptional.xcodeproj">
+            BlueprintIdentifier = "FAB6F6791C2CEE68B3AF6A89"
+            BuildableName = "RxOptional watchOS.framework"
+            BlueprintName = "RxOptional watchOS"
+            ReferencedContainer = "container:RxOptional-SPM.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <CommandLineArguments>
@@ -99,10 +72,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6A00D0484A59D091E8911045"
-            BuildableName = "RxOptional macOS.framework"
-            BlueprintName = "RxOptional macOS"
-            ReferencedContainer = "container:RxOptional.xcodeproj">
+            BlueprintIdentifier = "FAB6F6791C2CEE68B3AF6A89"
+            BuildableName = "RxOptional watchOS.framework"
+            BlueprintName = "RxOptional watchOS"
+            ReferencedContainer = "container:RxOptional-SPM.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>
