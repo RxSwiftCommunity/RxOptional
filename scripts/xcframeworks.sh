@@ -4,13 +4,13 @@ set -euo pipefail
 rm -rf xcarchives/*
 rm -rf RxOptional.xcframework.zip
 
-xcodebuild archive -project RxOptional-SPM.xcodeproj -scheme "RxOptional iOS" -sdk iphoneos -archivePath "xcarchives/RxOptional-iOS"
-xcodebuild archive -project RxOptional-SPM.xcodeproj -scheme "RxOptional iOS" -sdk iphonesimulator  -archivePath "xcarchives/RxOptional-iOS-Simulator"
-xcodebuild archive -project RxOptional-SPM.xcodeproj -scheme "RxOptional tvOS" -sdk appletvos -archivePath "xcarchives/RxOptional-tvOS"
-xcodebuild archive -project RxOptional-SPM.xcodeproj -scheme "RxOptional tvOS" -sdk appletvsimulator -archivePath "xcarchives/RxOptional-tvOS-Simulator"
-xcodebuild archive -project RxOptional-SPM.xcodeproj -scheme "RxOptional macOS" -sdk macosx -archivePath "xcarchives/RxOptional-macOS"
-xcodebuild archive -project RxOptional-SPM.xcodeproj -scheme "RxOptional watchOS" -sdk watchos -archivePath "xcarchives/RxOptional-watchOS"
-xcodebuild archive -project RxOptional-SPM.xcodeproj -scheme "RxOptional watchOS" -sdk watchsimulator -archivePath "xcarchives/RxOptional-watchOS-Simulator"
+xcodebuild archive -quiet -project RxOptional-SPM.xcodeproj -scheme "RxOptional iOS" -sdk iphoneos -archivePath "xcarchives/RxOptional-iOS"
+xcodebuild archive -quiet -project RxOptional-SPM.xcodeproj -scheme "RxOptional iOS" -sdk iphonesimulator  -archivePath "xcarchives/RxOptional-iOS-Simulator"
+xcodebuild archive -quiet -project RxOptional-SPM.xcodeproj -scheme "RxOptional tvOS" -sdk appletvos -archivePath "xcarchives/RxOptional-tvOS"
+xcodebuild archive -quiet -project RxOptional-SPM.xcodeproj -scheme "RxOptional tvOS" -sdk appletvsimulator -archivePath "xcarchives/RxOptional-tvOS-Simulator"
+xcodebuild archive -quiet -project RxOptional-SPM.xcodeproj -scheme "RxOptional macOS" -sdk macosx -archivePath "xcarchives/RxOptional-macOS"
+xcodebuild archive -quiet -project RxOptional-SPM.xcodeproj -scheme "RxOptional watchOS" -sdk watchos -archivePath "xcarchives/RxOptional-watchOS"
+xcodebuild archive -quiet -project RxOptional-SPM.xcodeproj -scheme "RxOptional watchOS" -sdk watchsimulator -archivePath "xcarchives/RxOptional-watchOS-Simulator"
 
 xcodebuild -create-xcframework \
 -framework "xcarchives/RxOptional-iOS-Simulator.xcarchive/Products/Library/Frameworks/RxOptional.framework" \
