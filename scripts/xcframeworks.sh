@@ -33,7 +33,7 @@ xcodebuild -create-xcframework \
 -debug-symbols ""$(pwd)"/xcarchives/RxOptional-watchOS.xcarchive/dSYMs/RxOptional.framework.dSYM" \
 -output "RxOptional.xcframework" 
 
-# zip -r RxOptional.xcframework.zip RxOptional.xcframework
-# rm -rf xcarchives/*
-# rm -rf RxOptional.xcframework
-# rm -rf RxOptional-SPM.xcodeproj
+zip -r RxOptional.xcframework.zip RxOptional.xcframework
+rm -rf xcarchives/*
+rm -rf RxOptional.xcframework
+rm -rf RxOptional-SPM.xcodeproj
