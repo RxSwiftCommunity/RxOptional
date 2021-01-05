@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   # Version to always follow latest tag, with fallback to major
   s.version = "4.1.0"
   s.license = "MIT"
-  s.summary     = 'RxSwift extensions for Swift optionals and Occupiable types'
+  s.summary = "RxSwift extensions for Swift optionals and Occupiable types"
 
   s.description = <<-DESC
                   RxSwift extensions for Swift optionals and "Occupiable" types.
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 
   s.homepage = "https://github.com/RxSwiftCommunity/RxOptional"
   s.authors = { "RxSwift Community" => "community@rxswift.org" }
-  s.source = { :git => "https://github.com/RxSwiftCommunity/RxOptional.git", :tag => "v" + ENV["RELEASE_VERSION"] }
+  s.source = { :git => "https://github.com/RxSwiftCommunity/RxOptional.git", :tag => "v" + s.version.to_s }
   s.swift_version = "5.1"
 
   s.ios.deployment_target = "10.0"
