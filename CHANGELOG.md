@@ -1,4 +1,27 @@
-# master
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## 5.0.0 (2021-01-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* - Moved circleci to githubci
+- Supports RxSwift 6.0
+- Release xcframeworks
+
+### Features
+
+* Restructure for better support and maintenance ([64eea0c](https://github.com/RxSwiftCommunity/RxOptional/commits/64eea0c51152d1dc89c076a6df133e2b0191f37b))
+
+
+### Bug Fixes
+
+* Bump version script ([a7a1c20](https://github.com/RxSwiftCommunity/RxOptional/commits/a7a1c20ec46104b10c8bd45767dc326b4a0b3405))
+* Commit podspec version bump ([141cc95](https://github.com/RxSwiftCommunity/RxOptional/commits/141cc95fcebc5707c81419849b9c88cfb059aa4c))
+* Reenable cleanup script ([c6c73f5](https://github.com/RxSwiftCommunity/RxOptional/commits/c6c73f53280c1f20d7a8415482f6de0d42fe2112))
+* Remove unused step in action ([8566368](https://github.com/RxSwiftCommunity/RxOptional/commits/8566368791b701ce309249c9167011261a188558))
 
 # 4.1.0
 
