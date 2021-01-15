@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1020"
+   LastUpgradeVersion = "1230"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,23 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "848273551DF9C9660083191B"
-               BuildableName = "RxOptional.framework"
+               BlueprintIdentifier = "1CD2B6EA4FA6F3E24B74D63F"
+               BuildableName = "RxOptional tvOS.framework"
                BlueprintName = "RxOptional tvOS"
+               ReferencedContainer = "container:RxOptional.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D04DF7B7DF49D9E0BCCD6327"
+               BuildableName = "RxOptionalTests tvOS.xctest"
+               BlueprintName = "RxOptionalTests tvOS"
                ReferencedContainer = "container:RxOptional.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -26,15 +40,17 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      codeCoverageEnabled = "YES"
+      onlyGenerateCoverageForSpecifiedTargets = "NO"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4B59837A1D902FF300409FC8"
-               BuildableName = "RxOptional tvOS Tests.xctest"
-               BlueprintName = "RxOptional tvOS Tests"
+               BlueprintIdentifier = "D04DF7B7DF49D9E0BCCD6327"
+               BuildableName = "RxOptionalTests tvOS.xctest"
+               BlueprintName = "RxOptionalTests tvOS"
                ReferencedContainer = "container:RxOptional.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,14 +58,14 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "848273551DF9C9660083191B"
-            BuildableName = "RxOptional.framework"
+            BlueprintIdentifier = "1CD2B6EA4FA6F3E24B74D63F"
+            BuildableName = "RxOptional tvOS.framework"
             BlueprintName = "RxOptional tvOS"
             ReferencedContainer = "container:RxOptional.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
+      <CommandLineArguments>
+      </CommandLineArguments>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -64,14 +80,14 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "848273551DF9C9660083191B"
-            BuildableName = "RxOptional.framework"
+            BlueprintIdentifier = "1CD2B6EA4FA6F3E24B74D63F"
+            BuildableName = "RxOptional tvOS.framework"
             BlueprintName = "RxOptional tvOS"
             ReferencedContainer = "container:RxOptional.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
+      <CommandLineArguments>
+      </CommandLineArguments>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -79,15 +95,18 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "848273551DF9C9660083191B"
-            BuildableName = "RxOptional.framework"
+            BlueprintIdentifier = "1CD2B6EA4FA6F3E24B74D63F"
+            BuildableName = "RxOptional tvOS.framework"
             BlueprintName = "RxOptional tvOS"
             ReferencedContainer = "container:RxOptional.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
+      <CommandLineArguments>
+      </CommandLineArguments>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

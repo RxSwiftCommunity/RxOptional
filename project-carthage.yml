@@ -1,0 +1,186 @@
+name: RxOptional
+options:
+  minimumXcodeGenVersion: "2.15.1"
+  developmentLanguage: en
+  usesTabs: false
+  indentWidth: 2
+  tabWidth: 2
+  xcodeVersion: "1230"
+  deploymentTarget:
+    iOS: "10.0"
+    macOS: "10.10"
+    tvOS: "10.0"
+    watchOS: "3.0"
+  carthageExecutablePath: "`which carthage`"
+  defaultConfig: "Release"
+configs:
+  Debug: debug
+  Release: release
+attributes:
+  ORGANIZATIONNAME: RxSwiftCommunity
+schemes:
+  RxOptional iOS:
+    scheme: {}
+    build:
+      parallelizeBuild: true
+      buildImplicitDependencies: true
+      targets:
+        RxOptional iOS: all
+        RxOptionalTests iOS: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      gatherCoverageData: true
+      targets:
+        - RxOptionalTests iOS
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release
+      revealArchiveInOrganizer: true
+  RxOptional macOS:
+    scheme: {}
+    build:
+      parallelizeBuild: true
+      buildImplicitDependencies: true
+      targets:
+        RxOptional macOS: all
+        RxOptionalTests macOS: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      gatherCoverageData: true
+      targets:
+        - RxOptionalTests macOS
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release
+      revealArchiveInOrganizer: true
+  RxOptional watchOS:
+    scheme: {}
+    build:
+      parallelizeBuild: true
+      buildImplicitDependencies: true
+      targets:
+        RxOptional watchOS: all
+    run:
+      config: Debug
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release
+      revealArchiveInOrganizer: true
+  RxOptional tvOS:
+    scheme: {}
+    build:
+      parallelizeBuild: true
+      buildImplicitDependencies: true
+      targets:
+        RxOptional tvOS: all
+        RxOptionalTests tvOS: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      gatherCoverageData: true
+      targets:
+        - RxOptionalTests tvOS
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release
+      revealArchiveInOrganizer: true
+targets:
+  RxOptional iOS:
+    settings:
+      PRODUCT_NAME: RxOptional
+      PRODUCT_BUNDLE_IDENTIFIER: RxSwiftCommunity.RxOptional.RxOptional-iOS
+      BUILD_LIBRARY_FOR_DISTRIBUTION: YES
+      SKIP_INSTALL: NO
+      SUPPORTS_MACCATALYST: NO
+    platform: iOS
+    type: framework
+    sources:
+      - Sources/RxOptional
+    dependencies:
+      - carthage: RxCocoa
+      - carthage: RxSwift
+  RxOptional macOS:
+    settings:
+      PRODUCT_NAME: RxOptional
+      PRODUCT_BUNDLE_IDENTIFIER: RxSwiftCommunity.RxOptional.RxOptional-macOS
+      BUILD_LIBRARY_FOR_DISTRIBUTION: YES
+      SKIP_INSTALL: NO
+    platform: macOS
+    type: framework
+    sources:
+      - Sources/RxOptional
+    dependencies:
+      - carthage: RxCocoa
+      - carthage: RxSwift
+  RxOptional tvOS:
+    settings:
+      PRODUCT_NAME: RxOptional
+      PRODUCT_BUNDLE_IDENTIFIER: RxSwiftCommunity.RxOptional.RxOptional-tvOS
+      BUILD_LIBRARY_FOR_DISTRIBUTION: YES
+      SKIP_INSTALL: NO
+    platform: tvOS
+    type: framework
+    sources:
+      - Sources/RxOptional
+    dependencies:
+      - carthage: RxCocoa
+      - carthage: RxSwift
+  RxOptional watchOS:
+    settings:
+      PRODUCT_NAME: RxOptional
+      PRODUCT_BUNDLE_IDENTIFIER: RxSwiftCommunity.RxOptional.RxOptional-watchOS
+      BUILD_LIBRARY_FOR_DISTRIBUTION: YES
+      SKIP_INSTALL: NO
+    platform: watchOS
+    type: framework
+    sources:
+      - Sources/RxOptional
+    dependencies:
+      - carthage: RxCocoa
+      - carthage: RxSwift
+  RxOptionalTests iOS:
+    platform: iOS
+    type: bundle.unit-test
+    sources:
+      - path: Tests/RxOptionalTests
+    dependencies:
+      - target: RxOptional iOS
+      - carthage: Nimble
+      - carthage: Quick
+  RxOptionalTests macOS:
+    platform: macOS
+    type: bundle.unit-test
+    settings:
+      CODE_SIGN_IDENTITY: ""
+    sources:
+      - path: Tests/RxOptionalTests
+    dependencies:
+      - target: RxOptional macOS
+      - carthage: Nimble
+      - carthage: Quick
+  RxOptionalTests tvOS:
+    platform: tvOS
+    type: bundle.unit-test
+    sources:
+      - path: Tests/RxOptionalTests
+    dependencies:
+      - target: RxOptional tvOS
+      - carthage: Nimble
+      - carthage: Quick
