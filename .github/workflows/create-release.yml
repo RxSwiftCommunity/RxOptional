@@ -42,6 +42,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-spm-
 
+      - name: Resolve dependencies
+        run: |
+          brew bundle
+          bundle
+
       - name: Release XCFrameworks
         run: |
           chmod +x ./scripts/xcframeworks.sh
