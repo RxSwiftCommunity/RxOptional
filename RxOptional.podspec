@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name = "RxOptional"
   # Version to always follow latest tag, with fallback to major
-  s.version = "5.0.2"
+  s.version = "5.0.3"
   s.license = "MIT"
   s.summary = "RxSwift extensions for Swift optionals and Occupiable types"
 
