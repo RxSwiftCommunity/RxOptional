@@ -1,7 +1,7 @@
 import Foundation
 import RxCocoa
 
-public extension SharedSequenceConvertibleType where Element: Occupiable {
+public extension SharedSequenceConvertibleType where Element: Collection {
   /**
    Filters out empty elements.
 

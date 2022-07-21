@@ -1,7 +1,7 @@
 import Foundation
 import RxSwift
 
-public extension ObservableType where Element: Occupiable {
+public extension ObservableType where Element: Collection {
   /**
    Filter out empty occupiable elements.
 
