@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 5.0.6 (2024-10-06)
+
+There are no actual code changes to this release, we've only removed the original author's e-mail from the repo based on their request. (See #112)
+
 ### [5.0.5](https://github.com/RxSwiftCommunity/RxOptional/branches/compare/v5.0.5%0Dv5.0.4) (2022-04-14)
 
 ### [5.0.4](https://github.com/RxSwiftCommunity/RxOptional/branches/compare/v5.0.4%0Dv5.0.3) (2021-10-05)

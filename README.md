@@ -218,7 +218,7 @@ let package = Package(
 
 ## Author
 
-Thane Gill, me@thanegill.com
+Thane Gill
 
 ## License
 
