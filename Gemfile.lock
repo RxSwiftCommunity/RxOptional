@@ -165,7 +165,7 @@ GEM
     rake (13.2.1)
     rchardet (1.9.0)
     redcarpet (3.6.0)
-    rexml (3.4.0)
+    rexml (3.4.2)
     rouge (4.5.1)
     ruby-macho (2.5.1)
     ruby2_keywords (0.0.5)
